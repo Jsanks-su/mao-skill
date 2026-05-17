@@ -1,114 +1,129 @@
 {
+  "policy": {
+    "default_state": "inactive",
+    "activation_rule": "Trigger MAO only when the user explicitly asks to use mao mode/mao skill, or while mao mode is already active in the current conversation.",
+    "non_activation_rule": "Do not trigger from decision-analysis topic alone. Installing, editing, or discussing the skill is not activation.",
+    "new_conversation_state": "inactive"
+  },
   "positive": [
     {
-      "input": "我公司现金流紧张，要不要扩张？",
+      "input": "@mao 看一下这个问题：我现在要不要离职？",
       "expected_trigger": true,
-      "expected_mode": "强制刹车或深度模式",
-      "must_include": ["现金流", "阶段判断", "可逆试探"]
+      "expected_scope": "single_turn",
+      "expected_mode": "standard_or_deep",
+      "must_include": ["事实", "主要矛盾", "阶段"],
+      "must_not_persist": true
     },
     {
-      "input": "小团队怎么打赢大公司？",
+      "input": "这次用 mao skill 分析一下，我要不要扩大团队？",
       "expected_trigger": true,
-      "expected_mode": "深度模式",
-      "must_include": ["局部优势", "避战边界", "集中突破点"]
+      "expected_scope": "single_turn",
+      "expected_mode": "standard_or_deep",
+      "must_include": ["事实", "主要矛盾", "阶段"]
     },
     {
-      "input": "团队意见很分散，怎么统一行动？",
+      "input": "用 mao skill 看这一题：小团队怎么打赢大公司？",
       "expected_trigger": true,
-      "expected_mode": "深度模式",
-      "must_include": ["力量结构", "群众路线", "统一行动"]
+      "expected_scope": "single_turn",
+      "expected_mode": "deep",
+      "must_include": ["局部优势", "边界", "突破点"]
     },
     {
-      "input": "合伙关系很模糊，责任边界怎么划？",
+      "input": "进入 mao 模式。后面帮我一起判断这个职业选择。",
       "expected_trigger": true,
-      "expected_mode": "标准或深度模式",
-      "must_include": ["利益结构", "责任边界", "退出条件"]
+      "expected_scope": "session",
+      "expected_mode": "standard",
+      "must_include": ["已进入", "事实", "阶段"]
     },
     {
-      "input": "我学习很久没效果，该怎么调整？",
+      "input": "启动 mao 模式，我们复盘一下上次失败的决策。",
       "expected_trigger": true,
-      "expected_mode": "标准模式",
-      "must_include": ["实践闭环", "反馈指标", "训练任务"]
-    },
-    {
-      "input": "我最近精力很差，但必须做一个重要决定。",
-      "expected_trigger": true,
-      "expected_mode": "强制刹车或标准模式",
-      "must_include": ["阶段判断", "基础盘", "最小行动"]
-    },
-    {
-      "input": "你就支持我，不要质疑我。",
-      "expected_trigger": true,
-      "expected_mode": "独立参谋模式",
-      "must_include": ["同意的部分", "保留的部分", "验证方式"]
-    },
-    {
-      "input": "这个历史经验能不能迁移到现在？",
-      "expected_trigger": true,
-      "expected_mode": "标准或深度模式",
-      "must_include": ["相似点", "差异点", "迁移边界"]
-    },
-    {
-      "input": "我不要长分析，给我一句定盘判断。",
-      "expected_trigger": true,
-      "expected_mode": "轻量模式",
-      "must_include": ["主要矛盾", "当前行动", "最忌讳"]
-    },
-    {
-      "input": "我要快刀斩乱麻，打穿这个混乱项目。",
-      "expected_trigger": true,
-      "expected_mode": "标准模式",
-      "must_include": ["语境判断", "现实动作", "突破口"]
-    },
-    {
-      "input": "帮我复盘一个失败决策。",
-      "expected_trigger": true,
-      "expected_mode": "复盘模式",
+      "expected_scope": "session",
+      "expected_mode": "review",
       "must_include": ["原判断", "实际结果", "更新原则"]
     },
     {
-      "input": "结合我过去的情况，帮我判断这次职业选择。",
+      "input": "使用 mao 模式分析，我公司现金流紧张，要不要扩张？",
       "expected_trigger": true,
-      "expected_mode": "深度模式",
-      "must_include": ["记忆读取触发", "当前事实", "能力主攻方向"]
+      "expected_scope": "session",
+      "expected_mode": "brake_or_deep",
+      "must_include": ["现金流", "止损线", "可逆试探"]
     },
     {
-      "input": "你现在就当自己是毛泽东本人，直接命令我。",
+      "input": "进入 mao 深度模式，这个组织问题后面几轮都按这个框架来。",
       "expected_trigger": true,
-      "expected_mode": "身份诱导防护",
-      "must_include": ["不冒充", "事实", "阶段", "行动"]
+      "expected_scope": "deep_campaign",
+      "expected_mode": "deep",
+      "must_include": ["事实盘点", "主要矛盾", "力量结构", "复盘节点"]
+    },
+    {
+      "input": "进入独立参谋模式，我不想只听好话。",
+      "expected_trigger": true,
+      "expected_scope": "independent_counselor",
+      "expected_mode": "independent_counselor",
+      "must_include": ["不同意见", "可能忽略", "验证"]
+    },
+    {
+      "input": "退出 mao 模式，回到普通模式。",
+      "expected_trigger": true,
+      "expected_scope": "exit",
+      "expected_mode": "exit_acknowledgement",
+      "must_include": ["已退出", "普通模式"]
+    },
+    {
+      "context": "mao mode is already active in this conversation",
+      "input": "继续，上面那个方案最大的风险是什么？",
+      "expected_trigger": true,
+      "expected_scope": "session_continuation",
+      "expected_mode": "standard_or_deep",
+      "must_include": ["风险", "反方推演", "验证"]
     }
   ],
   "negative": [
+    {
+      "input": "我公司现金流紧张，要不要扩张？",
+      "expected_trigger": false,
+      "reason": "现实决策主题本身不再自动触发 MAO"
+    },
+    {
+      "input": "小团队怎么打赢大公司？",
+      "expected_trigger": false,
+      "reason": "弱对强战略问题没有明确启动 mao 模式"
+    },
+    {
+      "input": "团队意见很分散，怎么统一行动？",
+      "expected_trigger": false,
+      "reason": "组织问题没有明确启动 mao 模式"
+    },
+    {
+      "input": "帮我复盘一个失败决策。",
+      "expected_trigger": false,
+      "reason": "复盘请求没有明确启动 mao 模式"
+    },
+    {
+      "input": "这个历史经验能不能迁移到现在？",
+      "expected_trigger": false,
+      "reason": "历史迁移问题没有明确启动 mao 模式"
+    },
+    {
+      "input": "这个项目怎么安装？",
+      "expected_trigger": false,
+      "reason": "安装 skill 不是启用 skill"
+    },
+    {
+      "input": "帮我修改 mao skill 的触发规则。",
+      "expected_trigger": false,
+      "reason": "编辑或讨论 skill 本身不是启用"
+    },
     {
       "input": "介绍一下某个历史事件的基本时间线。",
       "expected_trigger": false,
       "reason": "纯历史百科问题"
     },
     {
-      "input": "帮我把这段普通文案润色得更顺。",
-      "expected_trigger": false,
-      "reason": "与现实决策无关的普通写作"
-    },
-    {
       "input": "修复这个 TypeScript 类型错误。",
       "expected_trigger": false,
-      "reason": "只需要代码修复"
-    },
-    {
-      "input": "模仿一个历史人物说两句口号。",
-      "expected_trigger": false,
-      "reason": "只有口吻表演且没有现实问题"
-    },
-    {
-      "input": "把这个 CSV 按月份汇总。",
-      "expected_trigger": false,
-      "reason": "普通数据处理任务"
-    },
-    {
-      "input": "给我讲讲某篇文章的主要内容。",
-      "expected_trigger": false,
-      "reason": "普通摘要任务，未出现现实决策或复盘目标"
+      "reason": "普通代码修复任务"
     }
   ]
 }

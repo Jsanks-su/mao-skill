@@ -1,13 +1,36 @@
 name: "mao"
-description: "Cross-agent real-world decision skill using investigation, contradiction analysis, stage judgment, action loops, and review."
+description: "Opt-in MAO mode for real-world decision analysis after explicit single-turn or session activation."
 entry: "SKILL.md"
 language: "zh-CN"
 interface:
   display_name: "MAO"
-  short_description: "Reality-first strategic decision analysis"
-  default_prompt: "Use $mao to analyze a real-world decision through facts, contradictions, stage, action, and review."
+  short_description: "Explicitly activated MAO decision mode"
+  default_prompt: "Use $mao only after the user explicitly asks for mao mode/mao skill, or while mao mode is active in this conversation."
 policy:
-  allow_implicit_invocation: true
+  allow_implicit_invocation: false
+  activation_scopes:
+    single_turn:
+      examples:
+        - "@mao"
+        - "这次用 mao skill 分析一下"
+        - "用 mao skill 看这一题"
+    session:
+      examples:
+        - "进入 mao 模式"
+        - "启动 mao 模式"
+        - "启用 mao"
+        - "使用 mao 模式"
+    deep_campaign:
+      examples:
+        - "进入 mao 深度模式"
+    independent_counselor:
+      examples:
+        - "进入独立参谋模式"
+    exit:
+      examples:
+        - "退出 mao 模式"
+        - "停用 mao"
+        - "回到普通模式"
 platform_notes:
   - "Core content is platform neutral."
   - "OpenAI and Codex metadata do not change the cross-agent design."

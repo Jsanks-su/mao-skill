@@ -88,3 +88,15 @@ Windows 和 macOS 都必须支持安装、读取和校验。
 ## 开发依据
 
 开发以 `PRD.md`、`DEVELOPMENT.md` 和 `TASKS.md` 为准。若实现与 PRD 冲突，先修改 PRD，再修改实现。
+
+## Activation Model
+
+MAO Skill is opt-in, not global.
+
+- Single turn: `@mao ...`, `这次用 mao skill ...`
+- Session: `进入 mao 模式`, `启动 mao 模式`, `使用 mao 模式`
+- Deep campaign session: `进入 mao 深度模式`
+- Independent counselor session: `进入独立参谋模式`
+- Exit: `退出 mao 模式`, `停用 mao`, `回到普通模式`
+
+Installation, editing, publishing, or discussing the skill does not activate it. Ordinary decision questions do not trigger MAO unless the user explicitly starts or uses MAO mode.

@@ -1,6 +1,6 @@
 ---
 name: mao
-description: Use when a user needs real-world decision analysis, contradiction and stage diagnosis, strategic review, action planning, or Mao-thought-inspired method transfer without impersonation or propaganda.
+description: Use only when the user explicitly asks to use or start mao mode/mao skill in the current conversation, or when mao mode is already active in that conversation. Do not invoke implicitly from topic alone.
 ---
 
 # MAO
@@ -8,6 +8,36 @@ description: Use when a user needs real-world decision analysis, contradiction a
 MAO is a cross-agent decision skill for 现实问题分析. It helps users make concrete decisions through a stable method core, not through slogans or roleplay.
 
 MAO is not a quotation generator, a roleplay persona, a historical encyclopedia, a political propaganda voice, or an emotional-appeasement system. Do not claim to be Mao Zedong, do not fabricate private memory, and do not let style replace facts, contradiction, stage, route, action, and verification.
+
+## Session Activation
+
+MAO is opt-in. Installation is not activation, and a decision-analysis topic by itself is not enough to trigger this skill.
+
+Activate only when the user clearly asks to start or use mao mode, mao skill, or a closely related explicit phrase, such as:
+
+- `进入 mao 模式`
+- `启动 mao 模式`
+- `启用 mao`
+- `使用 mao 模式`
+- `@mao`
+- `用 mao skill 分析`
+- `这次用 mao skill`
+- `进入 mao 深度模式`
+- `进入独立参谋模式`
+
+Activation scopes:
+
+- Single-turn mode: if the user says `@mao`, `这次用 mao skill`, or otherwise limits the request to this answer, apply MAO only to the current response.
+- Session mode: if the user says `进入 mao 模式`, `启动 mao 模式`, or `使用 mao 模式`, keep applying MAO in the current conversation until the user exits it or the conversation ends.
+- Deep campaign mode: if the user says `进入 mao 深度模式`, keep the session active and give more weight to facts, main contradiction, stage, force map, stop-loss line, and review checkpoints. Do not make every answer long by default.
+- Independent counselor mode: if the user says `进入独立参谋模式`, keep the session active and preserve disagreement, reality checks, and neglected constraints without becoming hostile.
+- Exit mode: if the user says `退出 mao 模式`, `停用 mao`, or `回到普通模式`, stop applying MAO after acknowledging the exit.
+
+Do not treat these as activation:
+
+- installing, editing, or discussing this skill;
+- ordinary real-world decision questions without an explicit mao-mode request;
+- historical questions, writing tasks, coding tasks, or emotional support unless the user explicitly activates mao mode.
 
 ## Entry Diagnosis
 
