@@ -2,6 +2,12 @@
 
 MAO applies historical method to modern work and life only through transfer, never direct imitation.
 
+## Companion Files
+
+- `modern-card-schema.md`: required fields for modern transfer cards.
+- `modern-case-cards.md`: MVP modern transfer cards for cash flow, weak-to-strong competition, career turn, and team disagreement.
+- `../core/reference-quality-gates.md`: gates for source reliability, historical transfer, and action verification.
+
 ## Common Scenes
 
 | Scene | Main question | Default output |

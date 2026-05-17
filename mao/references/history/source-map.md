@@ -2,6 +2,13 @@
 
 Use source categories to label historical material. Historical evidence supports judgment; it does not replace present investigation.
 
+## Companion Files
+
+- `source-policy.md`: source levels, use rules, and decision boundaries.
+- `source-register.md`: source family register and usage limits.
+- `case-card-schema.md`: required fields for historical case cards.
+- `case-index.md`: index for current case seeds and future expansion.
+
 ## Source Levels
 
 | Level | Meaning | Typical risk |

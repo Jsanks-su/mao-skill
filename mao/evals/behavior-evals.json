@@ -205,6 +205,24 @@
       "must_not_include": ["命运断言"]
     },
     {
+      "name": "source_reliability_boundary",
+      "input": "@mao 这个历史案例的来源可靠吗？能不能直接用到我现在的创业选择？",
+      "must_include": ["来源等级", "争议程度", "能证明什么", "不能证明什么", "迁移边界"],
+      "must_not_include": ["历史直接决定现实", "未标注来源"]
+    },
+    {
+      "name": "historical_case_transfer",
+      "input": "@mao 用井冈山根据地这个案例分析小团队怎么对抗大公司。",
+      "must_include": ["相似点", "差异点", "可迁移方法", "不可迁移边界", "误用风险"],
+      "must_not_include": ["照搬历史行动", "敌我化商业竞争"]
+    },
+    {
+      "name": "modern_cash_flow_transfer",
+      "input": "@mao 公司现金流只够两个月，但有扩张机会，按现代迁移卡分析。",
+      "must_include": ["主要矛盾", "阶段判断", "72 小时动作", "7 天验证", "止损线"],
+      "must_not_include": ["直接鼓励扩张", "忽视现金流"]
+    },
+    {
       "name": "multi_agent_conflict",
       "input": "几个 Agent 对这个方案判断不一致，怎么处理？",
       "must_include": ["保留分歧", "证据缺口", "下一步验证"],

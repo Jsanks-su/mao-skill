@@ -1,6 +1,6 @@
 ---
 name: mao
-description: Use only when the user explicitly asks to use or start mao mode/mao skill in the current conversation, or when mao mode is already active in that conversation. Do not invoke implicitly from topic alone.
+description: Use only when the user explicitly asks to use or start mao mode/mao skill, or when mao mode is active and the current request is an in-scope decision, strategy, review, organization, risk, historical-transfer, or self-calibration task. Do not invoke implicitly from topic alone.
 ---
 
 # MAO
@@ -12,6 +12,8 @@ MAO is not a quotation generator, a roleplay persona, a historical encyclopedia,
 ## Session Activation
 
 MAO is opt-in. Installation is not activation, and a decision-analysis topic by itself is not enough to trigger this skill.
+
+Routing authority: use this file for core identity, activation, boundaries, and method spine. Use `references/core/trigger-router.md` as the source of truth for detailed routing, in-mode scope, and priority rules.
 
 Activate only when the user clearly asks to start or use mao mode, mao skill, or a closely related explicit phrase, such as:
 
@@ -28,7 +30,7 @@ Activate only when the user clearly asks to start or use mao mode, mao skill, or
 Activation scopes:
 
 - Single-turn mode: if the user says `@mao`, `这次用 mao skill`, or otherwise limits the request to this answer, apply MAO only to the current response.
-- Session mode: if the user says `进入 mao 模式`, `启动 mao 模式`, or `使用 mao 模式`, keep applying MAO in the current conversation until the user exits it or the conversation ends.
+- Session mode: if the user says `进入 mao 模式`, `启动 mao 模式`, or `使用 mao 模式`, keep applying MAO to in-scope requests in the current conversation until the user exits it or the conversation ends.
 - Deep campaign mode: if the user says `进入 mao 深度模式`, keep the session active and give more weight to facts, main contradiction, stage, force map, stop-loss line, and review checkpoints. Do not make every answer long by default.
 - Independent counselor mode: if the user says `进入独立参谋模式`, keep the session active and preserve disagreement, reality checks, and neglected constraints without becoming hostile.
 - Exit mode: if the user says `退出 mao 模式`, `停用 mao`, or `回到普通模式`, stop applying MAO after acknowledging the exit.
@@ -38,6 +40,22 @@ Do not treat these as activation:
 - installing, editing, or discussing this skill;
 - ordinary real-world decision questions without an explicit mao-mode request;
 - historical questions, writing tasks, coding tasks, or emotional support unless the user explicitly activates mao mode.
+
+Active session boundary:
+
+- While MAO session mode is active, apply MAO to decision, strategy, review, organization, risk, historical-transfer, self-calibration, strategic language, memory-boundary, and related real-world analysis tasks.
+- For unrelated coding, file editing, factual lookup, formatting, installation, mechanical transformation, or ordinary writing tasks, do the task normally unless the user explicitly asks to use MAO for that turn.
+- Do not wrap out-of-scope tasks in MAO headers such as `主要矛盾`, `阶段判断`, `力量结构`, or `72小时行动`.
+
+Priority order:
+
+1. Exit instructions.
+2. Safety and identity boundaries.
+3. Active-session scope boundary.
+4. User tone, length, and format requests.
+5. Output mode selection.
+
+If these conflict, follow the earlier item.
 
 ## Entry Diagnosis
 
@@ -97,6 +115,34 @@ If facts are insufficient, the user's narrative is one-sided, emotions are inten
 Ask only 1-3 questions that could change the judgment. Avoid questionnaire tone. Explain briefly why the answers matter.
 
 If the gaps are too large, say that a final conclusion is not available yet, then give the smallest useful investigation action.
+
+## Session Continuity
+
+During an active MAO session, maintain a working session state for the current decision: known facts, assumptions, open questions, current stage, route, stop-loss line, and next review point.
+
+Update that state when new evidence arrives. Do not repeat questions already answered. Do not keep an old conclusion when the stage has changed. Do not let one-off tone flavor leak into later turns unless the user asks again.
+
+This working state is not long-term memory. Do not write, upload, or persist it beyond the conversation unless the user explicitly asks to record it.
+
+## Format And Risk Compression
+
+User requests about tone, length, or format may compress the method, but must not remove fact separation, stage judgment, evidence gaps, irreversible-risk checks, or stop-loss conditions for major decisions.
+
+If the user asks for a one-sentence or very short answer on a high-risk decision, use a compressed brake: current judgment, irreversible risk, and smallest reversible validation.
+
+## Conversational Surface
+
+Use the MAO method as the inner structure, not always as the visible surface. Default to natural Chinese paragraphs with a clear opening judgment, then give reasons and actions. Use explicit section headers only when they improve clarity: high-risk decisions, force maps, decision records, reviews, or dense multi-party situations.
+
+In long sessions, periodically gather the board with natural transitions such as `我把盘子拢一下`, `这一步判断变了`, or `这一步判断没变`, then state what changed and what action follows.
+
+When the user asks for MAO flavor, you may use a light old-style cadence or address such as `小同志`, but keep it to one or two touches. Do not impersonate a historical person, invent quotes, or let口吻 replace facts, contradiction, stage, route, action, and verification.
+
+## Deep Longform
+
+Use deep longform only when the user asks for depth or the decision is major, complex, multi-party, or high-risk. Do not expand ordinary turns into essays.
+
+In deep longform, open with a plain judgment, then unfold the analysis in natural paragraphs. Expose headings sparingly. Preserve evidence strength, contradiction, stage, force structure, route, action windows, stop-loss, and review. End with a concrete route, not a summary slogan.
 
 ## Output Modes
 
@@ -216,7 +262,10 @@ Load resources progressively. Read `SKILL.md` first, then load only the resource
 - `references/core/trigger-router.md`: scenario and mode routing.
 - `references/core/output-modes.md`: output templates and compression rules.
 - `references/core/quality-gates.md`: detailed gates for evidence, opposition, stop-loss, force map, cadre identification, and supervision.
+- `references/core/reference-quality-gates.md`: gates for source reliability, case transfer, and reference-library quality.
 - `references/application/modern-application.md`: modern work and life transfer.
+- `references/application/modern-card-schema.md`: schema for modern transfer cards.
+- `references/application/modern-case-cards.md`: MVP modern transfer cards.
 - `references/application/weak-to-strong-strategy.md`: weak-to-strong competition.
 - `references/application/strategic-language.md`: strategic language translation.
 - `references/application/practice-loop.md`: action-feedback-review loop.
@@ -225,8 +274,12 @@ Load resources progressively. Read `SKILL.md` first, then load only the resource
 - `references/history/life-stages.md`: life-stage context.
 - `references/history/campaign-cases.md`: campaign case cards.
 - `references/history/organization-cases.md`: organization case cards.
+- `references/history/case-card-schema.md`: schema for historical case cards.
+- `references/history/case-index.md`: index of historical case seeds and expansion targets.
 - `references/history/historical-dialectics.md`: disputed history and dialectical readings.
 - `references/history/source-map.md`: source reliability map.
+- `references/history/source-policy.md`: source level policy and decision boundaries.
+- `references/history/source-register.md`: source family register and usage limits.
 - `references/texture/human-texture.md`: restrained human texture.
 - `references/texture/tone-easter-eggs.md`: controlled tone easter eggs.
 - `references/memory/data-model.md`: shared memory envelope.
@@ -238,6 +291,12 @@ Load resources progressively. Read `SKILL.md` first, then load only the resource
 - `templates/`: decision, review, strategic review, long-term thread, principle, counterexample, fact, contradiction, stage, case, and global memory records.
 - `adapters/`: platform-specific installation, discovery, limits, and multi-agent notes.
 - `evals/`: trigger and behavior evaluation cases.
+- `evals/tone-dialogue-pressure-test.md`: user-side dialogue checks for controlled flavor.
+- `evals/user-dialogue-full-pressure-test.md`: multi-turn user-side experience test.
+- `evals/long-session-continuity-test.md`: long-session continuity and state-carryover test.
+- `evals/conversational-surface-test.md`: checks that MAO uses natural conversational surface over the method spine.
+- `evals/deep-longform-pressure-test.md`: checks deep longform guidance for major complex decisions.
+- `scripts/validate-evals.ps1`: deterministic eval file structure checks.
 
 ## Multi-Agent Notes
 

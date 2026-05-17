@@ -182,6 +182,21 @@
                       "status":  "passed"
                   },
                   {
+                      "task":  "来源可靠性边界",
+                      "eval_case":  "source_reliability_boundary",
+                      "status":  "passed"
+                  },
+                  {
+                      "task":  "历史案例迁移边界",
+                      "eval_case":  "historical_case_transfer",
+                      "status":  "passed"
+                  },
+                  {
+                      "task":  "现代现金流迁移案例",
+                      "eval_case":  "modern_cash_flow_transfer",
+                      "status":  "passed"
+                  },
+                  {
                       "task":  "阶段性复盘",
                       "eval_case":  "stage_review",
                       "status":  "passed"
