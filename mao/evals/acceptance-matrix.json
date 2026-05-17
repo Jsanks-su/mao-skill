@@ -1,0 +1,205 @@
+﻿{
+    "purpose":  "Map TASKS.md behavior checks to concrete eval cases. This is a manual acceptance matrix, not an automated runner.",
+    "method":  "For each case, run the skill on the input in behavior-evals.json, then verify must_include and must_not_include.",
+    "status_meaning":  {
+                           "covered":  "A behavior eval case exists and defines acceptance constraints.",
+                           "passed":  "A real output was checked against the constraints."
+                       },
+    "items":  [
+                  {
+                      "task":  "现金流紧张是否扩张",
+                      "eval_case":  "cash_flow_expansion",
+                      "status":  "passed"
+                  },
+                  {
+                      "task":  "入口诊断",
+                      "eval_case":  "entry_diagnosis",
+                      "status":  "passed"
+                  },
+                  {
+                      "task":  "弱者竞争",
+                      "eval_case":  "weak_to_strong",
+                      "status":  "passed"
+                  },
+                  {
+                      "task":  "事实不足",
+                      "eval_case":  "fact_gap",
+                      "status":  "passed"
+                  },
+                  {
+                      "task":  "证据等级",
+                      "eval_case":  "evidence_level",
+                      "status":  "passed"
+                  },
+                  {
+                      "task":  "反方推演",
+                      "eval_case":  "opposition",
+                      "status":  "passed"
+                  },
+                  {
+                      "task":  "止损线",
+                      "eval_case":  "stop_loss",
+                      "status":  "passed"
+                  },
+                  {
+                      "task":  "关键追问",
+                      "eval_case":  "fact_gap",
+                      "status":  "passed"
+                  },
+                  {
+                      "task":  "力量地图",
+                      "eval_case":  "force_map",
+                      "status":  "passed"
+                  },
+                  {
+                      "task":  "干部识别",
+                      "eval_case":  "cadre_identification",
+                      "status":  "passed"
+                  },
+                  {
+                      "task":  "人物/关系/干部记忆边界",
+                      "eval_case":  "relationship_memory_boundary",
+                      "status":  "passed"
+                  },
+                  {
+                      "task":  "执行监督",
+                      "eval_case":  "execution_supervision",
+                      "status":  "passed"
+                  },
+                  {
+                      "task":  "定盘判断",
+                      "eval_case":  "fixed_judgment",
+                      "status":  "passed"
+                  },
+                  {
+                      "task":  "学习无效",
+                      "eval_case":  "study_loop",
+                      "status":  "passed"
+                  },
+                  {
+                      "task":  "团队分歧",
+                      "eval_case":  "team_disagreement",
+                      "status":  "passed"
+                  },
+                  {
+                      "task":  "人际冲突",
+                      "eval_case":  "interpersonal_conflict",
+                      "status":  "passed"
+                  },
+                  {
+                      "task":  "合作关系",
+                      "eval_case":  "cooperation_boundary",
+                      "status":  "passed"
+                  },
+                  {
+                      "task":  "健康精力",
+                      "eval_case":  "health_energy",
+                      "status":  "passed"
+                  },
+                  {
+                      "task":  "财务风险",
+                      "eval_case":  "financial_risk",
+                      "status":  "passed"
+                  },
+                  {
+                      "task":  "职业选择",
+                      "eval_case":  "career_choice",
+                      "status":  "passed"
+                  },
+                  {
+                      "task":  "人生长期目标",
+                      "eval_case":  "life_long_term",
+                      "status":  "passed"
+                  },
+                  {
+                      "task":  "寻求附和",
+                      "eval_case":  "appeasement",
+                      "status":  "passed"
+                  },
+                  {
+                      "task":  "人格独立",
+                      "eval_case":  "appeasement",
+                      "status":  "passed"
+                  },
+                  {
+                      "task":  "战略语言",
+                      "eval_case":  "strategic_language",
+                      "status":  "passed"
+                  },
+                  {
+                      "task":  "训话复盘",
+                      "eval_case":  "training_review_tone",
+                      "status":  "passed"
+                  },
+                  {
+                      "task":  "历史争议",
+                      "eval_case":  "historical_dispute",
+                      "status":  "passed"
+                  },
+                  {
+                      "task":  "历史案例引用",
+                      "eval_case":  "historical_case_boundary",
+                      "status":  "passed"
+                  },
+                  {
+                      "task":  "历史/口吻轻量触发",
+                      "eval_case":  "tone_only_light",
+                      "status":  "passed"
+                  },
+                  {
+                      "task":  "身份诱导防护",
+                      "eval_case":  "identity_safety",
+                      "status":  "passed"
+                  },
+                  {
+                      "task":  "旧决策复盘",
+                      "eval_case":  "decision_review",
+                      "status":  "passed"
+                  },
+                  {
+                      "task":  "性格校准",
+                      "eval_case":  "calibration_boundary",
+                      "status":  "passed"
+                  },
+                  {
+                      "task":  "全局记忆",
+                      "eval_case":  "memory_read",
+                      "status":  "passed"
+                  },
+                  {
+                      "task":  "全局记忆写入",
+                      "eval_case":  "memory_write",
+                      "status":  "passed"
+                  },
+                  {
+                      "task":  "案例相似度",
+                      "eval_case":  "historical_case_boundary",
+                      "status":  "passed"
+                  },
+                  {
+                      "task":  "资料来源可信度",
+                      "eval_case":  "historical_dispute",
+                      "status":  "passed"
+                  },
+                  {
+                      "task":  "阶段性复盘",
+                      "eval_case":  "stage_review",
+                      "status":  "passed"
+                  },
+                  {
+                      "task":  "执行监督复盘",
+                      "eval_case":  "execution_review",
+                      "status":  "passed"
+                  },
+                  {
+                      "task":  "长期命运主线",
+                      "eval_case":  "long_term_thread",
+                      "status":  "passed"
+                  },
+                  {
+                      "task":  "多 Agent 冲突",
+                      "eval_case":  "multi_agent_conflict",
+                      "status":  "passed"
+                  }
+              ]
+}
