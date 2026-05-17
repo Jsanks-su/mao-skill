@@ -194,6 +194,29 @@ if (-not (Test-Path -LiteralPath (Join-Path $Root "evals/deep-longform-pressure-
     Add-Failure "Missing deep-longform-pressure-test.md"
 }
 
+$selectedWorksManifest = Read-Json "references/history/selected-works-of-mao-tsetung/MANIFEST.json"
+if ($null -ne $selectedWorksManifest) {
+    if (-not (Has-Text $selectedWorksManifest.source_commit)) {
+        Add-Failure "Selected Works manifest is missing source_commit"
+    }
+    if ([int]$selectedWorksManifest.imported_entries -lt 1) {
+        Add-Failure "Selected Works manifest has no imported entries"
+    }
+    $canonical = @($selectedWorksManifest.entries | Where-Object {
+        $_.source_sha -eq "93b13f6d1c214433310c1a273773d0888828efa4" -and $_.status -eq "imported"
+    })
+    if ($canonical.Count -ne 1) {
+        Add-Failure "Selected Works manifest is missing imported canonical selected-works txt blob"
+    }
+    elseif (-not (Test-Path -LiteralPath (Join-Path $Root $canonical[0].target_path))) {
+        Add-Failure "Missing canonical Selected Works Markdown text at manifest target_path"
+    }
+}
+
+if (-not (Test-Path -LiteralPath (Join-Path $Root "references/history/selected-works-of-mao-tsetung/SOURCE.md"))) {
+    Add-Failure "Missing Selected Works SOURCE.md"
+}
+
 if ($failures.Count -gt 0) {
     Write-Host "Eval validation failed:" -ForegroundColor Red
     foreach ($failure in $failures) {

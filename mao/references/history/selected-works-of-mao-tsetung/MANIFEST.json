@@ -1,0 +1,1450 @@
+﻿{
+    "source_repo":  "https://github.com/M0rtzz/Selected-Works-of-MaoTseTung",
+    "source_commit":  "4cc981c232e1ffe8fe2974e125c00af8376829ca",
+    "generated_at":  "2026-05-17T16:50:49Z",
+    "output_root":  "references/history/selected-works-of-mao-tsetung",
+    "total_entries":  160,
+    "imported_entries":  9,
+    "entries":  [
+                    {
+                        "source_path":  "README.md",
+                        "source_sha":  "ea2dca26a0da176bc3f7100daef0e72712328670",
+                        "extension":  ".md",
+                        "status":  "imported",
+                        "conversion":  "direct-text",
+                        "target_path":  "references/history/selected-works-of-mao-tsetung/corpus/README.md.md",
+                        "note":  ""
+                    },
+                    {
+                        "source_path":  "images/大海航行靠舵手.jpg",
+                        "source_sha":  "a5c5a33d9ece6776f63ad5654cef89baba2c5f40",
+                        "extension":  ".jpg",
+                        "status":  "skipped-image",
+                        "conversion":  "",
+                        "target_path":  "",
+                        "note":  "Image binary is not stored in the text knowledge base."
+                    },
+                    {
+                        "source_path":  "两论/实践论、矛盾论.pdf",
+                        "source_sha":  "20bc61de5d15684b94e86677d3a9fc72eff3a730",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "其他/周恩来与中共党史重大事件.pdf",
+                        "source_sha":  "2b08b0aeffb03ddfca11c95fe7b58b9fc984cbab",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "其他/周恩来与外国首脑及政要会谈录.pdf",
+                        "source_sha":  "7f16718f654907c464a79f2c3651185328791ee1",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "其他/周恩来与张治中.pdf",
+                        "source_sha":  "7003d1a47f78966779b48f3b9d262bfa0c715ee6",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "其他/天翻地覆慨而慷——无产阶级文化大革命大事记.pdf",
+                        "source_sha":  "2c9dd10794542ecbb04e0328f1b1dfc199669ed1",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "其他/实录毛泽东（套装共4册）.pdf",
+                        "source_sha":  "1e449e5d65889f8ec81c1dfd6bf9a1440701bdd8",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "其他/平凡与伟大-毛泽东中南海遗物轶事.pdf",
+                        "source_sha":  "aa7f41b74d4dc13e5f07d5f999b73a0ecdb6aace",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "其他/把无产阶级文化大革命进行到底.pdf",
+                        "source_sha":  "6e66e6e2502216c4c9b5139b1a6aaae18942cdaa",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "其他/无产阶级文化大革命以来我国科学技术的重大成就.pdf",
+                        "source_sha":  "2fa722b7316281a2b52da89b2d95dbc6b4f0ced6",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "其他/无产阶级文化大革命伟大胜利万岁.pdf",
+                        "source_sha":  "684501436515e31ae776529667d97f1f6c21bff2",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "其他/无产阶级文化大革命参考资料.pdf",
+                        "source_sha":  "d11cb31a60f434fd82902ac23732db792dc44c9c",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "其他/无产阶级文化大革命胜利万岁.pdf",
+                        "source_sha":  "928f97100dc259d9a506a4bb365f557580c88c28",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "其他/智读毛泽东诗词.pdf",
+                        "source_sha":  "c1dbc54d25443b8548d8fa1fc58a531a9da6c188",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "其他/最后七年风雨路.pdf",
+                        "source_sha":  "9a2313b03509ec6276cd80ffdb652ad7fc3176cf",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "其他/最新最高指示.pdf",
+                        "source_sha":  "b3c8ee7492155350fb2775366be9dd5ea63f5132",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "其他/毛主席哲学著作学习文件汇编上.pdf",
+                        "source_sha":  "e917716825e2474b0bd1b7757141b1f39efdf4a0",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "其他/毛主席哲学著作学习文件汇编下.pdf",
+                        "source_sha":  "4364260682f1bb9a72200b9a22ca55b4c7e115cf",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "其他/毛主席哲学著作学习文件汇编中.pdf",
+                        "source_sha":  "516faf703ed5c0a3ff813b49dfe2fa4925eceafb",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "其他/毛主席的重要指示.pdf",
+                        "source_sha":  "7b1d4a6be0eab0b5fe1c5216581e03e54cf61f13",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "其他/毛主席的革命路线胜利万岁_党内两条路线斗争史.pdf",
+                        "source_sha":  "fdaa22662ee52602d0bd82b0c751ca04baa33c5b",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "其他/毛泽东书信手迹选.pdf",
+                        "source_sha":  "e40d4d58c1188693441448b4f7ca6658f6b100ef",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "其他/毛泽东书信欣赏.pdf",
+                        "source_sha":  "84db9f37132f0f5ba962efb3819ac81c0726a84c",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "其他/毛泽东书信选集.pdf",
+                        "source_sha":  "1cf2433c3525b0f99d35ee3de86fcdf205716275",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "其他/毛泽东传_周恩来传.pdf",
+                        "source_sha":  "f029396b81802d0b4789fb8514b3f3ec4cde4c74",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "其他/毛泽东农村调查文集.pdf",
+                        "source_sha":  "531970b80eb19d5d8fe20f09e81aa81082cb17f9",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "其他/毛泽东同志国际问题言论选录.pdf",
+                        "source_sha":  "46ae3978161eb74504ed7eac32dc4587859d0e68",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "其他/毛泽东周恩来与长征.pdf",
+                        "source_sha":  "c0eb50229b63e037ad324751e77801fa5dc7133d",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "其他/毛泽东品评四大名著.pdf",
+                        "source_sha":  "3ba596aa40dd5f248939f6d0d38f2cd4796daa73",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "其他/毛泽东哲学思想资料选辑（上册）.pdf",
+                        "source_sha":  "96a02e678d73d153e97c388aa7931c4a0caf5d1a",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "其他/毛泽东哲学思想资料选辑（下册）.pdf",
+                        "source_sha":  "3ec75f9d48af87cc92fd299691400fa4348b9f13",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "其他/毛泽东思想万岁.pdf",
+                        "source_sha":  "1b686852ab8eaac7fd23340303adbae428964371",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "其他/毛泽东早期文稿.txt",
+                        "source_sha":  "5a76930ffa041646c0db70c193936b30de6a48bd",
+                        "extension":  ".txt",
+                        "status":  "imported",
+                        "conversion":  "direct-text",
+                        "target_path":  "references/history/selected-works-of-mao-tsetung/corpus/其他/毛泽东早期文稿.txt.md",
+                        "note":  ""
+                    },
+                    {
+                        "source_path":  "其他/毛泽东的诗词、人生和思想.pdf",
+                        "source_sha":  "01aa80507ae7c1b3cddd175a655435d06189484d",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "其他/毛泽东的读书人生.pdf",
+                        "source_sha":  "dea8dbe14b6ae066c2acab134433350fa5970a3b",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "其他/毛泽东评点、圈阅的中国古典诗词.pdf",
+                        "source_sha":  "87ef2b937f5dc864ad2167386efdac0d068a0406",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "其他/毛泽东评点《智囊》全译本（上下册）.pdf",
+                        "source_sha":  "f32523f33a0b62dfddc50eb9003c76e75675c26c",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "其他/毛泽东评点历代王朝.pdf",
+                        "source_sha":  "e2ebbdc8e39e137b13bdb0dcb350a6b15e0a9adf",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "其他/毛泽东评点古今诗书文章（上中下册）.pdf",
+                        "source_sha":  "6ba8f6cf9ab955c3429f3e0e3c94199684bfc9a8",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "其他/毛泽东诗词.txt",
+                        "source_sha":  "7233a3d6818ba668a5e11e10d11e83dca1eddaf8",
+                        "extension":  ".txt",
+                        "status":  "imported",
+                        "conversion":  "direct-text",
+                        "target_path":  "references/history/selected-works-of-mao-tsetung/corpus/其他/毛泽东诗词.txt.md",
+                        "note":  ""
+                    },
+                    {
+                        "source_path":  "其他/毛泽东诗词全集.pdf",
+                        "source_sha":  "05e42e62af202e265f2e19f0d9089ba52b5c8a0e",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "其他/毛泽东诗词品读.txt",
+                        "source_sha":  "2f41423e7159598b231f0d0d9200956e7359fdc0",
+                        "extension":  ".txt",
+                        "status":  "imported",
+                        "conversion":  "direct-text",
+                        "target_path":  "references/history/selected-works-of-mao-tsetung/corpus/其他/毛泽东诗词品读.txt.md",
+                        "note":  ""
+                    },
+                    {
+                        "source_path":  "其他/毛泽东诗词笺释.pdf",
+                        "source_sha":  "fc6dcf850a94058f012fdaf2175c97d9c4e10e9b",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "其他/毛泽东诗词讲解.pdf",
+                        "source_sha":  "933daab357a43a9aa7a05b863707d84b2cba0bcb",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "其他/毛泽东诗词鉴赏辞典.pdf",
+                        "source_sha":  "5190a28ff3fbf7093193fe48ea6cd1c48f9001ee",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "其他/毛泽东诗词集.pdf",
+                        "source_sha":  "712c2db0eca3d2381086154b1259500898bf77b5",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "其他/毛泽东读书笔记解析.pdf",
+                        "source_sha":  "e125c61615366e2a34be0537b3d2e35c2ee95b2d",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "其他/毛泽东读社会主义政治经济学批注和谈话（简本）上册.txt",
+                        "source_sha":  "9f59dacbf7e07b2fa24a14720431ad7163d2c3d9",
+                        "extension":  ".txt",
+                        "status":  "imported",
+                        "conversion":  "direct-text",
+                        "target_path":  "references/history/selected-works-of-mao-tsetung/corpus/其他/毛泽东读社会主义政治经济学批注和谈话（简本）上册.txt.md",
+                        "note":  ""
+                    },
+                    {
+                        "source_path":  "其他/毛泽东读社会主义政治经济学批注和谈话（简本）下册.txt",
+                        "source_sha":  "dc4df2a9304e08d7a09ba3ab1123be2fd2c8d3fa",
+                        "extension":  ".txt",
+                        "status":  "imported",
+                        "conversion":  "direct-text",
+                        "target_path":  "references/history/selected-works-of-mao-tsetung/corpus/其他/毛泽东读社会主义政治经济学批注和谈话（简本）下册.txt.md",
+                        "note":  ""
+                    },
+                    {
+                        "source_path":  "其他/毛泽东读评五部古典小说.pdf",
+                        "source_sha":  "545bac3f85f78a21a84122b15659a7ecf61c6d4d",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "其他/毛泽东饮食趣谈.pdf",
+                        "source_sha":  "3c48914ef3829a76e96c70aee9e4b25e2d4b5fdf",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "其他/治国录-毛泽东与1949年后的中国（上册）.pdf",
+                        "source_sha":  "1a4eafc9355ffe1720cfe264e2b5780b50b1918c",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "其他/治国录-毛泽东与1949年后的中国（下册）.pdf",
+                        "source_sha":  "13a33b4478aed9a4d606a4aec0056eef87ac052a",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "其他/烽火里程-周恩来同志在长征途中.pdf",
+                        "source_sha":  "ebded941d1b6c3b69236850c9845e6876128d6e7",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "其他/胡乔木回忆毛泽东.pdf",
+                        "source_sha":  "2af644b5935f9e6ca971fff335376093197f716f",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "其他/苏联解密档案选：毛泽东著作.pdf",
+                        "source_sha":  "a3c800ef17b6c05a7bbe175bb854fd3ba26f9b63",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "其他/西行漫记（红星照耀中国）.pdf",
+                        "source_sha":  "bbeac80f48cce6e43502e3523cca0ee141342658",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "其他/走下神坛的毛泽东.pdf",
+                        "source_sha":  "8aff7fb76e14c9e657a8511fea18579149d34595",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "建国以来毛泽东文稿/建国以来毛泽东文稿_第08册（1953年1月-1953年10月）.pdf",
+                        "source_sha":  "176bc1c93fdc372f1ac1217f292b60d33088aa79",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "建国以来毛泽东文稿/建国以来毛泽东文稿_第09册（1953年11月-1955年6月）1.pdf",
+                        "source_sha":  "fd898827c09f338af4a3565c8e2ee8abe1f1e572",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "建国以来毛泽东文稿/建国以来毛泽东文稿_第10册（1955年6月-1956年4月）.pdf",
+                        "source_sha":  "03b5c2b880fd328a4561847db6a5199382cd8fbf",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "建国以来毛泽东文稿/建国以来毛泽东文稿_第11册（1956年4月-1957年7月）.pdf",
+                        "source_sha":  "17b0d307be6e33501799500949297814930a9e65",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "建国以来毛泽东文稿/建国以来毛泽东文稿_第12册（1957年8月-1958年8月）.pdf",
+                        "source_sha":  "60cff18a158a2bbd0de5bbee91bf834aaa6a50a3",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "建国以来毛泽东文稿/建国以来毛泽东文稿_第13册（1958年8月-1959年3月）.pdf",
+                        "source_sha":  "9a56fa2fb2945c0e59d7895bcb1462e1e6502c01",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "建国以来毛泽东文稿/建国以来毛泽东文稿_第14册（1959年4月-1959年12月）.pdf",
+                        "source_sha":  "48800992fe211b1575f24695f55fc895af7c826e",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "建国以来毛泽东文稿/建国以来毛泽东文稿_第15册（1960年1月-1961年3月）.pdf",
+                        "source_sha":  "6228772537ce8af2186c5edeac446aa29f5eed63",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "建国以来毛泽东文稿/建国以来毛泽东文稿_第16册（1961年4月-1963年5月）.pdf",
+                        "source_sha":  "2fdf63324902a60f784145e32c368ec876afce44",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "建国以来毛泽东文稿/建国以来毛泽东文稿_第17册（1963年6月-1965年1月）.pdf",
+                        "source_sha":  "edd23fd494e75802e1ee777674a41fdc2b84387c",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "建国以来毛泽东文稿/建国以来毛泽东文稿_第18册（1965年2月-1967年3月）.pdf",
+                        "source_sha":  "8ad4b6fcaf4b300c19567300aafc55a1ff334a65",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "建国以来毛泽东文稿/建国以来毛泽东文稿_第19册（1967年3月-1970年5月）.pdf",
+                        "source_sha":  "da6f46e16b3d35eb0b8ba5406da3800cb2b0afce",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "建国以来毛泽东文稿/建国以来毛泽东文稿_第1册（1949年9月-1950年2月）.pdf",
+                        "source_sha":  "73b346052d149175c14e993e3433e516a5cfed89",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "建国以来毛泽东文稿/建国以来毛泽东文稿_第20册（1970年6月-1976年7月）.pdf",
+                        "source_sha":  "90cc25f7dec6b80b3c6d92b4fea40586ca939c72",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "建国以来毛泽东文稿/建国以来毛泽东文稿_第2册（1950年3月-1950年8月）.pdf",
+                        "source_sha":  "7df948176796f87d05e411ba1b55fadfb1feedf6",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "建国以来毛泽东文稿/建国以来毛泽东文稿_第3册（1950年9月-1950年12月）.pdf",
+                        "source_sha":  "51c6367b5b5c69dbb0f4003aa637bdd5b495e100",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "建国以来毛泽东文稿/建国以来毛泽东文稿_第4册（1951年1月-1951年6月）.pdf",
+                        "source_sha":  "92ea8bbf870ff702edcccd402bc01b3d9b9b57d5",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "建国以来毛泽东文稿/建国以来毛泽东文稿_第5册（1951年7月-1952年1月）.pdf",
+                        "source_sha":  "00f9254e5d0bdd106f713dafff0ad1dafe25be19",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "建国以来毛泽东文稿/建国以来毛泽东文稿_第6册（1952年1月-1952年4月）.pdf",
+                        "source_sha":  "da5f11719e9be536224bbfa27f80ccf4338a47b1",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "建国以来毛泽东文稿/建国以来毛泽东文稿_第7册（1952年4月-1952年12月）.pdf",
+                        "source_sha":  "40747371a4650bfbed42febe08b95d54b2196cf0",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛主席语录/毛主席语录（1966年版）.pdf",
+                        "source_sha":  "c2f0d92601665432512cdb3f8dad57c5ef6a4334",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东传/毛泽东传.pdf",
+                        "source_sha":  "c3184f240efb9e4f8a822bc8d8c6213f6b709b09",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东传/毛泽东传_第一册.pdf",
+                        "source_sha":  "97a91b6b1a291f9be0bae77676b3403691cb12a6",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东传/毛泽东传_第三册.pdf",
+                        "source_sha":  "87b2173ff364dafa8e979f939ca658b43c2b4f2c",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东传/毛泽东传_第二册.pdf",
+                        "source_sha":  "b76b5dd21c992b9613ca716102389b54de3e9312",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东传/毛泽东传_第五册.pdf",
+                        "source_sha":  "fa6f584320d13680c23694f90a7a0c33e0506810",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东传/毛泽东传_第六册.pdf",
+                        "source_sha":  "051f7eac0341bd8f80d0ca98ecf681f242ed21f4",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东传/毛泽东传_第四册.pdf",
+                        "source_sha":  "2b7eeb571fabb69257ce1f7d3e01cd60a2f573aa",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东传/毛泽东传_罗斯·特里尔.pdf",
+                        "source_sha":  "8f5a21be5f2c120011ff8d010349edcfadbadd2d",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东传/毛泽东自传.pdf",
+                        "source_sha":  "bfaa6ab9f4433c826a1c90c707e21accef14e365",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东全集/README.md",
+                        "source_sha":  "76aef36ecbb762d20f20f7114e16dc3dadfc710a",
+                        "extension":  ".md",
+                        "status":  "imported",
+                        "conversion":  "direct-text",
+                        "target_path":  "references/history/selected-works-of-mao-tsetung/corpus/毛泽东全集/README.md.md",
+                        "note":  ""
+                    },
+                    {
+                        "source_path":  "毛泽东军事文集/毛泽东军事文集_第一卷.pdf",
+                        "source_sha":  "6700bf8e101903008c4925e24b14c565975a7896",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东军事文集/毛泽东军事文集_第三卷.pdf",
+                        "source_sha":  "41a11085d199549a8bcd0e677b816e1be0e8aefd",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东军事文集/毛泽东军事文集_第二卷.pdf",
+                        "source_sha":  "86ae6e2b8c4f52cef7eec71ddb612fd73475c968",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东军事文集/毛泽东军事文集_第五卷.pdf",
+                        "source_sha":  "42d130cf720369f0818454c39b86f0db28195c15",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东军事文集/毛泽东军事文集_第六卷.pdf",
+                        "source_sha":  "7ee97c73c1c36fc1aabdfe0c3125c7bdf2ef46f0",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东军事文集/毛泽东军事文集_第四卷.pdf",
+                        "source_sha":  "378bceb5c09d9360a70396ede3f6e5401be31e61",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东在延安丛书/延安时期毛泽东哲学思想.pdf",
+                        "source_sha":  "dd98790c7ec7ebab0283de004c9403d4247b6f57",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东在延安丛书/延安时期毛泽东外交战略.pdf",
+                        "source_sha":  "ddb7ebfbe7144d599b00c082c993dce95c59e5e3",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东在延安丛书/延安时期毛泽东建党思想.pdf",
+                        "source_sha":  "0c03673a7f1e43b6d5ff8bc17a5a15f60c930ba0",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东在延安丛书/延安时期毛泽东思想政治教育理论与实践.pdf",
+                        "source_sha":  "ed142765c689c88e63ad136203138d26c7b41c4a",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东在延安丛书/延安时期毛泽东政治思想.pdf",
+                        "source_sha":  "d674de625486c5c350bd5cc79f11ce2a9ff484a7",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东在延安丛书/延安时期毛泽东文化思想.pdf",
+                        "source_sha":  "070c3bbabe0be6f893b93a779c15945fd063c5ba",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东在延安丛书/延安时期毛泽东文艺思想.pdf",
+                        "source_sha":  "b01c07124d524a80ab713459d0ce90cf890fbe5e",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东在延安丛书/延安时期毛泽东经济思想.pdf",
+                        "source_sha":  "36518c8d09408bb8faa453ef5ebdd5018b7e8315",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东在延安丛书/延安时期毛泽东统战思想.pdf",
+                        "source_sha":  "b7e2f22362c9b81439f9952eadf68d85de40ac7e",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东在延安丛书/延安时期毛泽东著述提要.pdf",
+                        "source_sha":  "329ae9cf12d4bdff03427dd0b7561cbc37dff3b6",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东在延安丛书/延安时期毛泽东领导方法.pdf",
+                        "source_sha":  "d676d6d4e3ecf410b2358e1d1ea1da1628e96853",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东在延安丛书/毛泽东与延安时期精兵简政.pdf",
+                        "source_sha":  "07fc9dd104177dffd5b580793af088ddc0b29c17",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东在延安丛书/毛泽东及其战友与延安时期青年运动.pdf",
+                        "source_sha":  "1e1b579727eb25c245baecb77be1ad2e26d12724",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东在延安丛书/毛泽东和延安时代.pdf",
+                        "source_sha":  "51db4bea05fc01b94a64ef0378977388e4b438cf",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东在延安丛书/毛泽东在延安纪事.pdf",
+                        "source_sha":  "9a940cfe3eea62789dad156a2a5f32fb7b75d334",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东在延安丛书/毛泽东是延安精神的缔造者.pdf",
+                        "source_sha":  "7e4b70313cc96a29e030bc2fa941a60719f224f1",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东大传/毛泽东大传（2022终极版）.epub",
+                        "source_sha":  "f9745f3e8500fcbda5b152cd7c855403fd2f7713",
+                        "extension":  ".epub",
+                        "status":  "unsupported-binary",
+                        "conversion":  "",
+                        "target_path":  "",
+                        "note":  "Binary/e-book file is registered but not converted by this script."
+                    },
+                    {
+                        "source_path":  "毛泽东大传/毛泽东大传（自排文字版）.pdf",
+                        "source_sha":  "82b05636e909334ed9a93237fec2c262c9a36e29",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东年谱/1993年版/毛泽东年谱_上卷.pdf",
+                        "source_sha":  "3536593438862ee29badc269847bcf48c132aa5e",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东年谱/1993年版/毛泽东年谱_下卷.pdf",
+                        "source_sha":  "b2e65ad6c80fce170fc80dcfea2ae924d5cc485e",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东年谱/1993年版/毛泽东年谱_中卷.pdf",
+                        "source_sha":  "60c29a60e3d155cf20b0ae7913a7be7dd39bb889",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东年谱/2023年版/毛泽东年谱_第1卷（1893.12-1937.06）.pdf",
+                        "source_sha":  "3583756f681ddb2e857f8c82e17f51371334c3f6",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东年谱/2023年版/毛泽东年谱_第2卷（1937.07-1945.08）.pdf",
+                        "source_sha":  "e54f923f8339cfdd3b6a4087f6a51d79503b87ca",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东年谱/2023年版/毛泽东年谱_第3卷（1945.08-1949.09）.pdf",
+                        "source_sha":  "3cef012058526fc4b113ed1f02027cc7912041a8",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东年谱/2023年版/毛泽东年谱_第4卷（1949.10-1952.12）.pdf",
+                        "source_sha":  "43cc764735dc0f638109266ddf59a2a5b69c13d9",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东年谱/2023年版/毛泽东年谱_第5卷（1953.01-1956.09）.pdf",
+                        "source_sha":  "cfa83e286bd3ea1071188963d8a4cad544c4f749",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东年谱/2023年版/毛泽东年谱_第6卷（1956.10-1959.03）.pdf",
+                        "source_sha":  "0c71d10d5d07437ed16f1e338303fee7b7784d6b",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东年谱/2023年版/毛泽东年谱_第7卷（1959.04-1961.06）.pdf",
+                        "source_sha":  "3ce0e5f7958ba2148968d85717bf574ed304bc52",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东年谱/2023年版/毛泽东年谱_第8卷（1961.07-1966.09）.pdf",
+                        "source_sha":  "93330f4d49561fec94532cdc988697c0cd5700e2",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东年谱/2023年版/毛泽东年谱_第9卷（1966.10-1976.09）.pdf",
+                        "source_sha":  "52ad589b4c1740fd2f48ee1425ab9d249a3e638d",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东年谱/毛泽东军事年谱.pdf",
+                        "source_sha":  "002bcc65eda53db68635a005faa403c0e5d73cda",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东文集/毛泽东文集_第一卷.pdf",
+                        "source_sha":  "e3b88f1920548793d8ad8c717c782ef71d34581f",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东文集/毛泽东文集_第七卷.pdf",
+                        "source_sha":  "1260f9fad52b4315233adf0727b01b8b9d4c877e",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东文集/毛泽东文集_第三卷.pdf",
+                        "source_sha":  "e7955daf7209e2551fe847b6db63c51224f1e66b",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东文集/毛泽东文集_第二卷.pdf",
+                        "source_sha":  "1cefe86bc504f4a492097e004525b90127354ca4",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东文集/毛泽东文集_第五卷.pdf",
+                        "source_sha":  "a880b4355dd06b01e9b06cf0b488100bfafad036",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东文集/毛泽东文集_第八卷.pdf",
+                        "source_sha":  "f08f10d3e467c4174a31d570cdd6dc4020a3b043",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东文集/毛泽东文集_第六卷.pdf",
+                        "source_sha":  "fdfc16feb2ab7e9e870da2facbf5d7172519637b",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东文集/毛泽东文集_第四卷.pdf",
+                        "source_sha":  "0fd7d3e5387174e1d04fb680fbbb8659f4ea79f1",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东画传/毛泽东画传之一_湖湘之子.pdf",
+                        "source_sha":  "80436a4667a1bbec9b1f6ed70807b633830fe280",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东画传/毛泽东画传之七_奠基西北.pdf",
+                        "source_sha":  "4ce949aeaccc913ccb95505e9d2b29ac3118006c",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东画传/毛泽东画传之三_星火燎原.pdf",
+                        "source_sha":  "bfbeebd8c19da065dcd4e865e25f127b7f24d340",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东画传/毛泽东画传之九_革命到底.pdf",
+                        "source_sha":  "28c7866bc56dfb7e6f85c6a59551c141785e64a9",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东画传/毛泽东画传之二_工运之王.pdf",
+                        "source_sha":  "911204a130743f869e6ece388c4d151a2af6af6e",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东画传/毛泽东画传之五_朱毛会师.pdf",
+                        "source_sha":  "dfdae136ba50b8d01d43430289043dc672bac89f",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东画传/毛泽东画传之八_重庆谈判.pdf",
+                        "source_sha":  "a917ba64194b12e4027a4f8da5e4be4de133a4aa",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东画传/毛泽东画传之六_万里长征.pdf",
+                        "source_sha":  "b0a82679f2b53c938cf01eac49ee1526aece3927",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东画传/毛泽东画传之十_换了人间.pdf",
+                        "source_sha":  "003af12ffaa03a34e170a7088f33d81c73920dd4",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东画传/毛泽东画传之十一_走自己路.pdf",
+                        "source_sha":  "1476d60ff785fa6a927e5b6359b2acc4f36d76ea",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东画传/毛泽东画传之十二_晚年岁月.pdf",
+                        "source_sha":  "ecfdbf0e50f8f082dc7a576a3e8c0288ef3a0829",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东画传/毛泽东画传之四_走上井冈.pdf",
+                        "source_sha":  "48baa48592af09d9b89f9711c337eb77680244c8",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东离京巡视纪实/毛泽东离京巡视纪实_上卷.pdf",
+                        "source_sha":  "2766386cc51939d2f736071065406ea306a1b11c",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东离京巡视纪实/毛泽东离京巡视纪实_下卷.pdf",
+                        "source_sha":  "632d587120559b1ff859a30a38d0d7380b0c0c07",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东离京巡视纪实/毛泽东离京巡视纪实_中卷.pdf",
+                        "source_sha":  "83d6466d73bf438ae381a219a510e2e0129fe731",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东读书集成/README.md",
+                        "source_sha":  "a92c17103418321408a1437b563cdb9b6f02d23c",
+                        "extension":  ".md",
+                        "status":  "imported",
+                        "conversion":  "direct-text",
+                        "target_path":  "references/history/selected-works-of-mao-tsetung/corpus/毛泽东读书集成/README.md.md",
+                        "note":  ""
+                    },
+                    {
+                        "source_path":  "毛泽东选集/毛泽东选集.docx",
+                        "source_sha":  "842029811129fd3b7a6ad39a5128377c45fd8d9f",
+                        "extension":  ".docx",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东选集/毛泽东选集.epub",
+                        "source_sha":  "dd6d58305c12112ecaa1dfd95df620a540c27f76",
+                        "extension":  ".epub",
+                        "status":  "unsupported-binary",
+                        "conversion":  "",
+                        "target_path":  "",
+                        "note":  "Binary/e-book file is registered but not converted by this script."
+                    },
+                    {
+                        "source_path":  "毛泽东选集/毛泽东选集.mobi",
+                        "source_sha":  "f9bb9cd5fe1179f791e62c00dfef7585344f22f5",
+                        "extension":  ".mobi",
+                        "status":  "unsupported-binary",
+                        "conversion":  "",
+                        "target_path":  "",
+                        "note":  "Binary/e-book file is registered but not converted by this script."
+                    },
+                    {
+                        "source_path":  "毛泽东选集/毛泽东选集.pdf",
+                        "source_sha":  "a1e943341c2758c77b4a25f5241cd294d390b650",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "毛泽东选集/毛泽东选集.txt",
+                        "source_sha":  "93b13f6d1c214433310c1a273773d0888828efa4",
+                        "extension":  ".txt",
+                        "status":  "imported",
+                        "conversion":  "direct-text",
+                        "target_path":  "references/history/selected-works-of-mao-tsetung/corpus/毛泽东选集/毛泽东选集.txt.md",
+                        "note":  ""
+                    },
+                    {
+                        "source_path":  "毛泽东选集/毛泽东选集（1-7：原版五卷+静火+赤旗+草堂）.pdf",
+                        "source_sha":  "79227336dc1d33d99eea64f7cf80a323a8491bc9",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "老三篇/愚公移山（人民出版社）.pdf",
+                        "source_sha":  "6fee277a13a47839034f5a9056790d83792c7c2d",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "老三篇/愚公移山（河北人民出版社）.pdf",
+                        "source_sha":  "d95a3be14788cf65833882cc805addc704f592f0",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    },
+                    {
+                        "source_path":  "老三篇/纪念白求恩\u0026为人民服务.pdf",
+                        "source_sha":  "b6d91b78592904092ad56e8911720aae46c58dae",
+                        "extension":  ".pdf",
+                        "status":  "available-for-word-conversion",
+                        "conversion":  "word-com-text",
+                        "target_path":  "",
+                        "note":  "Run with -ConvertWithWord to convert this file through Microsoft Word."
+                    }
+                ]
+}
