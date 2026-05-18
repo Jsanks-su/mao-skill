@@ -118,6 +118,20 @@ function Write-MarkdownText {
   $targetDir = Split-Path -Parent $target
   New-Item -ItemType Directory -Force -Path $targetDir | Out-Null
 
+  $sourcePathLabel = -join @(
+    [char]0x6765
+    [char]0x6E90
+    [char]0x8DEF
+    [char]0x5F84
+    [char]0xFF1A
+  )
+  $conversionLabel = -join @(
+    [char]0x8F6C
+    [char]0x6362
+    [char]0x65B9
+    [char]0x5F0F
+    [char]0xFF1A
+  )
   $normalized = ($Text -replace "`r`n", "`n") -replace "`r", "`n"
   $body = @(
     "---"
@@ -130,14 +144,15 @@ function Write-MarkdownText {
     ""
     "# $Title"
     ""
-    "> 来源路径：``$SourcePath``"
-    "> 转换方式：$Conversion"
+    ("> {0}{1}" -f $sourcePathLabel, $SourcePath)
+    ("> {0}{1}" -f $conversionLabel, $Conversion)
     ""
     $normalized.Trim()
     ""
   ) -join "`n"
 
-  Set-Content -LiteralPath $target -Value $body -Encoding UTF8
+  $utf8NoBom = [System.Text.UTF8Encoding]::new($false)
+  [System.IO.File]::WriteAllText($target, $body, $utf8NoBom)
   return $target
 }
 
@@ -285,7 +300,8 @@ $manifestObject = [pscustomobject]@{
 }
 
 $manifestPath = Join-Path $root "MANIFEST.json"
-$manifestObject | ConvertTo-Json -Depth 6 | Set-Content -LiteralPath $manifestPath -Encoding UTF8
+$utf8NoBom = [System.Text.UTF8Encoding]::new($false)
+[System.IO.File]::WriteAllText($manifestPath, ($manifestObject | ConvertTo-Json -Depth 6), $utf8NoBom)
 
 Write-Output "source_commit=$commit"
 Write-Output "total_entries=$($manifest.Count)"

@@ -1,15 +1,15 @@
-﻿---
+---
 source_repo: "https://github.com/M0rtzz/Selected-Works-of-MaoTseTung"
 source_commit: "4cc981c232e1ffe8fe2974e125c00af8376829ca"
 source_path: "毛泽东读书集成/README.md"
 conversion: "direct-text"
-generated_at: "2026-05-17T16:50:48Z"
+generated_at: "2026-05-18T00:58:31Z"
 ---
 
 # README
 
-> 鏉ユ簮璺緞锛歚$SourcePath`
-> 杞崲鏂瑰紡锛?Conversion
+> 来源路径：毛泽东读书集成/README.md
+> 转换方式：direct-text
 
 # 注意
 
@@ -18,4 +18,3 @@ generated_at: "2026-05-17T16:50:48Z"
 链接: [https://pan.baidu.com/s/1IzzHNj-gdqBcWkNmNdGg8g?pwd=1226](https://pan.baidu.com/s/1IzzHNj-gdqBcWkNmNdGg8g?pwd=1226)
 
 提取码: 1226
-

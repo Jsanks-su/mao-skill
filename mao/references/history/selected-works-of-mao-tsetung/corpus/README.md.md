@@ -1,15 +1,15 @@
-﻿---
+---
 source_repo: "https://github.com/M0rtzz/Selected-Works-of-MaoTseTung"
 source_commit: "4cc981c232e1ffe8fe2974e125c00af8376829ca"
 source_path: "README.md"
 conversion: "direct-text"
-generated_at: "2026-05-17T16:50:47Z"
+generated_at: "2026-05-18T00:58:30Z"
 ---
 
 # README
 
-> 鏉ユ簮璺緞锛歚$SourcePath`
-> 杞崲鏂瑰紡锛?Conversion
+> 来源路径：README.md
+> 转换方式：direct-text
 
 # 🇨🇳战无不胜的毛泽东思想万岁！🇨🇳
 
@@ -86,4 +86,3 @@ generated_at: "2026-05-17T16:50:47Z"
   - 苏联解密档案选：毛泽东著作
   - 西行漫记（红星照耀中国）
   - etc.
-
