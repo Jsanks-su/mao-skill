@@ -3,7 +3,7 @@ source_repo: "https://github.com/M0rtzz/Selected-Works-of-MaoTseTung"
 source_commit: "4cc981c232e1ffe8fe2974e125c00af8376829ca"
 source_path: "README.md"
 conversion: "direct-text"
-generated_at: "2026-05-18T00:58:30Z"
+generated_at: "2026-05-18T01:09:03Z"
 ---
 
 # README
@@ -12,9 +12,6 @@ generated_at: "2026-05-18T00:58:30Z"
 > 转换方式：direct-text
 
 # 🇨🇳战无不胜的毛泽东思想万岁！🇨🇳
-
-![大海航行靠舵手](./images/大海航行靠舵手.jpg)
-
 ---
 
 推荐[http://www.mzdbl.cn](http://www.mzdbl.cn)或[http://www.mzdbl.com.cn](http://www.mzdbl.com.cn)还有[Z-Library](https://zlibrary.st/new-z-library-official-website-links)，里面有很多电子书资源。

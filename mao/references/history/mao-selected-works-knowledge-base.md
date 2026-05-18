@@ -12,14 +12,14 @@
 - 主全文：`references/history/selected-works-of-mao-tsetung/corpus/毛泽东选集/毛泽东选集.txt.md`
 - 导入脚本：`scripts/ingest-selected-works.ps1`
 
-本次不是篇目摘要，也不是节选索引；上游已有 `.txt` 的部分已经全文转成 Markdown。PDF、DOCX、RTF 等二进制/版式文件已进入清单，脚本支持通过本机 Microsoft Word COM 转文字，但大体量 PDF 需要分批单独跑，不能在未完成时标成已导入。
+本次不是篇目摘要，也不是节选索引；上游已有 `.txt` 的部分已经全文转成 Markdown。PDF、DOCX、EPUB、MOBI、Office 文件和图片文件已进入清单，脚本使用 Microsoft MarkItDown 转成 Markdown，并清理图片嵌入，只保留文字。
 
 ## 收录边界
 
 允许收录：
 
 - 用户指定源仓库中的现成文本；
-- 通过可复跑脚本从源仓库二进制文件转换出的文字；
+- 通过可复跑脚本和 Microsoft MarkItDown 从源仓库二进制文件转换出的文字；
 - 文件级来源、提交号、转换方式和清单；
 - 书目级信息、主题地图、方法索引和迁移边界。
 
@@ -85,10 +85,11 @@
 
 ## 后续补全
 
-PDF/Office 文件已经在 `MANIFEST.json` 中登记为 `available-for-word-conversion`。需要补全时，用以下方式分批运行：
+PDF/Office/EPUB/MOBI/图片文件已经在 `MANIFEST.json` 中登记为 `available-for-markitdown-conversion`。需要补全时，用以下方式分批运行：
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File .\scripts\ingest-selected-works.ps1 -ConvertWithWord -WordPath "毛泽东文集" -MaxWordConversions 3
+python -m pip install -r requirements-markitdown.txt
+powershell -ExecutionPolicy Bypass -File .\scripts\ingest-selected-works.ps1 -ConvertWithMarkItDown -ConvertPath "毛泽东文集" -MaxMarkItDownConversions 3
 ```
 
 每批转换后检查 `MANIFEST.json`，只把实际完成转换的文件标记为 imported。

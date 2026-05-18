@@ -4,6 +4,10 @@ param(
   [string]$SourceRepo = "https://github.com/M0rtzz/Selected-Works-of-MaoTseTung",
   [string]$Ref = "HEAD",
   [string[]]$OnlyPath = @(),
+  [string[]]$ConvertPath = @(),
+  [switch]$ConvertWithMarkItDown,
+  [string]$MarkItDownPython = "",
+  [int]$MaxMarkItDownConversions = 0,
   [string[]]$WordPath = @(),
   [switch]$ConvertWithWord,
   [int]$MaxWordConversions = 0
@@ -132,6 +136,7 @@ function Write-MarkdownText {
     [char]0x5F0F
     [char]0xFF1A
   )
+  $Text = Remove-MarkdownImages $Text
   $normalized = ($Text -replace "`r`n", "`n") -replace "`r", "`n"
   $body = @(
     "---"
@@ -154,6 +159,17 @@ function Write-MarkdownText {
   $utf8NoBom = [System.Text.UTF8Encoding]::new($false)
   [System.IO.File]::WriteAllText($target, $body, $utf8NoBom)
   return $target
+}
+
+function Remove-MarkdownImages {
+  param([string]$Text)
+
+  $cleaned = $Text
+  $cleaned = [regex]::Replace($cleaned, "(?is)<img\b[^>]*>", "")
+  $cleaned = [regex]::Replace($cleaned, "(?m)^\s*!\[[^\]]*\]\([^\r\n]*\)\s*$\r?\n?", "")
+  $cleaned = [regex]::Replace($cleaned, "!\[[^\]]*\]\([^\r\n)]*\)", "")
+  $cleaned = [regex]::Replace($cleaned, "(\r?\n){3,}", "`n`n")
+  return $cleaned
 }
 
 function Convert-WithWordToText {
@@ -180,6 +196,68 @@ function Convert-WithWordToText {
   }
 }
 
+function Resolve-MarkItDownPython {
+  param([string]$Value)
+
+  $candidates = @()
+  if ($Value) { $candidates += $Value }
+  $candidates += (Join-Path (Get-Location).Path ".venv-markitdown\Scripts\python.exe")
+  $candidates += (Join-Path (Get-Location).Path ".venv\Scripts\python.exe")
+  $candidates += "python"
+  $candidates += "py"
+
+  foreach ($candidate in $candidates) {
+    try {
+      if ($candidate -like "*\*" -and -not (Test-Path -LiteralPath $candidate)) {
+        continue
+      }
+      $probe = & $candidate -c "import importlib.util; import sys; sys.exit(0 if importlib.util.find_spec('markitdown') else 1)" 2>$null
+      if ($LASTEXITCODE -eq 0) {
+        return $candidate
+      }
+    }
+    catch {
+      continue
+    }
+  }
+
+  throw "MarkItDown was requested but no Python environment with the markitdown package was found. Install with: python -m pip install 'markitdown[all]'"
+}
+
+function Convert-WithMarkItDown {
+  param(
+    [string]$InputPath,
+    [string]$OutputPath,
+    [string]$PythonExe
+  )
+
+  $scriptPath = Join-Path (Split-Path -Parent $OutputPath) ("markitdown-convert-" + [guid]::NewGuid().ToString("N") + ".py")
+  $script = @'
+import pathlib
+import sys
+from markitdown import MarkItDown
+
+input_path = pathlib.Path(sys.argv[1])
+output_path = pathlib.Path(sys.argv[2])
+converter = MarkItDown(enable_plugins=False)
+result = converter.convert_local(str(input_path))
+output_path.write_text(result.text_content or "", encoding="utf-8", newline="\n")
+'@
+
+  try {
+    [System.IO.File]::WriteAllText($scriptPath, $script, [System.Text.UTF8Encoding]::new($false))
+    & $PythonExe $scriptPath $InputPath $OutputPath
+    if ($LASTEXITCODE -ne 0) {
+      throw "MarkItDown exited with code $LASTEXITCODE"
+    }
+  }
+  finally {
+    if (Test-Path -LiteralPath $scriptPath) {
+      Remove-Item -LiteralPath $scriptPath -Force
+    }
+  }
+}
+
 $repo = Resolve-SourceDir $SourceDir
 $root = Join-Path (Get-Location).Path $OutputRoot
 New-Item -ItemType Directory -Force -Path $root | Out-Null
@@ -202,15 +280,22 @@ $entries = foreach ($line in $tree) {
 }
 
 $directTextExt = @(".txt", ".md", ".markdown")
+$markItDownExt = @(".pdf", ".doc", ".docx", ".rtf", ".ppt", ".pptx", ".xls", ".xlsx", ".html", ".htm", ".csv", ".json", ".xml", ".epub", ".mobi", ".jpg", ".jpeg", ".png", ".gif", ".webp", ".bmp", ".tif", ".tiff")
 $wordExt = @(".pdf", ".doc", ".docx", ".rtf")
 $imageExt = @(".jpg", ".jpeg", ".png", ".gif", ".webp", ".bmp", ".tif", ".tiff")
 $manifest = @()
 $word = $null
 $wordCount = 0
+$markItDownPythonExe = ""
+$markItDownCount = 0
 $tempRoot = Join-Path $env:TEMP ("mao-selected-works-ingest-" + [guid]::NewGuid().ToString("N"))
 New-Item -ItemType Directory -Force -Path $tempRoot | Out-Null
 
 try {
+  if ($ConvertWithMarkItDown) {
+    $markItDownPythonExe = Resolve-MarkItDownPython $MarkItDownPython
+  }
+
   if ($ConvertWithWord) {
     $word = New-Object -ComObject Word.Application
     $word.Visible = $false
@@ -232,6 +317,35 @@ try {
         $target = Write-MarkdownText -Root $root -SourcePath $entry.Path -Title $title -Text $text -Conversion "direct-text" -Commit $commit -Repo $SourceRepo
         $status = "imported"
         $conversion = "direct-text"
+      }
+      elseif ($markItDownExt -contains $entry.Ext) {
+        $convertPathMatches = $ConvertPath.Count -eq 0 -or ($ConvertPath | Where-Object { $entry.Path -eq $_ -or $entry.Path.StartsWith($_.TrimEnd("/") + "/") })
+        if ($ConvertWithMarkItDown -and $convertPathMatches -and ($MaxMarkItDownConversions -le 0 -or $markItDownCount -lt $MaxMarkItDownConversions)) {
+          $markItDownCount += 1
+          $bytes = Get-GitBlobBytes -Repo $repo -Sha $entry.Sha
+          $input = Join-Path $tempRoot ([guid]::NewGuid().ToString("N") + $entry.Ext)
+          $md = Join-Path $tempRoot ([guid]::NewGuid().ToString("N") + ".md")
+          [System.IO.File]::WriteAllBytes($input, $bytes)
+          Convert-WithMarkItDown -InputPath $input -OutputPath $md -PythonExe $markItDownPythonExe
+          $text = Get-Content -LiteralPath $md -Raw -Encoding UTF8
+          $text = Remove-MarkdownImages $text
+          $title = [System.IO.Path]::GetFileNameWithoutExtension($entry.Path)
+          if ([string]::IsNullOrWhiteSpace($text)) {
+            $status = "empty-markitdown-output"
+            $conversion = "markitdown"
+            $note = "MarkItDown completed but produced no text."
+          }
+          else {
+            $target = Write-MarkdownText -Root $root -SourcePath $entry.Path -Title $title -Text $text -Conversion "markitdown" -Commit $commit -Repo $SourceRepo
+            $status = "imported"
+            $conversion = "markitdown"
+          }
+        }
+        else {
+          $status = "available-for-markitdown-conversion"
+          $conversion = "markitdown"
+          $note = "Run with -ConvertWithMarkItDown to convert this file through Microsoft MarkItDown."
+        }
       }
       elseif ($wordExt -contains $entry.Ext) {
         $wordPathMatches = $WordPath.Count -eq 0 -or ($WordPath | Where-Object { $entry.Path -eq $_ -or $entry.Path.StartsWith($_.TrimEnd("/") + "/") })
@@ -256,7 +370,8 @@ try {
       }
       elseif ($imageExt -contains $entry.Ext) {
         $status = "skipped-image"
-        $note = "Image binary is not stored in the text knowledge base."
+        $conversion = "markitdown"
+        $note = "Image binary is not stored in the text knowledge base. Run with -ConvertWithMarkItDown to extract available text/metadata."
       }
       else {
         $status = "unsupported-binary"

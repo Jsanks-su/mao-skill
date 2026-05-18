@@ -107,4 +107,5 @@ resources:
   - "evals/conversational-surface-test.md"
   - "evals/deep-longform-pressure-test.md"
   - "scripts/ingest-selected-works.ps1"
+  - "requirements-markitdown.txt"
   - "scripts/validate-evals.ps1"

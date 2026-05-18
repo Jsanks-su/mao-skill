@@ -211,10 +211,25 @@ if ($null -ne $selectedWorksManifest) {
     elseif (-not (Test-Path -LiteralPath (Join-Path $Root $canonical[0].target_path))) {
         Add-Failure "Missing canonical Selected Works Markdown text at manifest target_path"
     }
+    $markitdownDocx = @($selectedWorksManifest.entries | Where-Object {
+        $_.source_sha -eq "842029811129fd3b7a6ad39a5128377c45fd8d9f" -and $_.status -eq "imported" -and $_.conversion -eq "markitdown"
+    })
+    if ($markitdownDocx.Count -ne 1) {
+        Add-Failure "Selected Works manifest is missing imported MarkItDown docx conversion"
+    }
 }
 
 if (-not (Test-Path -LiteralPath (Join-Path $Root "references/history/selected-works-of-mao-tsetung/SOURCE.md"))) {
     Add-Failure "Missing Selected Works SOURCE.md"
+}
+
+$corpusRoot = Join-Path $Root "references/history/selected-works-of-mao-tsetung/corpus"
+if (Test-Path -LiteralPath $corpusRoot) {
+    $imageEmbeds = Get-ChildItem -LiteralPath $corpusRoot -Recurse -File -Filter "*.md" |
+        Select-String -Pattern "data:image|!\[|<img"
+    if (@($imageEmbeds).Count -gt 0) {
+        Add-Failure "Selected Works corpus contains Markdown image embeds"
+    }
 }
 
 if ($failures.Count -gt 0) {

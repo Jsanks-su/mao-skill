@@ -282,6 +282,7 @@ Load resources progressively. Read `SKILL.md` first, then load only the resource
 - `references/history/source-register.md`: source family register and usage limits.
 - `references/history/mao-selected-works-knowledge-base.md`: Selected Works knowledge-base entry, source commit, and usage rules.
 - `references/history/selected-works-of-mao-tsetung/`: imported Selected Works text corpus and manifest.
+- `scripts/ingest-selected-works.ps1` and `requirements-markitdown.txt`: Microsoft MarkItDown import pipeline for source documents.
 - `references/texture/human-texture.md`: restrained human texture.
 - `references/texture/tone-easter-eggs.md`: controlled tone easter eggs.
 - `references/memory/data-model.md`: shared memory envelope.

@@ -5,6 +5,7 @@ This directory contains text extracted from the user-supplied source repository:
 - Source repository: https://github.com/M0rtzz/Selected-Works-of-MaoTseTung
 - Source commit: `4cc981c232e1ffe8fe2974e125c00af8376829ca`
 - Import script: `scripts/ingest-selected-works.ps1`
+- Converter requirement: `requirements-markitdown.txt`
 - Manifest: `MANIFEST.json`
 
 ## Import Policy
@@ -14,17 +15,21 @@ The knowledge base stores text, not images or binary editions.
 Current import behavior:
 
 - `.txt`, `.md`, and `.markdown` files are imported as full Markdown text.
-- `.pdf`, `.doc`, `.docx`, and `.rtf` files are registered as Microsoft Word conversion candidates.
-- image binaries are not stored in the text knowledge base.
-- `.epub` and `.mobi` files are registered but not converted by the current script.
+- `.pdf`, `.doc`, `.docx`, `.rtf`, `.pptx`, `.xlsx`, `.epub`, `.mobi`, HTML, and image files are registered as Microsoft MarkItDown conversion candidates.
+- MarkItDown output is cleaned so Markdown image embeds and HTML image tags are not stored in the text knowledge base.
 
 No summary-only replacement is used for imported text. The source text is preserved as body text with a small metadata header.
 
-## Microsoft Conversion Note
+## MarkItDown Conversion Note
 
-The import script includes a `-ConvertWithWord` path that uses the locally installed Microsoft Word COM converter for `.pdf`, `.doc`, `.docx`, and `.rtf` files.
+The import script includes a `-ConvertWithMarkItDown` path that uses Microsoft's MarkItDown package for document-to-Markdown conversion:
 
-The full `毛泽东选集/毛泽东选集.txt` source already exists in the upstream repository and is imported directly as the canonical text copy. A test conversion of the large PDF variant through Word did not complete within the local timeout, so PDF/Office entries remain registered for controlled batch conversion instead of being marked as completed.
+```powershell
+python -m pip install -r requirements-markitdown.txt
+powershell -ExecutionPolicy Bypass -File .\scripts\ingest-selected-works.ps1 -ConvertWithMarkItDown -ConvertPath "毛泽东选集/毛泽东选集.docx" -MaxMarkItDownConversions 1
+```
+
+The full `毛泽东选集/毛泽东选集.txt` source already exists in the upstream repository and is imported directly as the canonical text copy. MarkItDown conversion is used for document variants that need structure extraction, such as DOCX/PDF/EPUB. Large files should be converted in controlled batches and marked imported only after the script completes successfully.
 
 ## Canonical Text Entry
 
