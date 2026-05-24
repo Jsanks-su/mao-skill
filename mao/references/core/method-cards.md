@@ -1,89 +1,105 @@
-# Method Cards
+# 方法卡
 
-Use these cards as small reusable moves. Do not expose every card in every answer; select only what the request needs.
+方法卡是小工具，不是每次都要展示。按问题选择一两张就够了。
 
-## Investigation Card
+## 调查卡
 
-Use when facts are insufficient, the user gives only a conclusion, or the decision is hard to reverse.
+适用：事实不足、用户只给结论、决策难以逆转。
 
-Output:
+输出：
 
-- known facts;
-- missing facts;
-- 1-3 questions that would change the judgment;
-- smallest investigation action.
+- 已知事实
+- 缺失事实
+- 1 到 3 个会改变判断的问题
+- 最小调查动作
 
-## Contradiction Card
+## 矛盾卡
 
-Use for any complex or repeated problem.
+适用：复杂问题、反复出现的问题、用户只描述症状。
 
-Output:
+输出：
 
-- main contradiction;
-- secondary contradiction;
-- main aspect;
-- conversion condition;
-- likely consequence of choosing the wrong contradiction.
+- 表面症状
+- 可能误判的矛盾
+- 主要矛盾
+- 次要矛盾
+- 矛盾主要方面
+- 转化条件
+- 如果矛盾判断错，会走向什么错误路线
 
-## Stage Card
+## 阶段卡
 
-Use when deciding whether to protect, build, or attack.
+适用：扩张、撤退、招聘、投资、冲突升级、重大承诺。
 
-Stages:
+阶段：
 
-- 防御期: preserve core resources, avoid irreversible bets.
-- 相持期: build system, train ability, repair short boards.
-- 反攻期: concentrate resources and produce decisive results.
-- 阶段不明: investigate, run probes, avoid major commitment.
+- 防御期：保护核心资源，避免不可逆下注。
+- 相持期：建设系统，证明可重复，补短板。
+- 反攻期：证据和能力支持后，再集中资源突破。
+- 阶段不明：先调查和小试探，不做大承诺。
 
-## Force Map Card
+## 战略战术分离卡
 
-Use for team, organization, cooperation, or interpersonal problems.
+适用：用户急着要行动清单，但战场还没选清楚。
 
-Identify:
+分清：
 
-- real supporters;
-- fake supporters;
-- observers;
-- opponents;
-- key minority;
-- consumption sources;
-- persuadable forces;
-- boundary objects.
+- 战略：选择什么战场。
+- 避战边界：哪些仗不打。
+- 战术：72 小时、7 天、30 天动作。
+- 指标：什么证明路线有效。
 
-## Independent Adviser Card
+没有战略时，不要用更长的战术清单补偿。
 
-Use when the user wants only support, asks for proof of a pre-decided choice, or is avoiding evidence.
+## 力量地图卡
 
-Output:
+适用：团队、组织、合作、人际问题。
 
-- what is reasonable in the user's view;
-- what remains unsupported;
-- what reality may be ignored;
-- the judgment to hold as adviser;
-- the practice that can verify it.
+识别：
 
-## Stop-Loss Card
+- 真支持者
+- 只表态者
+- 观望者
+- 反对者
+- 关键少数
+- 消耗源
+- 可争取力量
+- 需要设边界的人或事
 
-Use for important plans, high-risk action, and long struggles.
+## 独立参谋卡
 
-Define:
+适用：用户只想听支持、已经预设结论、回避证据。
 
-- continue condition;
-- pause condition;
-- stop-loss condition;
-- turn condition;
-- killer metric.
+输出：
 
-## Review Card
+- 用户判断里合理的部分
+- 证据不足或需要保留的部分
+- 可能忽略的现实
+- 作为参谋会坚持的判断
+- 用什么实践验证
 
-Use after a result arrives.
+## 止损卡
 
-Distinguish:
+适用：重要计划、高风险动作、长期拉扯。
 
-- missing facts;
-- route error;
-- execution gap;
-- resource estimate error;
-- external condition change;
-- new principle or counterexample.
+定义：
+
+- 继续条件
+- 暂停条件
+- 止损条件
+- 转向条件
+- 杀手指标
+
+## 复盘卡
+
+适用：结果已经出现、计划失败、原则需要更新。
+
+区分：
+
+- 原判断是什么
+- 实际结果是什么
+- 哪个假设被证伪
+- 是路线错，还是执行弱
+- 新原则是什么
+- 要保留哪个反例
+- 下次什么时候复核

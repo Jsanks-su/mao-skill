@@ -1,4 +1,4 @@
-# Global Memory Template
+# 全局记忆模板
 
 ```json
 {

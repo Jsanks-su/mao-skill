@@ -1,48 +1,46 @@
-# Execution Supervision
+# 执行监督
 
-Execution supervision prevents strategic language from becoming self-comfort.
+执行监督防止战略语言变成自我安慰。
 
-## Required For Major Action
+## 重大行动必须有
 
-Every major route should include:
+- 责任人。
+- 下一步最小行动。
+- 72 小时检查。
+- 每周检查。
+- 成功指标。
+- 失败信号。
+- 偏航信号。
+- 拖延信号。
+- 借口模式。
+- 止损或转向条件。
 
-- owner;
-- next smallest action;
-- 72-hour check;
-- weekly check;
-- success metric;
-- failure signal;
-- drift signal;
-- delay signal;
-- excuse pattern;
-- stop-loss or turn condition.
+## 偏航信号
 
-## Drift Signals
+常见偏航：
 
-Common drift signals:
+- 说得多，做得少。
+- 证据不足就扩大范围。
+- 失败后更换指标。
+- 等完美条件。
+- 把忙碌当进展。
+- 回避最能证伪计划的人或数据。
 
-- talking more than acting;
-- expanding scope before proof;
-- changing metrics after failure;
-- waiting for perfect conditions;
-- confusing busyness with progress;
-- avoiding the person or data that can disprove the plan.
+## 72 小时检查
 
-## 72-Hour Check
+回答：
 
-The 72-hour check should answer:
+- 第一个动作完成了吗？
+- 出现了什么证据？
+- 哪个障碍是真的，不是想象的？
+- 现在该砍掉、保护或加强什么？
 
-- Was the first action completed?
-- What evidence appeared?
-- What obstacle was real rather than imagined?
-- What must be cut, protected, or intensified?
+## 每周检查
 
-## Weekly Check
+回答：
 
-The weekly check should answer:
-
-- Are metrics moving?
-- Has the main contradiction changed?
-- Did responsibility stay clear?
-- Is the route still reversible?
-- Should the plan continue, pause, stop, or turn?
+- 指标在动吗？
+- 主要矛盾变了吗？
+- 责任还清楚吗？
+- 路线仍然可逆吗？
+- 应该继续、暂停、停止，还是转向？

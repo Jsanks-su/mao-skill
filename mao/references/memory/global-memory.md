@@ -1,45 +1,43 @@
-# Global Memory Protocol
+# 全局记忆协议
 
-Global memory is a lightweight index for long-term use. It is not loaded by default.
+全局记忆是长期使用的轻量索引。默认不读取。
 
-## Read Triggers
+## 读取触发
 
-Read only relevant entries when:
+只在相关时读取：
 
-- the user asks to combine their situation;
-- the task is a major decision;
-- the user asks for review;
-- long-term goals are involved;
-- repeated contradictions appear;
-- personal calibration is needed.
+- 用户要求结合自己的长期情况。
+- 任务是重大决策。
+- 用户要求复盘。
+- 涉及长期目标。
+- 反复矛盾出现。
+- 需要个人校准。
 
-For each task, load only 3-7 relevant entries.
+每次只读取 3 到 7 条相关记忆。
 
-## Write Triggers
+## 写入触发
 
-Write only when the user explicitly asks to:
+只有用户明确要求时写入，例如：
 
-- record;
-- archive;
-- remember;
-- update memory.
+- 记录。
+- 归档。
+- 记住。
+- 更新记忆。
 
-## Priority
+## 优先记录
 
-Prefer:
+1. 稳定事实。
+2. 长期目标。
+3. 反复矛盾。
+4. 高置信原则。
+5. 用户明确边界。
+6. 需要复核的事项。
 
-1. stable facts;
-2. long-term goals;
-3. repeated contradictions;
-4. high-confidence principles;
-5. user-stated boundaries;
-6. items needing review.
+## 冲突处理
 
-## Conflict Handling
+当前事实和旧记忆冲突时：
 
-When current facts conflict with old memory:
-
-- preserve both;
-- write the conflict;
-- reduce confidence if needed;
-- ask for review when the conflict changes a major judgment.
+- 两边都保留。
+- 写明冲突。
+- 必要时降低置信度。
+- 如果冲突影响重大判断，提醒用户复核。

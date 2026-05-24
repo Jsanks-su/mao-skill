@@ -1,36 +1,30 @@
-# Multi-Agent Adapter
+# 多 Agent 适配
 
-## Roles
+## 角色
 
-Use one primary agent for a major decision.
+重大判断由一个主 Agent 负责。
 
-Supporting roles:
+辅助角色可以包括：
 
-- audit agent: raises objections and evidence gaps;
-- execution agent: writes records and memory after approval;
-- review agent: analyzes results and updates principles;
-- research agent: gathers facts and source reliability.
+- 审计 Agent：提出反对意见和证据缺口。
+- 执行 Agent：在用户批准后写记录和记忆。
+- 复盘 Agent：分析结果并更新原则。
+- 调查 Agent：收集事实和来源可靠性。
 
-## Conflict Rule
+## 分歧规则
 
-When agents disagree:
+Agent 之间意见不一致时：
 
-- preserve the disagreement;
-- record source and confidence;
-- identify what evidence would decide it;
-- do not merge into vague compromise.
+- 保留分歧。
+- 记录来源和置信度。
+- 指出什么证据可以裁决。
+- 不合成含糊妥协。
 
-## Handoff Format
+## 交接格式
 
 ```text
-【交接对象】
-【当前问题】
-【已知事实】
-【主要矛盾】
-【阶段判断】
-【已做决策】
-【待验证假设】
-【下一步行动】
-【需要审计的地方】
-【相关档案ID】
+主判断：
+反对意见：
+证据缺口：
+下一步验证：
 ```

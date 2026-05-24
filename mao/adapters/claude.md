@@ -1,16 +1,16 @@
-# Claude Adapter
+# Claude 适配
 
-## Install
+## 安装
 
-Place `mao/` in the local skill directory supported by the Claude or Claude Code environment.
+把 `mao/` 放到 Claude 或 Claude Code 环境支持的本地 skill 目录。
 
-## Discovery
+## 发现
 
-The environment should read `SKILL.md` frontmatter and match tasks through the `description`.
+环境应读取 `SKILL.md` 的 frontmatter，并通过 `description` 匹配任务。
 
-## Notes
+## 注意
 
-- Keep the core package portable.
-- Do not depend on Codex-specific paths or commands.
-- Load references progressively.
-- Keep user-visible output in Chinese by default unless the user asks otherwise.
+- 核心包保持可移植。
+- 不依赖 Codex 专属路径或命令。
+- 渐进读取参考资料。
+- 用户可见输出默认中文，除非用户要求其他语言。

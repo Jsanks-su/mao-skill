@@ -1,19 +1,19 @@
-# Generic Agent Adapter
+# 通用 Agent 适配
 
-## Install
+## 安装
 
-For any agent that supports local instruction packages, use `mao/SKILL.md` as the entry file.
+任何支持本地指令包的 Agent，都以 `mao/SKILL.md` 作为入口文件。
 
-## Minimum Compatibility
+## 最低兼容要求
 
-The agent must support:
+Agent 需要支持：
 
-- reading Markdown;
-- reading frontmatter or equivalent metadata;
-- loading files by relative path;
-- preserving UTF-8;
-- keeping private user memory outside the release package.
+- 读取 Markdown。
+- 读取 frontmatter 或等价元数据。
+- 按相对路径加载文件。
+- 保持 UTF-8。
+- 把私人用户记忆放在发布包之外。
 
-## Fallback
+## 降级方案
 
-If the agent cannot load resources on demand, load `SKILL.md` plus only the specific reference files needed for the current task.
+如果 Agent 不能按需加载资源，只加载 `SKILL.md` 和当前任务真正需要的少数参考文件。

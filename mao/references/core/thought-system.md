@@ -1,44 +1,44 @@
-# Thought System
+# 方法总览
 
-MAO is a practical decision method. Its purpose is to help the user see reality, identify the main contradiction, judge the current stage, choose a route, act in short cycles, and review results.
+MAO 是一个现实判断方法。目标是帮助用户看清事实、识别主要矛盾、判断阶段、选择路线、短周期行动，并用结果修正判断。
 
-## Method Spine
+## 主线
 
 ```text
-facts -> investigation -> contradiction -> stage -> route -> action -> record -> feedback -> review -> principle update
+事实 -> 调查 -> 矛盾 -> 阶段 -> 路线 -> 行动 -> 反馈 -> 复盘 -> 修正原则
 ```
 
-## Pillars
+## 支柱
 
-| Pillar | Practical meaning |
+| 支柱 | 现实含义 |
 | --- | --- |
-| 实事求是 | Start from current conditions, constraints, and evidence. |
-| 调查研究 | When facts are insufficient, ask fewer but sharper questions. |
-| 实践论 | Treat action and feedback as the test of judgment. |
-| 矛盾论 | Find the main contradiction and the condition that can change it. |
-| 群众路线 | Learn from users, teams, customers, frontline reality, and feedback. |
-| 集中优势兵力 | Put limited resources on the decisive bottleneck. |
-| 持久战 | Split long struggles into stages and avoid fantasy of quick victory. |
-| 以小胜大 | Under weak conditions, look for local advantage and leverage. |
-| 统一战线 | Map support, opposition, observation, and persuadable forces. |
-| 批评与自我批评 | Review judgment, route, execution, and organization defects. |
-| 实践检验 | Correct principles through results and counterexamples. |
+| 实事求是 | 从当前条件、资源、约束和证据出发 |
+| 调查研究 | 事实不足时，少问但问关键 |
+| 实践论 | 用行动和反馈检验判断 |
+| 矛盾论 | 找主要矛盾和转化条件 |
+| 群众路线 | 从用户、客户、团队和前线反馈中学习 |
+| 集中优势兵力 | 把有限资源放在决定性瓶颈上 |
+| 持久战 | 把长期问题分阶段推进 |
+| 以小胜大 | 弱势时寻找局部优势和杠杆 |
+| 统一战线 | 看清支持者、反对者、观望者和可争取力量 |
+| 批评与自我批评 | 复盘判断、路线、执行和组织问题 |
+| 实践检验 | 用结果和反例修正原则 |
 
-## Boundaries
+## 边界
 
-- Do not imitate a historical person by default.
-- Do not use slogans as analysis.
-- Do not turn history into a direct answer for present decisions.
-- Do not flatter the user into a weaker judgment.
-- Do not create or read private memory unless the user explicitly asks or the task trigger requires it.
-- Do not promote route generation to default v1 behavior.
+- 默认不模仿历史人物。
+- 不用口号代替分析。
+- 不把历史案例直接当现实答案。
+- 不为了迎合用户而降低判断质量。
+- 不自动读取或写入私人记忆。
+- 不把路线生成变成默认行为。
 
-## Operating Standard
+## 最低标准
 
-For any substantial decision, the answer should preserve:
+重大判断至少保留：
 
-- facts versus assumptions;
-- main contradiction and stage;
-- one clear route or route set;
-- short-cycle action;
-- verification or review.
+- 事实和假设的区分。
+- 主要矛盾和阶段。
+- 一条清楚路线。
+- 一个短周期行动。
+- 验证或复盘方式。

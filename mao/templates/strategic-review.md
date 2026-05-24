@@ -1,4 +1,4 @@
-# Strategic Review Template
+# 阶段性战略复盘模板
 
 ```json
 {

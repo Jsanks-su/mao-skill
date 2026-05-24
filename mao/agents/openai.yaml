@@ -1,66 +1,66 @@
 name: "mao"
-description: "Opt-in MAO mode for in-scope real-world decision analysis after explicit single-turn or session activation."
+description: "面向创业者、经营者和团队负责人的中文 MAO 方法提醒，用于创业方向、产品增长、资源取舍、组织管理、竞争策略、重大风险和复盘问题。"
 entry: "SKILL.md"
 language: "zh-CN"
 interface:
   display_name: "MAO"
-  short_description: "Explicitly activated MAO decision mode"
-  default_prompt: "Use $mao only after explicit mao-mode/mao-skill activation. While session mode is active, apply it only to in-scope decision, strategy, review, organization, risk, historical-transfer, or self-calibration tasks."
+  short_description: "创业方向方法论提醒"
+  default_prompt: "在创业、经营、产品增长、组织管理、竞争策略、资源取舍、现金流、重大风险和复盘问题中，轻量使用 $mao 的方法论提醒。不要求用户写 @mao。不要把它当全局人格；普通代码、写作、查询、格式化、安装任务不要套 MAO。"
 policy:
-  allow_implicit_invocation: false
-  session_scope_boundary:
+  allow_implicit_invocation: true
+  implicit_domains:
+    - "创业方向"
+    - "产品增长"
+    - "资源取舍"
+    - "现金流风险"
+    - "组织管理"
+    - "竞争策略"
+    - "重大决策复盘"
+    - "创业者方向判断"
+  scope_boundary:
     apply_to:
-      - "decision"
-      - "strategy"
-      - "review"
-      - "organization"
-      - "risk"
-      - "historical_transfer"
-      - "self_calibration"
-      - "strategic_language"
-      - "memory_boundary"
+      - "创业者和经营者的方向判断"
+      - "产品、增长、团队、现金流、竞争、资源和复盘问题"
+      - "同一个已经开始的 MAO 分析问题"
+      - "用户明确要求的独立参谋、历史迁移或方法论分析"
     do_not_apply_to:
-      - "unrelated_coding_fix"
-      - "file_edit"
-      - "factual_lookup"
-      - "formatting"
-      - "installation"
-      - "mechanical_transformation"
-      - "ordinary_writing"
-  routing_priority:
-    - "exit_instructions"
-    - "safety_and_identity_boundaries"
-    - "active_session_scope_boundary"
-    - "user_tone_length_format_requests"
-    - "output_mode_selection"
-  activation_scopes:
-    single_turn:
-      examples:
-        - "@mao"
-        - "这次用 mao skill 分析一下"
-        - "用 mao skill 看这一题"
-    session:
-      examples:
-        - "进入 mao 模式"
-        - "启动 mao 模式"
-        - "启用 mao"
-        - "使用 mao 模式"
-    deep_campaign:
-      examples:
-        - "进入 mao 深度模式"
-    independent_counselor:
-      examples:
-        - "进入独立参谋模式"
-    exit:
-      examples:
-        - "退出 mao 模式"
-        - "停用 mao"
-        - "回到普通模式"
-platform_notes:
-  - "Core content is platform neutral."
-  - "OpenAI and Codex metadata do not change the cross-agent design."
+      - "无关代码修复"
+      - "文件编辑"
+      - "事实查询"
+      - "格式化"
+      - "安装"
+      - "机械转换"
+      - "普通写作"
+      - "纯历史百科"
+      - "普通闲聊"
+  priority:
+    - "用户明确结束 MAO 跟进"
+    - "安全和身份边界"
+    - "创业方向范围边界"
+    - "当前问题边界"
+    - "用户语气长度格式要求"
+    - "最轻可用回答方式"
+  invocation_examples:
+    implicit:
+      - "我公司现金流紧张，要不要扩张？"
+      - "小团队怎么打赢大公司？"
+      - "产品增长慢，是不是销售不够努力？"
+      - "AI agent demo 很惊艳但用户不用第二次"
+    explicit:
+      - "@mao"
+      - "这次用 mao skill 分析一下"
+      - "用 MAO 框架看这个问题"
+    same_problem_followup:
+      - "这个问题后面继续按 mao 看"
+      - "继续上面的 MAO 分析"
+    compatibility:
+      - "进入 mao 模式"
+      - "启动 mao 模式"
+      - "退出 mao 模式"
 resources:
   - "references/core/thought-system.md"
+  - "references/core/cognitive-architecture.md"
+  - "references/core/decision-engine.md"
   - "references/core/method-cards.md"
   - "references/core/trigger-router.md"
   - "references/core/output-modes.md"
@@ -69,6 +69,7 @@ resources:
   - "references/application/modern-application.md"
   - "references/application/modern-card-schema.md"
   - "references/application/modern-case-cards.md"
+  - "references/application/ai-startup-case-cards.md"
   - "references/application/weak-to-strong-strategy.md"
   - "references/application/strategic-language.md"
   - "references/application/practice-loop.md"

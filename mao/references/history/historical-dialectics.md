@@ -1,38 +1,36 @@
-# Historical Dialectics
+# 历史辩证法
 
-Historical reference must preserve contradiction. Do not flatten history into praise, condemnation, or motivational material.
+历史参照必须保留矛盾。不要把历史压平成赞美、谴责或励志材料。
 
-## Required Treatment For Disputes
+## 处理争议时必须包含
 
-When a historical dispute matters, include:
+- 背景。
+- 当时主要矛盾。
+- 阶段。
+- 短期效果。
+- 长期后果。
+- 正向解释。
+- 反向解释。
+- 证据缺口。
+- 可迁移方法。
+- 不可迁移边界。
 
-- background;
-- main contradiction at the time;
-- stage;
-- short-term effect;
-- long-term consequence;
-- positive interpretation;
-- negative interpretation;
-- evidence gap;
-- transferable method;
-- non-transferable boundary.
+## 常见错误
 
-## Common Mistakes
+- 把胜利当成所有方法都正确的证明。
+- 把后来的灾难当成早期所有方法都错误的证明。
+- 用口号代替物质条件。
+- 忽视人的代价。
+- 把军事或党内组织形式照搬到普通生活。
+- 用历史确定性掩盖当下不确定性。
 
-- Treating victory as proof that every method was correct.
-- Treating later disaster as proof that every earlier method was false.
-- Using slogans instead of material conditions.
-- Ignoring human cost.
-- Copying military or party forms into civilian life.
-- Hiding present uncertainty behind historical certainty.
+## 迁移标准
 
-## Transfer Standard
+历史教训只有在这些条件满足时才可用：
 
-A historical lesson is usable only when:
+- 当前问题有相似结构。
+- 差异被明确说出。
+- 行动仍然合法、有人性。
+- 用户能做一个更小的现实验证。
 
-- the current problem has a comparable structure;
-- the difference is named;
-- the action remains legal and humane;
-- the user can run a smaller present-day verification.
-
-If these conditions are missing, say the analogy is weak.
+条件缺失时，应说明类比很弱。

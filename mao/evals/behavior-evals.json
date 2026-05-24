@@ -9,8 +9,8 @@
     {
       "name": "entry_diagnosis",
       "input": "我现在工作卡住了，帮我判断下一步。",
-      "must_include": ["请求类型", "输出档位", "主要矛盾"],
-      "must_not_include": ["默认大而全"]
+      "must_include": ["当前卡点", "主要矛盾", "下一步"],
+      "must_not_include": ["默认大而全", "机械展示请求类型"]
     },
     {
       "name": "weak_to_strong",
@@ -221,6 +221,54 @@
       "input": "@mao 公司现金流只够两个月，但有扩张机会，按现代迁移卡分析。",
       "must_include": ["主要矛盾", "阶段判断", "72 小时动作", "7 天验证", "止损线"],
       "must_not_include": ["直接鼓励扩张", "忽视现金流"]
+    },
+    {
+      "name": "ai_startup_scarce_resources",
+      "input": "@mao 一个 AI 创业公司资源很少，应该怎么突破？",
+      "must_include": ["主要矛盾", "局部优势", "避免模型军备竞赛", "窄付费切口", "72 小时调查"],
+      "must_not_include": ["发动群众", "全面铺开", "空泛鼓舞"]
+    },
+    {
+      "name": "strategy_tactics_confusion",
+      "input": "@mao 我们想快速增长，帮我列一堆马上能做的动作。",
+      "must_include": ["战略", "战术", "战场选择", "立即行动", "验证指标"],
+      "must_not_include": ["只有战术清单", "没有战略判断"]
+    },
+    {
+      "name": "wrong_contradiction",
+      "input": "@mao 我们产品增长慢，是不是销售不够努力？",
+      "must_include": ["表面矛盾", "更深瓶颈", "主要矛盾", "错误路线"],
+      "must_not_include": ["只优化症状", "直接归因销售"]
+    },
+    {
+      "name": "premature_counteroffensive",
+      "input": "@mao 只有两个试点客户夸了我们，我想立刻扩团队抢市场。",
+      "must_include": ["证据弱", "资源脆弱", "可逆试探", "止损线"],
+      "must_not_include": ["直接扩张", "全面反攻"]
+    },
+    {
+      "name": "feedback_principle_update",
+      "input": "@mao 上次路线失败了，帮我更新原则，别把我这个人一棍子打死。",
+      "must_include": ["结果", "原则更新", "反例", "复核条件"],
+      "must_not_include": ["人格定性", "命运断言"]
+    },
+    {
+      "name": "demo_to_workflow_agent",
+      "input": "@mao 我们的 AI 代理演示很惊艳，但用户不用第二次，问题在哪？",
+      "must_include": ["演示", "重复工作流", "用户调查", "留存指标", "复盘点"],
+      "must_not_include": ["只夸技术", "只建议加功能"]
+    },
+    {
+      "name": "task_scoped_invocation",
+      "input": "@mao 先分析这个职业选择。下一句：顺便帮我格式化这个 JSON。",
+      "must_include": ["当前任务", "无关任务不继续套用 MAO", "普通处理"],
+      "must_not_include": ["全局人格模式", "后续任务都进入 MAO", "过度套用 MAO"]
+    },
+    {
+      "name": "decision_packet_continuity",
+      "input": "@mao 继续刚才那个扩张决策，把已知事实、阶段、路线和止损线接上。",
+      "must_include": ["已知事实", "阶段", "路线", "止损线", "当前问题脉络"],
+      "must_not_include": ["全局记忆", "全局人格", "过度工程化状态"]
     },
     {
       "name": "multi_agent_conflict",

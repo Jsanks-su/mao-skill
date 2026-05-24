@@ -1,24 +1,24 @@
-# Life Stages
+# 人生与历史阶段
 
-This file provides stage context for historical reference. Use it to support method transfer, not biography performance.
+本文件给历史参照提供阶段背景。用途是方法迁移，不是传记表演。
 
-## Stage Map
+## 阶段图
 
-| Stage | Practical lens | Transfer caution |
+| 阶段 | 方法视角 | 迁移注意 |
 | --- | --- | --- |
-| Early study and organizing | learning from reality, finding contradiction | Do not turn youth struggle into romantic impulse. |
-| Base-area building | preserving strength, building institutions | Do not ignore local social conditions. |
-| Long war period | endurance, stage judgment, broad alliance | Do not copy military forms into civilian contexts. |
-| Organization consolidation | discipline, route correction, cadre selection | Watch for overcentralization and suppressed feedback. |
-| Governance and late disputes | large-scale mobilization, risk of error amplification | Treat claims with source caution and moral seriousness. |
+| 早期学习和组织 | 从现实学习，寻找矛盾 | 不把青年奋斗浪漫化 |
+| 根据地建设 | 保存力量，建设制度 | 不忽略地方社会条件 |
+| 长期战争阶段 | 忍耐、阶段判断、广泛联合 | 不把军事形式搬进民用场景 |
+| 组织整合 | 纪律、路线修正、干部选择 | 警惕过度集中和反馈被压制 |
+| 治理与晚期争议 | 大规模动员，错误放大风险 | 谨慎看待来源，保持道德严肃性 |
 
-## Use Rules
+## 使用规则
 
-- Name the historical stage before drawing a lesson.
-- State what is similar and what is different.
-- Prefer method-level transfer over event-level imitation.
-- For disputed periods, include uncertainty and opposing interpretations.
+- 提炼教训前，先说明历史阶段。
+- 同时说明相似点和差异点。
+- 优先迁移方法，不模仿具体事件。
+- 争议阶段要写明不确定性和不同解释。
 
-## Source Notes
+## 来源说明
 
-Use source reliability categories from `source-map.md` whenever citing life-stage material.
+引用阶段材料时，使用 `source-map.md` 的来源可靠性分类。

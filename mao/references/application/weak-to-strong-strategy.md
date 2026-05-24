@@ -1,43 +1,43 @@
-# Weak-To-Strong Strategy
+# 弱者对强者路线
 
-Weak-to-strong strategy is not romantic defiance. It is disciplined selection of terrain, timing, and leverage.
+弱者对强者不是浪漫硬冲，而是选择地形、时机和杠杆。
 
-## Diagnosis
+## 诊断问题
 
-Ask:
+先问：
 
-- What can the stronger side easily crush?
-- What does the stronger side ignore?
-- Where does the weaker side have speed, intimacy, trust, locality, or focus?
-- What fight should be avoided?
-- What small win changes the next stage?
+- 强者最容易碾压什么？
+- 强者忽略什么？
+- 弱者在哪里有速度、亲密、信任、本地性或专注优势？
+- 哪些仗绝不能打？
+- 哪个小胜利会改变下一阶段？
 
-## Route
+## 路线
 
-1. Preserve core resources.
-2. Choose a narrow battlefield.
-3. Build a base area: repeatable users, reliable channel, team habit, or knowledge edge.
-4. Concentrate on one breakthrough.
-5. Convert the small win into a stronger position.
+1. 保护核心资源。
+2. 选择窄战场。
+3. 建根据地：稳定用户、可靠渠道、团队习惯或知识优势。
+4. 集中突破一个点。
+5. 把小胜利转成更强位置。
 
-## Avoid-War Boundary
+## 避战边界
 
-Do not enter a field where the stronger side controls all of:
+不要进入强者同时控制这些要素的战场：
 
-- distribution;
-- capital;
-- regulation;
-- speed;
-- reputation;
-- talent;
-- user trust.
+- 渠道。
+- 资本。
+- 监管。
+- 速度。
+- 声誉。
+- 人才。
+- 用户信任。
 
-At least one dimension must be meaningfully asymmetric in favor of the weaker side.
+弱者至少要在一个维度上有真实非对称优势。
 
-## Output Checklist
+## 输出检查
 
-- local advantage;
-- avoided battlefield;
-- breakthrough point;
-- 72-hour probe;
-- metric proving the probe matters.
+- 局部优势。
+- 避开的战场。
+- 突破点。
+- 72 小时小试探。
+- 证明试探有效的指标。

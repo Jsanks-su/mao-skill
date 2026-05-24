@@ -1,16 +1,14 @@
 # 资料质量闸门
 
-本文件用于检查 MAO 的历史案例、现代迁移案例和资料引用是否合格。它补充 `quality-gates.md`，专门处理资料库质量。
-
-English anchors for cross-agent search: Historical Case Gate, Modern Transfer Gate, Rejection Gate, non-transferable boundary.
+本文件用于检查历史案例、现代迁移案例和资料引用是否合格。
 
 ## 历史案例闸门
 
-每个历史案例必须回答：
+每个历史案例要尽量回答：
 
 ```text
-有没有来源等级？
-有没有争议程度？
+来源等级是什么？
+争议程度如何？
 能证明什么？
 不能证明什么？
 主要矛盾是什么？
@@ -22,11 +20,11 @@ English anchors for cross-agent search: Historical Case Gate, Modern Transfer Ga
 能否落到现代行动？
 ```
 
-如果上述问题缺失三项以上，不能作为成熟案例卡，只能作为种子材料。
+如果缺失三项以上，只能当作种子材料，不要当成熟案例卡。
 
 ## 现代迁移闸门
 
-每个现代迁移案例必须回答：
+每个现代迁移案例要回答：
 
 ```text
 现代场景是否清楚？
@@ -37,14 +35,14 @@ English anchors for cross-agent search: Historical Case Gate, Modern Transfer Ga
 72 小时动作是否可执行？
 7 天验证是否可检查？
 止损线是否明确？
-复盘问题是否能帮助纠偏？
+复盘问题是否能纠偏？
 ```
 
-如果没有可执行动作和验证指标，不能作为行动建议，只能作为思路草案。
+没有行动和验证指标的案例，只能当思路草案。
 
 ## 来源闸门
 
-涉及历史、人物血肉和案例引用时，必须标注：
+涉及历史、人物质感和案例引用时，要标注：
 
 ```text
 来源类型：
@@ -59,7 +57,7 @@ English anchors for cross-agent search: Historical Case Gate, Modern Transfer Ga
 
 ## 迁移闸门
 
-每次历史迁移必须输出或内部确认：
+历史迁移必须确认：
 
 ```text
 相似点：

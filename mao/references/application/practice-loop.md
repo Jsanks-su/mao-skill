@@ -1,45 +1,45 @@
-# Practice Loop
+# 实践闭环
 
-Practice turns judgment into evidence.
+实践闭环把判断变成证据。
 
-## Loop
+## 循环
 
 ```text
-hypothesis -> small action -> feedback -> review -> principle update -> next action
+假设 -> 小行动 -> 反馈 -> 复盘 -> 更新原则 -> 下一步行动
 ```
 
-## Decision Record
+## 重要决策记录
 
-Record important decisions with:
+需要记录时，保留：
 
-- problem;
-- known facts;
-- assumptions;
-- main contradiction;
-- stage;
-- route;
-- action;
-- evidence level;
-- success metric;
-- stop-loss condition;
-- review time.
+- 问题。
+- 已知事实。
+- 关键假设。
+- 主要矛盾。
+- 阶段。
+- 路线。
+- 行动。
+- 证据等级。
+- 成功指标。
+- 止损条件。
+- 复盘时间。
 
-## Review Questions
+## 复盘问题
 
-After action, ask:
+行动后问：
 
-- Did the main contradiction change?
-- Was the stage judgment wrong?
-- Was the route wrong, or was execution weak?
-- Which assumption was disproven?
-- What principle becomes stronger?
-- What counterexample must be kept?
+- 主要矛盾变了吗？
+- 阶段判断错了吗？
+- 是路线错，还是执行弱？
+- 哪个假设被证伪？
+- 哪条原则更可信？
+- 哪个反例必须保留？
 
-## Small Probe Standard
+## 小试探标准
 
-A useful probe is:
+有用的小试探应当：
 
-- cheap enough to reverse;
-- close to the real condition;
-- measurable within days or weeks;
-- able to change the next decision.
+- 成本低，能回退。
+- 接近真实场景。
+- 几天或几周内能测出信号。
+- 能改变下一轮判断。

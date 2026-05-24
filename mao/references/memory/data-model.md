@@ -1,41 +1,41 @@
-# Memory Data Model
+# 记忆数据模型
 
-This model defines a portable envelope for structured memory records. It does not create private user memory by itself.
+本文件定义结构化记忆记录的通用外壳。它本身不会创建私人记忆。
 
-## Envelope
+## 外壳
 
-All structured records use:
+结构化记录使用统一字段。字段名可以保留英文，方便跨工具处理；解释必须用中文。
 
 ```json
 {
-  "entry_id": "string",
-  "entry_type": "fact|decision|review|principle|counterexample|contradiction|stage|case|global-memory|long-term-thread",
-  "source_agent": "string",
-  "source_platform": "string",
-  "operator_agent": "string",
-  "created_at": "YYYY-MM-DD",
-  "updated_at": "YYYY-MM-DD",
+  "entry_id": "记录编号",
+  "entry_type": "记录类型",
+  "source_agent": "来源 agent",
+  "source_platform": "来源平台",
+  "operator_agent": "写入 agent",
+  "created_at": "创建日期",
+  "updated_at": "更新日期",
   "confidence": 0.75,
-  "scope": "session|project|user-approved-long-term",
+  "scope": "会话/项目/用户批准的长期记忆",
   "evidence": [
     {
-      "type": "first-hand|second-hand|inference|analogy|historical-analogy",
-      "source": "string",
-      "note": "string"
+      "type": "一手事实/二手转述/推断/类比/历史类比",
+      "source": "来源",
+      "note": "说明"
     }
   ],
   "content": {},
   "conflicts": [],
-  "status": "active|deprecated|needs-review"
+  "status": "有效/已过时/需要复核"
 }
 ```
 
-Business fields belong inside `content`.
+业务字段放在 `content` 里。
 
-## Rules
+## 规则
 
-- Separate facts, observations, and inferences.
-- Mark source, time, confidence, and review condition.
-- Write conflicts instead of overwriting.
-- Lower confidence or mark deprecated when evidence changes.
-- Do not store private memory unless the user explicitly asks.
+- 区分事实、观察和推断。
+- 标注来源、时间、置信度和复核条件。
+- 有冲突就记录冲突，不直接覆盖。
+- 证据变化时降低置信度或标记过时。
+- 用户没有明确要求时，不存私人记忆。

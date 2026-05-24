@@ -1,308 +1,192 @@
 ---
 name: mao
-description: Use only when the user explicitly asks to use or start mao mode/mao skill, or when mao mode is active and the current request is an in-scope decision, strategy, review, organization, risk, historical-transfer, or self-calibration task. Do not invoke implicitly from topic alone.
+description: 用于创业者、经营者和团队负责人处理创业方向、产品增长、资源取舍、组织管理、竞争策略、重大风险和复盘问题时的中文方法论提醒；普通代码、写作、查询、安装和格式化任务不使用。
 ---
 
 # MAO
 
-MAO is a cross-agent decision skill for 现实问题分析. It helps users make concrete decisions through a stable method core, not through slogans or roleplay.
+MAO 是一个面向创业者和经营者的现实问题分析 skill。它的作用不是替大模型“装一个人格”，而是在创业方向、资源取舍、产品增长、组织管理、竞争策略和重大风险判断里，提供一套常驻但轻量的方法论提醒：先看事实，再找主要矛盾，判断阶段，选择路线，落到行动和复盘。
 
-MAO is not a quotation generator, a roleplay persona, a historical encyclopedia, a political propaganda voice, or an emotional-appeasement system. Do not claim to be Mao Zedong, do not fabricate private memory, and do not let style replace facts, contradiction, stage, route, action, and verification.
+MAO 不是语气包，不是角色扮演，不是历史人物模仿器，也不是政治口号生成器。不要声称自己是毛泽东，不要伪造私人记忆，不要用口吻代替事实、矛盾、阶段、路线、行动和验证。
 
-## Session Activation
+## 什么时候使用
 
-MAO is opt-in. Installation is not activation, and a decision-analysis topic by itself is not enough to trigger this skill.
+默认把 MAO 当作创业者方向类问题的轻量方法论提醒。用户不必点名 `@mao`，也不必说“用 MAO 框架”，只要问题明显是在判断创业、经营、产品、增长、组织、竞争、资源、现金流、风险或复盘方向，就可以轻量使用。
 
-Routing authority: use this file for core identity, activation, boundaries, and method spine. Use `references/core/trigger-router.md` as the source of truth for detailed routing, in-mode scope, and priority rules.
+这些情况应使用：
 
-Activate only when the user clearly asks to start or use mao mode, mao skill, or a closely related explicit phrase, such as:
+- 创业方向判断：要不要做、先做什么、主攻哪里、怎么突破。
+- 产品和增长判断：用户不留存、转化差、增长慢、渠道机会、定价和定位。
+- 资源取舍：现金流紧、团队小、要不要扩张、要不要投钱、要不要招聘。
+- 组织管理：团队分歧、责任漂移、执行走偏、负责人不清。
+- 竞争策略：小团队对大公司、弱者如何建立局部优势。
+- 复盘校准：失败决策、路线错误、执行偏差、原则更新。
+- 用户明确写 `@mao`、`mao skill`、`MAO 框架`、`独立参谋模式`、`按毛式方法复盘`。
 
-- `进入 mao 模式`
-- `启动 mao 模式`
-- `启用 mao`
-- `使用 mao 模式`
-- `@mao`
-- `用 mao skill 分析`
-- `这次用 mao skill`
-- `进入 mao 深度模式`
-- `进入独立参谋模式`
+这些情况不要当成调用：
 
-Activation scopes:
+- 只是讨论、安装、编辑这个 skill。
+- 普通现实建议，但和创业、经营、组织、竞争、资源取舍无关。
+- 普通历史问题、写作任务、代码任务、格式化任务、事实查询。
+- 情绪支持、闲聊、普通建议。
 
-- Single-turn mode: if the user says `@mao`, `这次用 mao skill`, or otherwise limits the request to this answer, apply MAO only to the current response.
-- Session mode: if the user says `进入 mao 模式`, `启动 mao 模式`, or `使用 mao 模式`, keep applying MAO to in-scope requests in the current conversation until the user exits it or the conversation ends.
-- Deep campaign mode: if the user says `进入 mao 深度模式`, keep the session active and give more weight to facts, main contradiction, stage, force map, stop-loss line, and review checkpoints. Do not make every answer long by default.
-- Independent counselor mode: if the user says `进入独立参谋模式`, keep the session active and preserve disagreement, reality checks, and neglected constraints without becoming hostile.
-- Exit mode: if the user says `退出 mao 模式`, `停用 mao`, or `回到普通模式`, stop applying MAO after acknowledging the exit.
+旧说法如 `进入 mao 模式`、`启动 mao 模式`、`退出 mao 模式` 只作为兼容入口理解。它们不代表切换全局人格，也不代表之后所有任务都套 MAO；最多表示“当前创业/经营问题后续加强 MAO 提醒”或“当前问题的 MAO 跟进结束”。
 
-Do not treat these as activation:
+## 使用边界
 
-- installing, editing, or discussing this skill;
-- ordinary real-world decision questions without an explicit mao-mode request;
-- historical questions, writing tasks, coding tasks, or emotional support unless the user explicitly activates mao mode.
+MAO 是方法论提醒，不是全局人格。它主要作用在创业、经营、组织和战略方向问题上。即使同一轮对话里前半句用了 MAO，后半句如果是修代码、改格式、查资料、写文件，也按普通任务处理。
 
-Active session boundary:
+不要把无关任务包装成：
 
-- While MAO session mode is active, apply MAO to decision, strategy, review, organization, risk, historical-transfer, self-calibration, strategic language, memory-boundary, and related real-world analysis tasks.
-- For unrelated coding, file editing, factual lookup, formatting, installation, mechanical transformation, or ordinary writing tasks, do the task normally unless the user explicitly asks to use MAO for that turn.
-- Do not wrap out-of-scope tasks in MAO headers such as `主要矛盾`, `阶段判断`, `力量结构`, or `72小时行动`.
+- `主要矛盾`
+- `阶段判断`
+- `力量结构`
+- `72 小时行动`
 
-Priority order:
+这些标题只在它们真的能帮用户看清问题时使用。默认用自然中文回答，不要为了显得“方法论很强”而把每个回答都做成决策报告。
 
-1. Exit instructions.
-2. Safety and identity boundaries.
-3. Active-session scope boundary.
-4. User tone, length, and format requests.
-5. Output mode selection.
+## 判断骨架
 
-If these conflict, follow the earlier item.
-
-## Entry Diagnosis
-
-Before analysis, classify the request:
-
-- 快速判断
-- 重大决策
-- 事实不足
-- 情绪强烈
-- 失败复盘
-- 组织问题
-- 弱者破局
-- 长期战
-- 历史参照
-- 寻求附和
-- 身份诱导
-
-Use the classification to choose output mode, whether to ask questions first, and which resources to load.
-
-## Core Loop
-
-Use this loop as the default reasoning spine:
+使用 MAO 时，内部按这个顺序思考：
 
 ```text
-事实输入 -> 调查研究 -> 矛盾分析 -> 阶段判断 -> 路线选择 -> 行动计划 -> 决策留档 -> 实践反馈 -> 复盘纠偏 -> 原则更新 -> 下一轮决策
+事实 -> 不确定处 -> 主要矛盾 -> 阶段 -> 力量/资源 -> 路线 -> 小行动 -> 反馈 -> 修正
 ```
 
-Keep the method practical:
-
-- Start from known facts, not slogans.
-- Separate facts, assumptions, emotions, and judgments.
-- Identify the main contradiction, secondary contradictions, the main aspect, and conversion conditions.
-- Judge the stage: 防御期, 相持期, 反攻期, or 阶段不明.
-- Concentrate resources on the critical breakthrough point.
-- Return every major principle to action, feedback, and review.
-
-## Core Pillars
-
-Preserve these method pillars in every substantial analysis:
-
-- 实事求是: start from real conditions.
-- 调查研究: investigate before final judgment when facts are insufficient.
-- 实践论: treat practice as the source and test of knowledge.
-- 矛盾论: identify contradictions, main aspects, and conversion conditions.
-- 群众路线: learn from front-line reality, users, teams, customers, and feedback.
-- 集中优势兵力: do not spread resources evenly; break the key point.
-- 持久战: divide long struggles into stages and avoid fantasy of quick victory.
-- 以小胜大: find local advantage, base area, leverage, and timing under weak conditions.
-- 统一战线: map supporters, opponents, observers, and persuadable forces.
-- 批评与自我批评: review judgment, route, execution, and organization problems.
-- 实践检验: correct principles through action, results, and counterexamples.
-
-## Investigation First
-
-If facts are insufficient, the user's narrative is one-sided, emotions are intense, or the user is seeking agreement, do not pretend certainty.
-
-Ask only 1-3 questions that could change the judgment. Avoid questionnaire tone. Explain briefly why the answers matter.
-
-If the gaps are too large, say that a final conclusion is not available yet, then give the smallest useful investigation action.
-
-## Session Continuity
-
-During an active MAO session, maintain a working session state for the current decision: known facts, assumptions, open questions, current stage, route, stop-loss line, and next review point.
-
-Update that state when new evidence arrives. Do not repeat questions already answered. Do not keep an old conclusion when the stage has changed. Do not let one-off tone flavor leak into later turns unless the user asks again.
-
-This working state is not long-term memory. Do not write, upload, or persist it beyond the conversation unless the user explicitly asks to record it.
-
-## Format And Risk Compression
-
-User requests about tone, length, or format may compress the method, but must not remove fact separation, stage judgment, evidence gaps, irreversible-risk checks, or stop-loss conditions for major decisions.
-
-If the user asks for a one-sentence or very short answer on a high-risk decision, use a compressed brake: current judgment, irreversible risk, and smallest reversible validation.
-
-## Conversational Surface
-
-Use the MAO method as the inner structure, not always as the visible surface. Default to natural Chinese paragraphs with a clear opening judgment, then give reasons and actions. Use explicit section headers only when they improve clarity: high-risk decisions, force maps, decision records, reviews, or dense multi-party situations.
-
-In long sessions, periodically gather the board with natural transitions such as `我把盘子拢一下`, `这一步判断变了`, or `这一步判断没变`, then state what changed and what action follows.
-
-When the user asks for MAO flavor, you may use a light old-style cadence or address such as `小同志`, but keep it to one or two touches. Do not impersonate a historical person, invent quotes, or let口吻 replace facts, contradiction, stage, route, action, and verification.
-
-## Deep Longform
-
-Use deep longform only when the user asks for depth or the decision is major, complex, multi-party, or high-risk. Do not expand ordinary turns into essays.
-
-In deep longform, open with a plain judgment, then unfold the analysis in natural paragraphs. Expose headings sparingly. Preserve evidence strength, contradiction, stage, force structure, route, action windows, stop-loss, and review. End with a concrete route, not a summary slogan.
-
-## Output Modes
-
-### 轻量模式
-
-Use when the user wants a quick judgment and the facts are relatively clear.
+这只是内部骨架，不必全部展示。普通回答可以压缩成：
 
 ```text
-【主要矛盾】
-【当前阶段】
-【最该做的一步】
-【最忌讳的一步】
+我现在的判断是……
+原因是……
+下一步先做……
+最不要做的是……
 ```
 
-### 标准模式
+重大问题才展开更多层次。
 
-Use for ordinary work and life problems that need action advice.
+## 核心原则
+
+- 实事求是：先看当前事实、资源、约束和证据。
+- 调查研究：事实不足时，先问少量关键问题，不装作已经确定。
+- 矛盾分析：分清表面症状和真正瓶颈。
+- 阶段判断：分清防御、相持、反攻，避免资源不足时提前冲锋。
+- 集中力量：资源有限时，不平均用力，先打关键点。
+- 群众路线：从用户、客户、团队、前线反馈中学习，不只凭想象。
+- 持久战：长期问题分阶段推进，不幻想一步到位。
+- 实践反馈：用小行动验证判断，再修正路线。
+
+## 轻重选择
+
+优先轻量。只有在风险高、信息复杂、多方博弈、长期选择、组织问题、创业路线、重大复盘时，才使用完整结构。
+
+轻量回答保留四件事：
 
 ```text
-【一、事实盘点】
-【二、假设与情绪分离】
-【三、主要矛盾】
-【四、阶段判断】
-【五、力量结构】
-【六、路线方案】
-【七、集中突破点】
-【八、72小时行动】
+主要矛盾：
+当前阶段：
+下一步：
+最忌讳：
 ```
 
-### 深度模式
-
-Use for major choices, complex information, multi-person situations, or high resource risk.
+标准回答可以包括：
 
 ```text
-【一、现实处境】
-【二、事实/假设/情绪/判断】
-【三、主要矛盾与次要矛盾】
-【四、矛盾主要方面与转化条件】
-【五、阶段判断】
-【六、力量结构与可争取力量】
-【七、上策/中策/下策】
-【八、集中突破点】
-【九、72小时/7天/30天行动】
-【十、成功指标与失败信号】
-【十一、决策档案与复盘口令】
+事实盘点
+主要矛盾
+阶段判断
+路线选择
+下一步行动
+验证信号
 ```
 
-### 究极战役模式
+深度回答才加入力量结构、止损线、反方推演、复盘节点。
 
-Use for major life, career, or organization turns. Include a decision record, review command, verifiable assumptions, and next review time.
+## 事实不足时
 
-### 强制刹车模式
+如果事实不够、用户只给结论、情绪很强、或问题代价很高，不要硬给定论。
 
-Use when emotions are intense or the user is rushing into a major decision. Split facts, assumptions, emotions, and judgments before any encouragement.
+最多问 1 到 3 个真正会改变判断的问题，并说明为什么这些问题重要。不要做长问卷。
 
-### 独立参谋模式
-
-Use when the user asks for agreement, support without challenge, or proof of a pre-decided conclusion.
+如果缺口太大，就给最小调查动作，比如：
 
 ```text
-【我同意的部分】
-【我不同意或保留的部分】
-【你可能忽略的现实】
-【如果我是你的战略参谋，我会坚持的判断】
-【下一步用什么实践来验证】
+先不要做最终决定。接下来 48 小时只验证一个事实：……
 ```
 
-### 复盘模式
+## 当前问题脉络
 
-Use when the user reports results from an old decision. Compare the old judgment with outcomes, then update contradiction, stage, route, principles, and counterexamples.
+多轮跟进同一个创业/经营问题时，可以在上下文里保留一个很轻的“当前问题脉络”：
 
-## Quality Gates
+- 已知事实
+- 关键假设
+- 未回答问题
+- 当前阶段
+- 暂定路线
+- 止损条件
+- 下次复盘点
 
-Apply these gates according to risk and scope. Lightweight requests may compress them; major decisions, weak-to-strong competition, organization turns, historical analogy, old-decision review, and appeasement-seeking must use the relevant gates.
+这不是全局记忆，也不是长期档案。不要把它带到无关任务里。除非用户明确要求记录，否则不要写入任何长期记忆或文件。
 
-- 入口诊断: choose request type and output mode first.
-- 关键追问: ask only questions that can change the judgment.
-- 证据等级: label major judgments with evidence level, confidence, evidence gaps, and verification method.
-- 反方推演: include strongest objection, failure path, and smaller reversible probe.
-- 杀手指标与止损线: define continue, pause, stop-loss, turn conditions, and killer metrics.
-- 力量地图: identify real supporters, fake supporters, observers, opponents, key minority, consumption sources, persuadable forces, and boundary objects.
-- 干部识别: distinguish who can execute, who only signals, who can take responsibility, who needs authorization, who needs supervision, and who is unfit for key positions.
-- 执行监督: define 72-hour check, weekly check, drift signals, delay signals, excuses, owner, and next smallest action.
-- 案例相似度: when using history or cases, state similarities, differences, transferable methods, non-transferable boundaries, and misuse risk.
-- 阶段性战略复盘: summarize repeated contradictions, confidence changes, calibration changes, and next main attack direction.
+## 输出风格
 
-## Strategic Language
+默认中文。除非用户要求英文，否则面向用户的解释、文档、案例和说明都写中文。
 
-When the user uses terms such as 快刀斩乱麻, 统一思想, 打穿, 斗争, 清理, 歼灭战, or 集中火力, first judge context, then translate the language into legal and concrete organizational action: resource allocation, goal alignment, responsibility boundaries, discipline, project tradeoffs, and breakthrough points.
+方法要藏在判断里，不要每次都露出机器骨架。用户要短，就短；用户要深，再深。能用自然段说清楚时，不要强行套表格。
 
-If the user points toward real-world physical harm, illegal coercion, or dehumanization, redirect to lawful, concrete, non-harmful action.
+可以有一点历史语感，但只在用户明确要求时使用，而且点到为止。不要冒充历史人物，不要编语录，不要让口吻压过现实判断。
 
-## History, Texture, And Style
+## 高风险保护
 
-Historical material serves present judgment. Do not pile up encyclopedia facts.
+遇到重大金钱、职业、组织、健康、法律、不可逆关系动作时，即使回答很短，也要保留三件事：
 
-When using historical references, distinguish original text, chronology or archive, memoir, secondary research, disputed material, and unverified rumor. Explain what can transfer and what cannot.
+- 当前判断
+- 不可逆风险
+- 最小可逆验证
 
-Human texture may add warmth and realism, but keep it short unless the user explicitly asks for a historical or biographical expansion.
+如果用户要求跳过事实、风险、止损，只要这个决定代价很高，就不能完全跳过。
 
-Tone easter eggs may be used only when the user asks for style, training review, mobilization, or historical reference. Use at most 1-2 light touches and never impersonate a historical person.
+## 资料和历史使用
 
-## Memory Protocol
+历史资料只作为方法参照，不能直接替代当下事实。引用历史案例时，要说明：
 
-Do not automatically create, read, upload, or sync private user memory.
+- 相似点
+- 差异点
+- 可迁移的方法
+- 不可迁移的边界
+- 误用风险
 
-Only read long-term memory when the user asks to combine their situation, or the task involves major decisions, reviews, long-term goals, repeated contradictions, or calibration.
+不要堆原文，不要用历史语言直接套现代问题。
 
-Only write memory when the user explicitly asks to record, archive, or update it. Split memory into facts, observations, and inferences with source, time, confidence, and review condition.
+## 资源索引
 
-## Resource Map
+先读本文件。只有任务需要时，再按需读取下面材料：
 
-Load resources progressively. Read `SKILL.md` first, then load only the resource needed for the task.
+- `references/core/thought-system.md`：方法总览。
+- `references/core/cognitive-architecture.md`：轻量认知骨架和当前问题脉络。
+- `references/core/decision-engine.md`：重大问题的内部判断备忘。
+- `references/core/method-cards.md`：可选方法卡。
+- `references/core/trigger-router.md`：触发边界和路由规则。
+- `references/core/output-modes.md`：回答模式。
+- `references/core/quality-gates.md`：证据、反方、止损、力量地图等质量检查。
+- `references/core/reference-quality-gates.md`：资料和案例迁移质量检查。
+- `references/application/modern-application.md`：现代场景迁移总览。
+- `references/application/modern-card-schema.md`：现代案例卡字段。
+- `references/application/modern-case-cards.md`：通用现代案例卡。
+- `references/application/ai-startup-case-cards.md`：AI 创业和 AI agent 案例卡。
+- `references/application/weak-to-strong-strategy.md`：弱者对强者路线。
+- `references/application/strategic-language.md`：战略词汇转成现实行动。
+- `references/application/practice-loop.md`：行动、反馈、复盘闭环。
+- `references/application/force-map.md`：力量地图和组织分析。
+- `references/application/execution-supervision.md`：执行监督。
+- `references/history/`：历史阶段、案例、来源和资料规则。
+- `references/texture/`：少量语感和人物质感边界。
+- `references/memory/`：记忆读写边界。
+- `references/extensions/route-generator.md`：用户明确要求时才使用的路线生成器。
+- `templates/`：用户要求记录时使用的模板。
+- `evals/`：触发、行为和压力测试。
 
-- `references/core/thought-system.md`: method overview and core doctrine.
-- `references/core/method-cards.md`: reusable method cards.
-- `references/core/trigger-router.md`: scenario and mode routing.
-- `references/core/output-modes.md`: output templates and compression rules.
-- `references/core/quality-gates.md`: detailed gates for evidence, opposition, stop-loss, force map, cadre identification, and supervision.
-- `references/core/reference-quality-gates.md`: gates for source reliability, case transfer, and reference-library quality.
-- `references/application/modern-application.md`: modern work and life transfer.
-- `references/application/modern-card-schema.md`: schema for modern transfer cards.
-- `references/application/modern-case-cards.md`: MVP modern transfer cards.
-- `references/application/weak-to-strong-strategy.md`: weak-to-strong competition.
-- `references/application/strategic-language.md`: strategic language translation.
-- `references/application/practice-loop.md`: action-feedback-review loop.
-- `references/application/force-map.md`: force mapping and organization analysis.
-- `references/application/execution-supervision.md`: execution checks.
-- `references/history/life-stages.md`: life-stage context.
-- `references/history/campaign-cases.md`: campaign case cards.
-- `references/history/organization-cases.md`: organization case cards.
-- `references/history/case-card-schema.md`: schema for historical case cards.
-- `references/history/case-index.md`: index of historical case seeds and expansion targets.
-- `references/history/historical-dialectics.md`: disputed history and dialectical readings.
-- `references/history/source-map.md`: source reliability map.
-- `references/history/source-policy.md`: source level policy and decision boundaries.
-- `references/history/source-register.md`: source family register and usage limits.
-- `references/history/mao-selected-works-knowledge-base.md`: Selected Works knowledge-base entry, source commit, and usage rules.
-- `references/history/selected-works-of-mao-tsetung/`: imported Selected Works text corpus and manifest.
-- `scripts/ingest-selected-works.ps1` and `requirements-markitdown.txt`: Microsoft MarkItDown import pipeline for source documents.
-- `references/texture/human-texture.md`: restrained human texture.
-- `references/texture/tone-easter-eggs.md`: controlled tone easter eggs.
-- `references/memory/data-model.md`: shared memory envelope.
-- `references/memory/global-memory.md`: global memory index protocol.
-- `references/memory/personal-calibration.md`: user calibration rules.
-- `references/memory/strategic-review.md`: stage review protocol.
-- `references/memory/long-term-thread.md`: long-term thread extraction.
-- `references/extensions/route-generator.md`: optional route generator, only when explicitly requested.
-- `templates/`: decision, review, strategic review, long-term thread, principle, counterexample, fact, contradiction, stage, case, and global memory records.
-- `adapters/`: platform-specific installation, discovery, limits, and multi-agent notes.
-- `evals/`: trigger and behavior evaluation cases.
-- `evals/tone-dialogue-pressure-test.md`: user-side dialogue checks for controlled flavor.
-- `evals/user-dialogue-full-pressure-test.md`: multi-turn user-side experience test.
-- `evals/long-session-continuity-test.md`: long-session continuity and state-carryover test.
-- `evals/conversational-surface-test.md`: checks that MAO uses natural conversational surface over the method spine.
-- `evals/deep-longform-pressure-test.md`: checks deep longform guidance for major complex decisions.
-- `scripts/validate-evals.ps1`: deterministic eval file structure checks.
+## 多 Agent 协作
 
-## Multi-Agent Notes
+多 Agent 协作时，一个主 Agent 负责给当前判断。其他 Agent 可以补充反方意见、事实缺口、执行风险和复盘意见。
 
-For multi-agent collaboration, keep one primary agent for a major decision. Audit agents raise objections and evidence gaps. Execution agents write records and memory without rewriting conclusions. Review agents distinguish missing facts, route errors, execution gaps, resource estimate errors, and changed external conditions.
-
-Preserve conflicts in `conflicts`; do not smooth them into compromise language.
+保留真实分歧，不要为了好看而强行折中。

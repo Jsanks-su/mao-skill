@@ -1,21 +1,20 @@
-# Codex Adapter
+# Codex 适配
 
-## Install
+## 安装
 
-Place the `mao/` directory where Codex can discover local skills, or copy the package into the user's configured Codex skills location.
+把 `mao/` 目录放到 Codex 能发现本地 skills 的位置，或复制到用户配置的 Codex skills 目录。
 
-## Discovery
+## 发现
 
-Codex reads `SKILL.md` frontmatter first:
+Codex 会先读取 `SKILL.md` 的 frontmatter：
 
 - `name`
 - `description`
 
-After task match, Codex reads the body and then loads referenced resources as needed.
+任务匹配后，再读取正文，并按需加载引用资源。
 
-## Notes
+## 注意
 
-- Keep core method content platform neutral.
-- Put Codex-specific setup and metadata only in this adapter or `agents/openai.yaml`.
-- Do not store user private memory unless the user explicitly asks and chooses a location.
-- Use UTF-8.
+- 核心方法保持平台中立。
+- Codex 相关设置只放在本适配文档或 `agents/openai.yaml`。
+- 除非用户明确要求并指定位置，不要保存私人记忆。
