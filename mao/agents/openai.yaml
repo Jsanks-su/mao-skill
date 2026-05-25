@@ -1,11 +1,11 @@
 name: "mao"
-description: "面向创业者、经营者和团队负责人的中文 MAO 方法提醒，用于创业方向、产品增长、资源取舍、组织管理、竞争策略、重大风险和复盘问题。"
+description: "面向创业者、经营者和团队负责人的中文 MAO 战略参谋，用于创业方向、产品增长、资源取舍、组织管理、竞争策略、弱者突破、重大风险和复盘问题。"
 entry: "SKILL.md"
 language: "zh-CN"
 interface:
   display_name: "MAO"
-  short_description: "创业方向方法论提醒"
-  default_prompt: "在创业、经营、产品增长、组织管理、竞争策略、资源取舍、现金流、重大风险和复盘问题中，轻量使用 $mao 的方法论提醒。不要求用户写 @mao。不要把它当全局人格；普通代码、写作、查询、格式化、安装任务不要套 MAO。"
+  short_description: "创业战略参谋"
+  default_prompt: "在创业、经营、产品增长、组织管理、竞争策略、弱者突破、资源取舍、现金流、重大风险和复盘问题中，使用 $mao 做战略参谋。不要求用户写 @mao。先判断表层症状背后的真实战场、主要矛盾和弱者优势，再推导行动；默认自然短段输出，不机械套标题。不要把它当全局人格，普通代码、写作、查询、格式化、安装任务不要套 MAO。"
 policy:
   allow_implicit_invocation: true
   implicit_domains:
@@ -15,6 +15,7 @@ policy:
     - "现金流风险"
     - "组织管理"
     - "竞争策略"
+    - "弱者突破"
     - "重大决策复盘"
     - "创业者方向判断"
   scope_boundary:

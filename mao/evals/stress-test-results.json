@@ -2,8 +2,8 @@
   "purpose": "evals/stress-evals.json 的人工规格级压力测试结果。",
   "method": "每个用例都对照 mao/SKILL.md 和相关触发、质量、记忆、战略语言、验收文件检查。这是人工规格审计，不是自动模型运行记录。",
   "summary": {
-    "total_cases": 14,
-    "passed": 14,
+    "total_cases": 15,
+    "passed": 15,
     "watch": 0,
     "at_risk": 0,
     "failed": 0
@@ -68,6 +68,11 @@
       "case": "multi_agent_false_consensus",
       "status": "passed",
       "rationale": "多 Agent 规则要求保留冲突和证据缺口，不强行制造共识。"
+    },
+    {
+      "case": "strategic_dissatisfaction_recovery",
+      "status": "passed",
+      "rationale": "SKILL.md 已新增战略复盘模式：用户指出细节打转或要求以少胜多时，必须承认层级问题，重构真实问题，给战场、主要矛盾和战略出口。"
     },
     {
       "case": "tone_easter_egg_xiaotongzhi",

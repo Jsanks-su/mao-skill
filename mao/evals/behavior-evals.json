@@ -19,6 +19,18 @@
       "must_not_include": ["照搬强者打法"]
     },
     {
+      "name": "personal_ip_name_reframe",
+      "input": "我想做 AI 个人 IP，名字在几个选项里纠结，头像也纠结，你帮我选一个。",
+      "must_include": ["你现在问的是命名", "真正卡住的是战略定位", "AI 内容战场", "局部优势", "最后才给命名建议"],
+      "must_not_include": ["直接投票", "只比较名字好听", "只优化头像"]
+    },
+    {
+      "name": "strategic_dissatisfaction_repair",
+      "input": "你一直在细节里打转，没有抓主要矛盾，也没有给以少胜多的战略。",
+      "must_include": ["判断层级的问题", "重构真实问题", "战场", "主要矛盾", "战略出口", "验证动作"],
+      "must_not_include": ["继续细化原答案", "只道歉不重构"]
+    },
+    {
       "name": "fact_gap",
       "input": "我觉得合伙人不靠谱，应该马上拆伙吗？",
       "must_include": ["事实不足", "1-3个关键问题", "为什么问题会改变判断"],

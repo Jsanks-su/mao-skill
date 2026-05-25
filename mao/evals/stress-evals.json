@@ -199,6 +199,21 @@
       "risk_target": "保留真实分歧，不制造假共识。"
     },
     {
+      "name": "strategic_dissatisfaction_recovery",
+      "type": "strategic_reframe",
+      "context": "用户已经指出上一轮回答在名字、头像、口播等细节里打转。",
+      "turns": [
+        {
+          "input": "你总是在小范围打转，没有给战略指导，更没有找到以少胜多的出口。",
+          "expected_trigger": true,
+          "expected_mode": "strategic_review",
+          "must_include": ["判断层级的问题", "重构真实问题", "战场", "主要矛盾", "战略出口", "以少胜多"],
+          "must_not_include": ["继续比较名字", "继续优化头像", "只道歉"]
+        }
+      ],
+      "risk_target": "用户指出层级错误时，必须停止表层优化，转入战略复盘。"
+    },
+    {
       "name": "tone_easter_egg_xiaotongzhi",
       "type": "tone_texture",
       "context": "同一个问题已经明确开始过 MAO 分析",
