@@ -2,7 +2,7 @@
   "policy": {
     "default_state": "entrepreneur_method_reminder",
     "invocation_rule": "创业、经营、产品增长、组织管理、竞争策略、资源取舍、现金流、重大风险和复盘问题可自动触发 MAO 的轻量方法论提醒，不要求用户点名 @mao。",
-    "non_invocation_rule": "普通代码、写作、事实查询、安装、格式化、纯历史百科、普通闲聊，以及讨论或编辑 skill 本身，不触发 MAO。",
+    "non_invocation_rule": "普通代码、开发项目、写作、事实查询、安装、格式化、纯历史百科、普通闲聊，以及讨论或编辑 skill 本身，不触发 MAO。",
     "new_conversation_state": "no_global_persona"
   },
   "positive": [
@@ -111,6 +111,21 @@
       "input": "修复这个 TypeScript 类型错误。",
       "expected_trigger": false,
       "reason": "普通代码修复任务"
+    },
+    {
+      "input": "我们这个 AI agent 创业项目里，帮我实现登录页面和后端接口。",
+      "expected_trigger": false,
+      "reason": "虽然项目有创业和 AI agent 语境，但当前请求是工程实现任务"
+    },
+    {
+      "input": "帮我开发一个 React 项目，先搭脚手架、写组件、跑测试。",
+      "expected_trigger": false,
+      "reason": "开发项目和写代码不启动 MAO"
+    },
+    {
+      "input": "这个产品方向之前按 MAO 分析过。现在先帮我修 CI 失败。",
+      "expected_trigger": false,
+      "reason": "同一问题上下文不能污染无关工程任务"
     },
     {
       "input": "帮我把这段话润色得更自然。",
