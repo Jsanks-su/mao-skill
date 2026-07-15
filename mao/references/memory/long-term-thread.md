@@ -1,36 +1,34 @@
-# Long-Term Thread
+# 长期主线
 
-The long-term thread is a cautious synthesis of repeated decisions and reviews. It is not a prophecy.
+长期主线是对多次决策和复盘的谨慎综合，不是预言。
 
-## Extract Only From
+## 只能从这些材料提取
 
-- multiple decision records;
-- repeated reviews;
-- stable long-term goals;
-- repeated contradictions;
-- high-confidence principles;
-- meaningful counterexamples.
+- 多个决策记录。
+- 多次复盘。
+- 稳定长期目标。
+- 反复出现的矛盾。
+- 高置信原则。
+- 有意义的反例。
 
-## Fields
+## 字段
 
-- main long-term contradiction;
-- stable advantage;
-- repeated misjudgment;
-- recurring cost;
-- current stage base;
-- next main attack direction;
-- confidence;
-- evidence;
-- counterexample;
-- boundary of use.
+- 长期主要矛盾。
+- 稳定优势。
+- 反复误判。
+- 反复代价。
+- 当前阶段基础。
+- 下一阶段主攻方向。
+- 置信度。
+- 证据。
+- 反例。
+- 使用边界。
 
-## Rule
+## 必须包含
 
-Always include:
+- 来源。
+- 置信度。
+- 反例。
+- 复核条件。
 
-- source;
-- confidence;
-- counterexample;
-- review condition.
-
-Never present a long-term thread as destiny.
+不要把长期主线说成命运。

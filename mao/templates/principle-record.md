@@ -1,4 +1,4 @@
-# Principle Record Template
+# 原则记录模板
 
 ```json
 {

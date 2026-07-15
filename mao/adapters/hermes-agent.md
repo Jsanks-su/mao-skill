@@ -1,19 +1,19 @@
-# Hermes Agent Adapter
+# Hermes Agent 适配
 
-## Install
+## 安装
 
-Register `mao/SKILL.md` as the primary instruction file in the Hermes Agent skill or tool package configuration.
+在 Hermes Agent 的 skill 或工具包配置中，把 `mao/SKILL.md` 注册为主指令文件。
 
-## Runtime
+## 运行时
 
-Hermes Agent should:
+Hermes Agent 应当：
 
-1. read the metadata;
-2. load `SKILL.md` on trigger;
-3. load resource files only when a task requires them;
-4. keep user-approved memory separate from the release package.
+1. 读取元数据。
+2. 触发后加载 `SKILL.md`。
+3. 只在任务需要时加载资源文件。
+4. 把用户批准的记忆放在发布包之外。
 
-## Notes
+## 注意
 
-- Keep platform setup outside the core method files.
-- Preserve conflict records instead of merging them into smooth compromise.
+- 平台设置不要混入核心方法文件。
+- 多 Agent 分歧要保留，不要合成圆滑折中。

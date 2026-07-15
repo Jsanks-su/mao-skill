@@ -1,33 +1,107 @@
-# Organization Cases
+# 组织案例卡
 
-Organization cases focus on building, correction, cadre selection, and feedback. Use them carefully because organization methods can easily become coercive if copied without boundaries.
+组织案例用于团队建设、路线纠偏、干部识别和反馈闭环。使用时必须防止把历史组织形式直接搬到现代关系中。
 
-## Case: Rectification As Method Correction
+## 延安整风
 
-- Source level: party documents, memoirs, secondary research.
-- Dispute level: high.
-- Main contradiction: fragmented understanding and weak discipline versus unified action.
-- Transferable method: clarify goals, standards, responsibility, and review.
-- Non-transferable boundary: do not copy coercive pressure, identity control, or speech control.
-- Modern use: team alignment, project standardization, postmortem discipline.
-- Misuse risk: using "unity" to suppress valid dissent.
+【案例名称】延安整风
 
-## Case: Cadre Selection Through Work
+【案例类型】组织 / 方法纠偏 / 路线统一
 
-- Source level: organization history and memoir.
-- Dispute level: medium.
-- Main contradiction: verbal loyalty versus practical execution.
-- Transferable method: judge people by observed work, responsibility, reliability, and ability to learn.
-- Non-transferable boundary: do not reduce people to fixed labels.
-- Modern use: role assignment, leadership pipeline, accountability.
-- Misuse risk: confusing obedience with execution ability.
+【时间与阶段】1940 年代延安时期；按方法迁移看，属于相持期的组织校准和方法统一。
 
-## Case: Mass Line As Feedback Loop
+【资料基础】党史材料、组织史材料、二手研究、回忆录和争议材料。
 
-- Source level: policy documents and secondary research.
-- Dispute level: medium.
-- Main contradiction: leadership abstraction versus frontline reality.
-- Transferable method: gather dispersed experience, synthesize, return as action, and test again.
-- Non-transferable boundary: do not perform feedback collection while ignoring real objections.
-- Modern use: customer discovery, internal research, community product work.
-- Misuse risk: extracting user voices to justify pre-decided conclusions.
+【来源等级】B/C/D。方法目标可用 B 类材料理解，人物体验和具体做法争议较高。
+
+【争议程度】高。
+
+【可验证性】中。组织目标和历史影响较清楚，具体过程、个体经验和评价分歧较大。
+
+【历史背景】组织扩大后，认识、路线、纪律、文风和执行标准出现分散，需要重新建立共同方法和组织纪律。
+
+【主要矛盾】组织需要统一行动，与成员理解分散、标准不一、执行漂移之间的矛盾。
+
+【次要矛盾】思想统一与保留有效异议之间的矛盾；纪律建设与个体安全感之间的矛盾；方法纠偏与组织压力之间的矛盾。
+
+【阶段判断】相持期。重点不是外部猛攻，而是内部方法、标准和组织能力建设。
+
+【力量结构】领导层需要统一路线；干部和成员需要理解目标和标准；一线反馈能检验方法；争议材料提醒组织压力和边界风险。
+
+【路线选择】通过学习、讨论、批评与自我批评、组织审查和标准统一来提升行动一致性。
+
+【短期结果】增强了组织一致性和执行纪律，也留下高争议的压力和边界问题。
+
+【长期影响】成为组织校准、复盘纪律和路线统一的复杂案例。
+
+【正向解释】组织不能只靠热情，需要共同语言、责任标准、复盘纪律和方法纠偏。
+
+【反向解释】如果缺少权利边界和反方保护，统一容易滑向压制异议和身份压力。
+
+【相似点】现代团队在快速扩张、目标混乱、协作失灵时，也需要统一目标、标准、责任和复盘方法。
+
+【差异点】现代组织必须遵守法律、劳动关系、人格尊严、心理安全和多元表达边界。
+
+【可迁移方法】统一目标；明确标准；建立复盘制度；把批评指向行为、流程和责任，不指向人格。
+
+【不可迁移边界】不能迁移强制压力、身份审判、言论控制、人格羞辱或用“统一”压制有效异议。
+
+【适用现代场景】团队标准化、项目复盘、组织转型、管理层对齐、工作方法纠偏。
+
+【不适用现代场景】领导只是想消灭反对声音；团队缺乏基本信任；权责不清却先要求思想统一。
+
+【误用风险】用“统一思想”掩盖决策失误；把批评变成攻击；把执行力问题归咎于态度问题。
+
+【现代行动提示】先统一一页纸：目标、非目标、负责人、验收标准、复盘节奏、允许保留的异议。
+
+## 群众路线作为反馈闭环
+
+【案例名称】群众路线作为反馈闭环
+
+【案例类型】组织 / 调查研究 / 反馈机制
+
+【时间与阶段】长期组织方法；按现代迁移看，适用于相持期建设系统，也适用于反攻前的事实校准。
+
+【资料基础】政策文献、组织史材料、二手研究、实践案例。
+
+【来源等级】B，局部 A/C。
+
+【争议程度】中。
+
+【可验证性】中。方法原则清楚，但具体实践质量差异很大。
+
+【历史背景】领导层如果脱离基层经验，容易形成抽象路线；一线如果没有组织综合，也容易停留在零散经验。
+
+【主要矛盾】上层抽象判断与一线真实情况之间的矛盾。
+
+【次要矛盾】零散反馈和系统决策之间的矛盾；真实意见和表演性汇报之间的矛盾；短期需求和长期路线之间的矛盾。
+
+【阶段判断】阶段不固定。事实不足时用于调查；相持期用于系统建设；反攻期用于防止路线脱离现实。
+
+【力量结构】一线用户、客户、团队成员掌握具体事实；决策者负责综合和取舍；中间层可能放大或过滤信息。
+
+【路线选择】从一线收集真实经验，综合成可执行方案，再回到一线验证和修正。
+
+【短期结果】能减少闭门造车，提高方案贴近现实的概率。
+
+【长期影响】形成“调查、综合、行动、反馈、再修正”的实践循环。
+
+【正向解释】好决策不是从会议室凭空产生，而是从真实现场中来，再经组织能力加工后回到现场。
+
+【反向解释】如果反馈只是形式，群众路线会变成替既定结论找素材。
+
+【相似点】现代产品、管理、教育、服务和社区运营都需要从真实用户和一线人员处获取反馈。
+
+【差异点】现代反馈必须尊重隐私、知情同意、劳动边界和数据合规。
+
+【可迁移方法】访谈真实用户；观察一线流程；综合共性矛盾；形成小方案；回到现场验证。
+
+【不可迁移边界】不能把反馈收集变成操控意见；不能只选择支持自己结论的声音；不能让一线承担无边界成本。
+
+【适用现代场景】客户发现、产品迭代、团队复盘、内部调研、社区治理、服务流程优化。
+
+【不适用现代场景】决策者已经定结论，只想找背书；反馈对象没有表达安全；没有后续行动能力。
+
+【误用风险】表面听取意见，实际筛选顺耳声音；把用户声音碎片化使用，忽略结构性矛盾。
+
+【现代行动提示】做 5-10 个一线访谈，记录原话、行为证据和反例，再提炼 1 个可在 7 天内验证的小改动。

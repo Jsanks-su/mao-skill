@@ -1,46 +1,86 @@
 name: "mao"
-description: "Opt-in MAO mode for real-world decision analysis after explicit single-turn or session activation."
+description: "面向创业者、经营者和团队负责人的中文 MAO 战略参谋，用于创业方向、产品增长、资源取舍、组织管理、竞争策略、弱者突破、重大风险和复盘问题。"
 entry: "SKILL.md"
 language: "zh-CN"
 interface:
   display_name: "MAO"
-  short_description: "Explicitly activated MAO decision mode"
-  default_prompt: "Use $mao only after the user explicitly asks for mao mode/mao skill, or while mao mode is active in this conversation."
+  short_description: "创业战略参谋"
+  default_prompt: "在创业、经营、产品增长、组织管理、竞争策略、弱者突破、资源取舍、现金流、重大风险和复盘问题中，使用 $mao 做战略参谋。不要求用户写 @mao。先判断表层症状背后的真实战场、主要矛盾和弱者优势，再推导行动；默认自然短段输出，不机械套标题。不要把它当全局人格。写代码、做代码、开发项目、调试、实现功能、跑测试、安装依赖、配置环境、格式化和查询任务不要套 MAO。"
 policy:
-  allow_implicit_invocation: false
-  activation_scopes:
-    single_turn:
-      examples:
-        - "@mao"
-        - "这次用 mao skill 分析一下"
-        - "用 mao skill 看这一题"
-    session:
-      examples:
-        - "进入 mao 模式"
-        - "启动 mao 模式"
-        - "启用 mao"
-        - "使用 mao 模式"
-    deep_campaign:
-      examples:
-        - "进入 mao 深度模式"
-    independent_counselor:
-      examples:
-        - "进入独立参谋模式"
-    exit:
-      examples:
-        - "退出 mao 模式"
-        - "停用 mao"
-        - "回到普通模式"
-platform_notes:
-  - "Core content is platform neutral."
-  - "OpenAI and Codex metadata do not change the cross-agent design."
+  allow_implicit_invocation: true
+  implicit_domains:
+    - "创业方向"
+    - "产品增长"
+    - "资源取舍"
+    - "现金流风险"
+    - "组织管理"
+    - "竞争策略"
+    - "弱者突破"
+    - "重大决策复盘"
+    - "创业者方向判断"
+  scope_boundary:
+    apply_to:
+      - "创业者和经营者的方向判断"
+      - "产品、增长、团队、现金流、竞争、资源和复盘问题"
+      - "同一个已经开始的 MAO 分析问题"
+      - "用户明确要求的独立参谋、历史迁移或方法论分析"
+    do_not_apply_to:
+      - "无关代码修复"
+      - "写代码"
+      - "做代码"
+      - "开发项目"
+      - "调试报错"
+      - "实现功能"
+      - "重构"
+      - "跑测试"
+      - "修 CI"
+      - "部署"
+      - "配置开发环境"
+      - "文件编辑"
+      - "事实查询"
+      - "格式化"
+      - "安装"
+      - "机械转换"
+      - "普通写作"
+      - "纯历史百科"
+      - "普通闲聊"
+  priority:
+    - "用户明确结束 MAO 跟进"
+    - "安全和身份边界"
+    - "创业方向范围边界"
+    - "当前问题边界"
+    - "用户语气长度格式要求"
+    - "最轻可用回答方式"
+  invocation_examples:
+    implicit:
+      - "我公司现金流紧张，要不要扩张？"
+      - "小团队怎么打赢大公司？"
+      - "产品增长慢，是不是销售不够努力？"
+      - "AI agent demo 很惊艳但用户不用第二次"
+    explicit:
+      - "@mao"
+      - "这次用 mao skill 分析一下"
+      - "用 MAO 框架看这个问题"
+    same_problem_followup:
+      - "这个问题后面继续按 mao 看"
+      - "继续上面的 MAO 分析"
+    compatibility:
+      - "进入 mao 模式"
+      - "启动 mao 模式"
+      - "退出 mao 模式"
 resources:
   - "references/core/thought-system.md"
+  - "references/core/cognitive-architecture.md"
+  - "references/core/decision-engine.md"
   - "references/core/method-cards.md"
   - "references/core/trigger-router.md"
   - "references/core/output-modes.md"
   - "references/core/quality-gates.md"
+  - "references/core/reference-quality-gates.md"
   - "references/application/modern-application.md"
+  - "references/application/modern-card-schema.md"
+  - "references/application/modern-case-cards.md"
+  - "references/application/ai-startup-case-cards.md"
   - "references/application/weak-to-strong-strategy.md"
   - "references/application/strategic-language.md"
   - "references/application/practice-loop.md"
@@ -49,8 +89,15 @@ resources:
   - "references/history/life-stages.md"
   - "references/history/campaign-cases.md"
   - "references/history/organization-cases.md"
+  - "references/history/case-card-schema.md"
+  - "references/history/case-index.md"
   - "references/history/historical-dialectics.md"
   - "references/history/source-map.md"
+  - "references/history/source-policy.md"
+  - "references/history/source-register.md"
+  - "references/history/mao-selected-works-knowledge-base.md"
+  - "references/history/selected-works-of-mao-tsetung/SOURCE.md"
+  - "references/history/selected-works-of-mao-tsetung/MANIFEST.json"
   - "references/texture/human-texture.md"
   - "references/texture/tone-easter-eggs.md"
   - "references/memory/data-model.md"
@@ -63,3 +110,14 @@ resources:
   - "evals/behavior-evals.json"
   - "evals/acceptance-matrix.json"
   - "evals/acceptance-results.json"
+  - "evals/stress-evals.json"
+  - "evals/stress-test-results.json"
+  - "evals/stress-test-report.md"
+  - "evals/tone-dialogue-pressure-test.md"
+  - "evals/user-dialogue-full-pressure-test.md"
+  - "evals/long-session-continuity-test.md"
+  - "evals/conversational-surface-test.md"
+  - "evals/deep-longform-pressure-test.md"
+  - "scripts/ingest-selected-works.ps1"
+  - "requirements-markitdown.txt"
+  - "scripts/validate-evals.ps1"

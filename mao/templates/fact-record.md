@@ -1,4 +1,4 @@
-# Fact Record Template
+# 事实记录模板
 
 ```json
 {

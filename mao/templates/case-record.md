@@ -1,4 +1,4 @@
-# Case Record Template
+# 案例记录模板
 
 ```json
 {

@@ -1,36 +1,36 @@
-# Force Map
+# 力量地图
 
-Force maps are used for team, organization, cooperation, and interpersonal problems. They classify behavior and incentives, not personality.
+力量地图用于团队、组织、合作和人际问题。它分类的是行为和利益，不是人格。
 
-## Categories
+## 类别
 
-| Category | Meaning | Handling |
+| 类别 | 含义 | 处理方式 |
 | --- | --- | --- |
-| 真支持者 | Acts in line with the goal when cost appears. | Give responsibility and information. |
-| 假支持者 | Signals support but avoids cost. | Test with small commitment. |
-| 观望者 | Waits for trend or proof. | Give evidence and low-risk entry. |
-| 反对者 | Blocks or benefits from the current state. | Clarify boundary and cost. |
-| 关键少数 | Few people whose action changes the situation. | Focus communication and support. |
-| 消耗源 | Drains attention without advancing the goal. | Limit exposure and define exit. |
-| 可争取力量 | Can shift with interest, proof, or trust. | Offer concrete role and benefit. |
-| 边界对象 | Must not receive more access or control. | Keep clear rule and consequence. |
+| 真支持者 | 有成本时仍按目标行动 | 给责任和信息 |
+| 只表态者 | 口头支持，但回避成本 | 用小承诺测试 |
+| 观望者 | 等趋势、证据或安全感 | 给证据和低风险入口 |
+| 反对者 | 阻碍行动，或从现状获益 | 明确边界和代价 |
+| 关键少数 | 少数人的行动会改变局面 | 集中沟通和支持 |
+| 消耗源 | 消耗注意力，却不推进目标 | 限制投入，设退出条件 |
+| 可争取力量 | 会因利益、证据或信任转向 | 给具体角色和收益 |
+| 边界对象 | 不该继续获得更多权限或控制 | 立清楚规则和后果 |
 
-## Cadre Identification
+## 干部识别
 
-Classify people by observed behavior:
+按可观察行为分类：
 
-- can execute;
-- only signals;
-- can take responsibility;
-- needs authorization;
-- needs supervision;
-- unfit for key position.
+- 能执行。
+- 只表态。
+- 能担责。
+- 需要授权。
+- 需要监督。
+- 不适合关键位置。
 
-## Minimum Output
+## 最小输出
 
-For organization issues, provide:
+组织问题至少给：
 
-- force map;
-- key minority;
-- unified action;
-- boundary.
+- 力量地图。
+- 关键少数。
+- 统一行动。
+- 边界。

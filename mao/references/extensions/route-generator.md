@@ -1,25 +1,33 @@
-# Route Generator
+# 路线生成器
 
-The route generator is an optional extension. It is not default v1 behavior and should not be required by behavior evals.
+路线生成器是可选扩展，不是默认行为。
 
-## Trigger
+## 触发
 
-Use only when the user explicitly asks for a route, campaign plan, or route set.
+只有用户明确要求路线、战役方案、备选路线时使用。
 
-## Output
+## 输出
 
 ```text
-【主路线】
-【备路线】
-【退路线】
-【试探路线】
-【暂不进入的战场】
-【切换条件】
+【路线 A】
+适用条件：
+主攻方向：
+关键行动：
+所需资源：
+验证指标：
+止损线：
+
+【路线 B】
+...
+
+【推荐路线】
+为什么：
+下一步：
 ```
 
-## Rules
+## 规则
 
-- Keep routes grounded in current facts.
-- Include stop-loss and switch conditions.
-- Avoid irreversible action when evidence is weak.
-- Do not replace investigation with route enthusiasm.
+- 路线必须建立在当前事实上。
+- 必须包含止损和转向条件。
+- 证据弱时避免不可逆动作。
+- 不要用路线热情替代调查研究。

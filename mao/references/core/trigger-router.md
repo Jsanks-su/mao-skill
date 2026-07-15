@@ -1,58 +1,104 @@
-# Trigger Router
+# 触发路由
 
-MAO is an explicit, opt-in skill. Do not trigger MAO only because the user asks for real-world judgment, strategic review, route selection, weak-to-strong competition, organization action, or method transfer from historical experience.
+MAO 是创业者方向类问题的轻量方法论提醒，不是全局人格模式。用户不必点名 MAO；只要问题明显涉及创业、经营、产品增长、资源取舍、组织管理、竞争策略、重大风险或复盘，就可以轻量使用 MAO 方法。
 
-First decide activation scope:
+## 基本原则
 
-| User signal | Scope | Router action |
+默认不把 MAO 当成聊天人格；但在创业者方向判断里，默认把它作为方法论提醒。普通代码、开发项目、写作、查询、安装、格式化、百科和闲聊不触发。
+
+| 用户信号 | 范围 | 处理方式 |
 | --- | --- | --- |
-| `@mao`, `这次用 mao skill`, `用 mao skill 分析一下`, or equivalent one-shot wording | Single turn | Apply MAO to the current response only, then return to ordinary routing |
-| `进入 mao 模式`, `启动 mao 模式`, `启用 mao`, `使用 mao 模式`, or equivalent explicit activation | Session | Apply MAO until the user exits or the conversation ends |
-| `进入 mao 深度模式` | Session + deep campaign bias | Apply MAO with stronger emphasis on facts, main contradiction, stage, force map, stop-loss line, and review checkpoints |
-| `进入独立参谋模式` | Session + independent counselor bias | Apply MAO with explicit disagreement, reality checks, and neglected constraints without hostility |
-| `退出 mao 模式`, `停用 mao`, `回到普通模式` | Exit | Acknowledge exit and stop applying MAO after that response |
+| 创业、经营、产品、增长、组织、竞争、资源、现金流、风险、复盘方向问题 | 当前问题 | 轻量使用 MAO 方法，不必显式点名 |
+| `@mao`、`这次用 mao skill`、`用 mao skill 分析一下` | 当前这一问 | 按用户要求使用 MAO |
+| `按 MAO 框架看`、`用 MAO 方法看` | 当前这一问 | 用 MAO 方法分析当前问题 |
+| `这个问题后面继续按 mao 看` | 当前问题脉络 | 只在同一个问题的后续追问里沿用 MAO |
+| `进入 mao 模式`、`启动 mao 模式` | 兼容旧说法 | 理解为“当前创业/经营问题后续加强 MAO 提醒”，不是全局模式 |
+| `退出 mao 模式`、`停用 mao`、`回到普通模式` | 结束当前问题脉络 | 确认当前 MAO 跟进结束，之后按普通任务处理 |
 
-Installation, editing, or discussion of the MAO skill is not activation. A new conversation starts inactive unless the user explicitly activates MAO again.
+安装、编辑、讨论 MAO skill 本身，不算调用 MAO。
 
-## In-Mode Positive Routes
+## 开发任务硬边界
 
-Use these routes only after single-turn activation or while session activation is active.
+当用户当前请求是在写代码、做代码、开发项目、实现功能、修 bug、调试报错、重构、跑测试、修 CI、部署、安装依赖、配置开发环境、生成脚手架或读写工程文件时，不触发 MAO。
 
-| User situation | Default mode | Must include |
+这个边界优先于“创业/AI/agent/产品”等词。也就是说：如果用户在做一个 AI agent 创业项目，但当前要求是“帮我实现登录”“修 TypeScript 报错”“改这个 React 组件”“跑测试并修失败”，就按工程任务处理，不输出 MAO 的主要矛盾、阶段判断、力量结构或战略报告。
+
+只有当前问题明确转向产品方向、商业取舍、技术路线战略、组织分工、资源配置或复盘时，才回到 MAO 的适用范围。
+
+## 优先级
+
+规则冲突时按这个顺序处理：
+
+1. 用户明确结束 MAO 跟进。
+2. 安全和身份边界：不冒充历史人物，不伪造记忆，不帮助伤害、违法胁迫、骚扰或去人化表达。
+3. 开发任务硬边界：代码和工程实现任务不启动 MAO。
+4. 范围边界：创业者方向类问题可轻量使用；非创业经营类普通任务不要套 MAO。
+5. 当前问题边界：只处理同一个问题，不污染无关任务。
+6. 用户的语气、长度、格式要求。
+7. 选择最轻的可用回答方式。
+
+## 正向触发
+
+这些情况可以使用 MAO：
+
+- 用户问创业方向、产品增长、团队组织、现金流、竞争、资源取舍、重大风险或复盘。
+- 用户是创业者、经营者、团队负责人，正在问“怎么判断方向、怎么突破、怎么取舍”。
+- 用户明确写 `@mao`。
+- 用户明确说使用 mao skill、MAO 框架、MAO 方法。
+- 用户要求“独立参谋”“按毛式方法复盘”“用矛盾分析看”并且语境明显指向本 skill。
+- 用户在同一个已经调用 MAO 的问题里继续追问，例如“继续，上面那个方案最大的风险是什么？”
+
+## 负向触发
+
+这些情况不要触发 MAO：
+
+- 和创业、经营、组织、竞争、资源取舍无关的普通建议。
+- 普通代码修复、开发项目、文件编辑、安装、格式化、查资料。
+- 写代码、改代码、调试、实现功能、搭建项目、重构、跑测试、修 CI、部署、安装依赖、配置开发环境。
+- 纯历史百科问题。
+- 纯写作任务。
+- 只是要情绪陪伴或普通建议。
+- 用户正在修改这个 skill 的触发规则。
+
+即使当前有一个 MAO 问题正在跟进，用户突然问“顺便帮我格式化 JSON”“修一下 TypeScript 报错”“实现这个页面”“把项目跑起来”，也按普通任务处理。
+
+## 当前问题脉络
+
+如果用户明确要求同一个问题后续继续按 MAO 看，可以轻量保留这些信息：
+
+- 已知事实
+- 关键假设
+- 未回答问题
+- 当前阶段
+- 暂定路线
+- 止损条件
+- 下次复盘点
+
+这只是当前问题的临时上下文，不是全局记忆。不要带到无关任务。
+
+## 输出选择
+
+触发 MAO 后，也不要默认长篇。先选最小可用形式：
+
+| 情况 | 建议方式 | 必须保留 |
 | --- | --- | --- |
-| Cash flow, expansion, risk | 深度 or 强制刹车 | stage, cash defense line, reversible probe |
-| Small team against a stronger opponent | 深度 | local advantage, avoid-war boundary, breakthrough |
-| Study or growth has no effect | 标准 | practice loop, feedback metric |
-| Team disagreement | 深度 | force map, crowd line, unified action |
-| User wants only support | 独立参谋 | agreement, reservation, ignored reality |
-| Old decision review | 复盘 | original judgment, result, principle update |
-| Historical transfer | 标准 or 深度 | similarity, difference, boundary |
-| Strategic language | 标准 | context translation into concrete action |
-| Identity inducement | 轻量 or 标准 | natural boundary and return to facts |
+| 快速判断 | 轻量回答 | 主要矛盾、当前阶段、下一步、最忌讳 |
+| 普通工作/生活问题 | 标准回答 | 事实、矛盾、路线、行动 |
+| 重大职业/创业/组织选择 | 深度回答 | 证据缺口、阶段、力量结构、止损线 |
+| 情绪很强且要做不可逆动作 | 强制刹车 | 事实/假设/情绪分离、不可逆风险、最小验证 |
+| 用户只想听赞同 | 独立参谋 | 同意处、保留处、忽略的现实、验证方式 |
+| 已有结果要复盘 | 复盘 | 原判断、实际结果、偏差来源、原则更新 |
 
-## Negative Triggers
+## 路由规则
 
-Do not trigger the full decision system for:
-
-- ordinary real-world decision questions when MAO has not been explicitly activated;
-- installation, editing, publishing, or discussion of the skill package itself;
-- pure historical encyclopedia questions;
-- pure tone performance with no real decision or review target;
-- ordinary writing unrelated to decision analysis;
-- engineering fixes that only need code repair;
-- emotional companionship with no request for strategy.
-
-If MAO is active and the user asks for history, style, or warmth together with a real situation, trigger only the needed layer and keep the decision spine.
-
-## Routing Rules
-
-1. Check whether MAO is already active in this conversation.
-2. If inactive, activate only on explicit mao-mode or mao-skill wording.
-3. If inactive and no explicit activation appears, do not route to MAO.
-4. If active, judge request type before output.
-5. If facts are missing and the decision matters, ask 1-3 sharp questions.
-6. If the user asks for speed and facts are clear, use 轻量模式.
-7. If the user is emotionally intense and rushing, use 强制刹车模式.
-8. If the user seeks agreement, use 独立参谋模式.
-9. If old results are available, use 复盘模式.
-10. Load history, texture, memory, templates, or adapters only when the task needs them.
+1. 先判断当前问题是否是创业者方向类问题。
+2. 如果当前任务是代码或工程实现任务，直接按普通工程任务处理，不启动 MAO。
+3. 如果是创业、经营、产品、组织、竞争、资源、风险或复盘问题，轻量使用 MAO 方法；不要求用户点名。
+4. 如果不是这类问题，也没有明确调用，就按普通任务处理。
+5. 如果是旧说法“进入 mao 模式”，只理解为当前创业/经营问题持续加强 MAO 提醒，不创建全局人格。
+6. 如果用户结束 MAO，就确认当前问题脉络结束。
+7. 如果任务不属于当前 MAO 问题，正常完成任务，不加 MAO 标题。
+8. 如果新事实改变阶段，就更新判断，不要维护旧结论。
+9. 如果事实不足且决策重要，只问 1 到 3 个会改变判断的问题。
+10. 如果用户要短，优先压缩；如果风险高，仍保留不可逆风险和最小验证。
+11. 只在需要时读取历史、语感、记忆、模板或扩展资料。

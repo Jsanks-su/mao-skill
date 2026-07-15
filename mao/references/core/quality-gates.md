@@ -1,90 +1,87 @@
-# Quality Gates
+# 质量闸门
 
-Quality gates are not extra output modes. They are checks that protect judgment.
+质量闸门不是新的输出模板，而是防止判断变飘的检查项。轻量问题可以压缩，重大问题不能省掉关键风险。
 
-## Evidence Level
+## 证据等级
 
-Use these levels for important judgments:
+重大判断可以区分：
 
-- 一手事实: direct experience, raw data, field observation.
-- 二手转述: reports from others, team feedback, customer retelling, public retelling.
-- 推测判断: inference from known facts, not yet verified.
-- 经验类比: user history or general experience.
-- 历史类比: historical case, only auxiliary.
+- 一手事实：直接经历、原始数据、现场观察。
+- 二手转述：他人报告、团队反馈、客户转述、公开材料。
+- 推测判断：基于事实的推断，但还没验证。
+- 经验类比：来自用户过往或一般经验。
+- 历史类比：历史案例，只能辅助。
 
-Major judgment format:
+重大判断至少说明：
 
 ```text
-【判断】
-【证据等级】
-【置信度】
-【证据缺口】
-【下一步验证】
+判断：
+证据等级：
+证据缺口：
+下一步验证：
 ```
 
-## Opposition
+## 反方推演
 
-Use for major decisions and when the user seems to seek agreement.
+重大决策或用户明显寻求认同时，要补一层反方：
 
-Include:
+- 最强反对理由。
+- 可能失败路径。
+- 更小的可逆试探。
+- 什么证据会改变当前判断。
 
-- strongest objection;
-- plausible failure path;
-- smaller reversible probe;
-- evidence that would change the answer.
+## 止损线
 
-## Stop-Loss
+重要路线要有：
 
-Important routes require:
+- 继续条件。
+- 暂停条件。
+- 止损条件。
+- 转向条件。
+- 杀手指标。
 
-- continue condition;
-- pause condition;
-- stop-loss condition;
-- turn condition;
-- killer metric.
+## 力量地图
 
-## Force Map
+组织和人际问题看行为，不贴人格标签：
 
-For people and organization problems, identify behavior rather than personality labels:
+- 真支持者。
+- 只表态者。
+- 观望者。
+- 反对者。
+- 关键少数。
+- 消耗源。
+- 可争取力量。
+- 需要设边界的人或事。
 
-- true supporters;
-- signal-only supporters;
-- observers;
-- opponents;
-- key minority;
-- energy drains;
-- persuadable forces;
-- people needing boundaries.
+## 干部识别
 
-## Cadre Identification
+按可观察行为分类：
 
-Classify by behavior:
+- 能执行。
+- 只表态。
+- 能担责。
+- 需要授权。
+- 需要监督。
+- 不适合关键位置。
 
-- can execute;
-- only signals;
-- can take responsibility;
-- needs authorization;
-- needs supervision;
-- unfit for key positions.
+## 执行监督
 
-## Execution Supervision
+重大行动要有：
 
-Major action requires:
+- 72 小时检查。
+- 每周检查。
+- 偏航信号。
+- 拖延信号。
+- 借口模式。
+- 责任人。
+- 下一步最小行动。
 
-- 72-hour check;
-- weekly check;
-- drift signal;
-- delay signal;
-- excuse pattern;
-- owner;
-- next smallest action.
+## 案例相似度
 
-## Case Similarity
+使用历史、人物、组织或用户过往案例时，要说明：
 
-When using a historical, biographical, organization, or user case, include:
-
-- similarity;
-- difference;
-- transferable method;
-- non-transferable boundary;
-- misuse risk.
+- 相似点。
+- 差异点。
+- 可迁移方法。
+- 不可迁移边界。
+- 误用风险。

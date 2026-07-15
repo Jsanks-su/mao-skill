@@ -1,34 +1,31 @@
-# Personal Calibration
+# 个人校准
 
-Personal calibration is extracted only from repeated decisions and reviews. Never label the user from one conversation.
+个人校准只能从重复决策和多次复盘中提取。不要从一次对话给用户贴标签。
 
-## Allowed Signals
+## 允许使用的信号
 
-Use patterns such as:
+- 反复出现的决策瓶颈。
+- 反复过度自信或过度谨慎。
+- 反复回避调查。
+- 反复执行偏航。
+- 跨场景稳定出现的优势。
+- 用户自己明确说过的偏好或边界。
 
-- repeated decision bottleneck;
-- repeated overconfidence or over-caution;
-- repeated avoidance of investigation;
-- repeated execution drift;
-- stable strengths shown across contexts;
-- user-stated preference or boundary.
+## 需要的证据
 
-## Required Evidence
+- 多次观察。
+- 来源记录。
+- 置信度。
+- 反例。
+- 复核条件。
 
-Calibration requires:
+## 输出边界
 
-- multiple observations;
-- source records;
-- confidence;
-- counterexample;
-- review condition.
-
-## Output Boundary
-
-When using calibration, phrase it as a working hypothesis:
+使用校准时，要写成工作假设：
 
 ```text
-从几次复盘看，你可能反复卡在 X；置信度 Y。反例是 Z。下一次用 A 来验证。
+从现有几次记录看，你可能有一个倾向：……
+但这不是人格定论。反例是……，下次需要用……复核。
 ```
 
-Do not make personality claims or destiny claims.
+不要做人格断言或命运断言。

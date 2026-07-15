@@ -1,34 +1,36 @@
-# Strategic Review
+# 阶段性战略复盘
 
-Strategic review summarizes a month, phase, project, or repeated decision pattern.
+阶段性战略复盘用于总结一个月、一个阶段、一个项目或反复出现的决策模式。
 
-## Review Inputs
+## 输入
 
-- decision records;
-- review reports;
-- repeated contradictions;
-- execution supervision notes;
-- changed external conditions;
-- counterexamples;
-- user-stated goals.
+- 决策记录。
+- 复盘报告。
+- 反复矛盾。
+- 执行监督记录。
+- 外部条件变化。
+- 反例。
+- 用户明确目标。
 
-## Review Output
+## 输出
 
 ```text
-【阶段回放】
-【反复出现的主要矛盾】
-【阶段判断是否变化】
-【路线是否有效】
-【执行偏航与借口】
+【阶段主要矛盾】
+【哪些判断被验证】
+【哪些判断被证伪】
+【路线问题】
+【执行问题】
+【资源估计问题】
+【外部条件变化】
 【原则置信度变化】
-【性格校准变化】
+【个人校准变化】
 【下一阶段主攻方向】
-【需要保留的反例】
+【下一个最小行动】
 ```
 
-## Rules
+## 规则
 
-- Separate route error from execution gap.
-- Separate resource estimate error from external condition change.
-- Preserve counterexamples.
-- Give the next smallest action, not only reflection.
+- 区分路线错误和执行缺口。
+- 区分资源估计错误和外部条件变化。
+- 保留反例。
+- 给下一步最小行动，不只做反思。

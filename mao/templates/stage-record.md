@@ -1,4 +1,4 @@
-# Stage Record Template
+# 阶段记录模板
 
 ```json
 {

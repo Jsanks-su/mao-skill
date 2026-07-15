@@ -182,6 +182,21 @@
                       "status":  "passed"
                   },
                   {
+                      "task":  "来源可靠性边界",
+                      "eval_case":  "source_reliability_boundary",
+                      "status":  "passed"
+                  },
+                  {
+                      "task":  "历史案例迁移边界",
+                      "eval_case":  "historical_case_transfer",
+                      "status":  "passed"
+                  },
+                  {
+                      "task":  "现代现金流迁移案例",
+                      "eval_case":  "modern_cash_flow_transfer",
+                      "status":  "passed"
+                  },
+                  {
                       "task":  "阶段性复盘",
                       "eval_case":  "stage_review",
                       "status":  "passed"
@@ -194,6 +209,46 @@
                   {
                       "task":  "长期命运主线",
                       "eval_case":  "long_term_thread",
+                      "status":  "passed"
+                  },
+                  {
+                      "task":  "AI 创业资源稀缺",
+                      "eval_case":  "ai_startup_scarce_resources",
+                      "status":  "passed"
+                  },
+                  {
+                      "task":  "战略/战术分离",
+                      "eval_case":  "strategy_tactics_confusion",
+                      "status":  "passed"
+                  },
+                  {
+                      "task":  "抓错主要矛盾",
+                      "eval_case":  "wrong_contradiction",
+                      "status":  "passed"
+                  },
+                  {
+                      "task":  "过早反攻",
+                      "eval_case":  "premature_counteroffensive",
+                      "status":  "passed"
+                  },
+                  {
+                      "task":  "反馈后的原则更新",
+                      "eval_case":  "feedback_principle_update",
+                      "status":  "passed"
+                  },
+                  {
+                      "task":  "AI 代理演示到工作流",
+                      "eval_case":  "demo_to_workflow_agent",
+                      "status":  "passed"
+                  },
+                  {
+                      "task":  "任务级调用",
+                      "eval_case":  "task_scoped_invocation",
+                      "status":  "passed"
+                  },
+                  {
+                      "task":  "当前问题脉络连续性",
+                      "eval_case":  "decision_packet_continuity",
                       "status":  "passed"
                   },
                   {

@@ -1,15 +1,50 @@
 {
   "policy": {
-    "default_state": "inactive",
-    "activation_rule": "Trigger MAO only when the user explicitly asks to use mao mode/mao skill, or while mao mode is already active in the current conversation.",
-    "non_activation_rule": "Do not trigger from decision-analysis topic alone. Installing, editing, or discussing the skill is not activation.",
-    "new_conversation_state": "inactive"
+    "default_state": "entrepreneur_method_reminder",
+    "invocation_rule": "创业、经营、产品增长、组织管理、竞争策略、资源取舍、现金流、重大风险和复盘问题可自动触发 MAO 的轻量方法论提醒，不要求用户点名 @mao。",
+    "non_invocation_rule": "普通代码、开发项目、写作、事实查询、安装、格式化、纯历史百科、普通闲聊，以及讨论或编辑 skill 本身，不触发 MAO。",
+    "new_conversation_state": "no_global_persona"
   },
   "positive": [
     {
+      "input": "我公司现金流紧张，要不要扩张？",
+      "expected_trigger": true,
+      "expected_scope": "entrepreneur_method_reminder",
+      "expected_mode": "brake_or_standard",
+      "must_include": ["现金流", "阶段", "可逆验证", "止损"]
+    },
+    {
+      "input": "小团队怎么打赢大公司？",
+      "expected_trigger": true,
+      "expected_scope": "entrepreneur_method_reminder",
+      "expected_mode": "standard_or_deep",
+      "must_include": ["局部优势", "避战边界", "突破点"]
+    },
+    {
+      "input": "团队意见很分散，怎么统一行动？",
+      "expected_trigger": true,
+      "expected_scope": "entrepreneur_method_reminder",
+      "expected_mode": "standard",
+      "must_include": ["力量结构", "统一目标", "下一步行动"]
+    },
+    {
+      "input": "帮我复盘一个失败决策。",
+      "expected_trigger": true,
+      "expected_scope": "entrepreneur_method_reminder",
+      "expected_mode": "review",
+      "must_include": ["原判断", "实际结果", "偏差来源", "更新原则"]
+    },
+    {
+      "input": "我们的 AI 代理演示很惊艳，但用户不用第二次，问题在哪？",
+      "expected_trigger": true,
+      "expected_scope": "entrepreneur_method_reminder",
+      "expected_mode": "standard",
+      "must_include": ["演示", "重复工作流", "用户调查", "留存指标"]
+    },
+    {
       "input": "@mao 看一下这个问题：我现在要不要离职？",
       "expected_trigger": true,
-      "expected_scope": "single_turn",
+      "expected_scope": "explicit_single_turn",
       "expected_mode": "standard_or_deep",
       "must_include": ["事实", "主要矛盾", "阶段"],
       "must_not_persist": true
@@ -17,44 +52,16 @@
     {
       "input": "这次用 mao skill 分析一下，我要不要扩大团队？",
       "expected_trigger": true,
-      "expected_scope": "single_turn",
+      "expected_scope": "explicit_single_turn",
       "expected_mode": "standard_or_deep",
       "must_include": ["事实", "主要矛盾", "阶段"]
     },
     {
-      "input": "用 mao skill 看这一题：小团队怎么打赢大公司？",
-      "expected_trigger": true,
-      "expected_scope": "single_turn",
-      "expected_mode": "deep",
-      "must_include": ["局部优势", "边界", "突破点"]
-    },
-    {
       "input": "进入 mao 模式。后面帮我一起判断这个职业选择。",
       "expected_trigger": true,
-      "expected_scope": "session",
+      "expected_scope": "same_problem_context",
       "expected_mode": "standard",
-      "must_include": ["已进入", "事实", "阶段"]
-    },
-    {
-      "input": "启动 mao 模式，我们复盘一下上次失败的决策。",
-      "expected_trigger": true,
-      "expected_scope": "session",
-      "expected_mode": "review",
-      "must_include": ["原判断", "实际结果", "更新原则"]
-    },
-    {
-      "input": "使用 mao 模式分析，我公司现金流紧张，要不要扩张？",
-      "expected_trigger": true,
-      "expected_scope": "session",
-      "expected_mode": "brake_or_deep",
-      "must_include": ["现金流", "止损线", "可逆试探"]
-    },
-    {
-      "input": "进入 mao 深度模式，这个组织问题后面几轮都按这个框架来。",
-      "expected_trigger": true,
-      "expected_scope": "deep_campaign",
-      "expected_mode": "deep",
-      "must_include": ["事实盘点", "主要矛盾", "力量结构", "复盘节点"]
+      "must_include": ["当前问题", "事实", "阶段"]
     },
     {
       "input": "进入独立参谋模式，我不想只听好话。",
@@ -66,54 +73,34 @@
     {
       "input": "退出 mao 模式，回到普通模式。",
       "expected_trigger": true,
-      "expected_scope": "exit",
-      "expected_mode": "exit_acknowledgement",
-      "must_include": ["已退出", "普通模式"]
+      "expected_scope": "end_mao_context",
+      "expected_mode": "context_end_acknowledgement",
+      "must_include": ["当前问题", "结束"]
     },
     {
-      "context": "mao mode is already active in this conversation",
+      "context": "同一个创业问题已经开始按 MAO 方法跟进",
       "input": "继续，上面那个方案最大的风险是什么？",
       "expected_trigger": true,
-      "expected_scope": "session_continuation",
+      "expected_scope": "same_problem_continuation",
       "expected_mode": "standard_or_deep",
       "must_include": ["风险", "反方推演", "验证"]
     }
   ],
   "negative": [
     {
-      "input": "我公司现金流紧张，要不要扩张？",
+      "input": "mao 这个项目挺有意思，里面的 eval 怎么设计？",
       "expected_trigger": false,
-      "reason": "现实决策主题本身不再自动触发 MAO"
-    },
-    {
-      "input": "小团队怎么打赢大公司？",
-      "expected_trigger": false,
-      "reason": "弱对强战略问题没有明确启动 mao 模式"
-    },
-    {
-      "input": "团队意见很分散，怎么统一行动？",
-      "expected_trigger": false,
-      "reason": "组织问题没有明确启动 mao 模式"
-    },
-    {
-      "input": "帮我复盘一个失败决策。",
-      "expected_trigger": false,
-      "reason": "复盘请求没有明确启动 mao 模式"
-    },
-    {
-      "input": "这个历史经验能不能迁移到现在？",
-      "expected_trigger": false,
-      "reason": "历史迁移问题没有明确启动 mao 模式"
+      "reason": "讨论 skill 或 eval 设计，不是调用创业方法论"
     },
     {
       "input": "这个项目怎么安装？",
       "expected_trigger": false,
-      "reason": "安装 skill 不是启用 skill"
+      "reason": "安装 skill 不是调用 skill"
     },
     {
       "input": "帮我修改 mao skill 的触发规则。",
       "expected_trigger": false,
-      "reason": "编辑或讨论 skill 本身不是启用"
+      "reason": "编辑或讨论 skill 本身不是调用"
     },
     {
       "input": "介绍一下某个历史事件的基本时间线。",
@@ -124,6 +111,31 @@
       "input": "修复这个 TypeScript 类型错误。",
       "expected_trigger": false,
       "reason": "普通代码修复任务"
+    },
+    {
+      "input": "我们这个 AI agent 创业项目里，帮我实现登录页面和后端接口。",
+      "expected_trigger": false,
+      "reason": "虽然项目有创业和 AI agent 语境，但当前请求是工程实现任务"
+    },
+    {
+      "input": "帮我开发一个 React 项目，先搭脚手架、写组件、跑测试。",
+      "expected_trigger": false,
+      "reason": "开发项目和写代码不启动 MAO"
+    },
+    {
+      "input": "这个产品方向之前按 MAO 分析过。现在先帮我修 CI 失败。",
+      "expected_trigger": false,
+      "reason": "同一问题上下文不能污染无关工程任务"
+    },
+    {
+      "input": "帮我把这段话润色得更自然。",
+      "expected_trigger": false,
+      "reason": "普通写作润色任务"
+    },
+    {
+      "input": "把这个 JSON 格式化一下。",
+      "expected_trigger": false,
+      "reason": "普通格式化任务"
     }
   ]
 }

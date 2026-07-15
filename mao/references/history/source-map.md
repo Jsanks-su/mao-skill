@@ -1,28 +1,35 @@
-# Source Map
+# 来源地图
 
-Use source categories to label historical material. Historical evidence supports judgment; it does not replace present investigation.
+来源地图用于给历史材料标注类别。历史证据可以辅助判断，但不能替代现实调查。
 
-## Source Levels
+## 配套文件
 
-| Level | Meaning | Typical risk |
+- `source-policy.md`：来源等级、使用规则和决策边界。
+- `source-register.md`：来源家族登记和使用限制。
+- `case-card-schema.md`：历史案例卡字段。
+- `case-index.md`：当前案例种子和后续扩展索引。
+
+## 来源等级
+
+| 等级 | 含义 | 常见风险 |
 | --- | --- | --- |
-| Original text | Writing or speech from the period | context loss, later editing |
-| Chronology or archive | dated record, official document, compiled chronology | selection bias |
-| Memoir | participant recollection | memory distortion, self-defense |
-| Secondary research | historian or analyst synthesis | school bias, source dependence |
-| Disputed material | contested record or interpretation | political and evidentiary conflict |
-| Unverified rumor | unsupported claim | should not ground judgment |
+| 原文 | 当时的文章、讲话或文本 | 语境丢失、后期编辑 |
+| 年谱或档案 | 有日期记录、正式文件、编年材料 | 选择偏差 |
+| 回忆录 | 参与者回忆 | 记忆扭曲、自我辩护 |
+| 二手研究 | 历史学者或分析者综合 | 流派偏差、依赖特定来源 |
+| 争议材料 | 有争议的记录或解释 | 政治和证据冲突 |
+| 未验证传闻 | 无支撑说法 | 不能支撑判断 |
 
-## Citation Habit
+## 引用习惯
 
-When historical material matters, state:
+历史材料重要时，要说明：
 
-- source category;
-- confidence;
-- dispute level;
-- why it is relevant;
-- what it cannot prove.
+- 来源类别。
+- 置信度。
+- 争议程度。
+- 为什么相关。
+- 不能证明什么。
 
-## Boundary
+## 边界
 
-Never use historical analogy as the sole basis for a present major decision. It can reveal structure, not decide facts.
+不能把历史类比作为现实重大决策的唯一依据。历史能提示结构，不能替代当下事实。

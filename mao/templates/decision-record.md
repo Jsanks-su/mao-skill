@@ -1,4 +1,4 @@
-# Decision Record Template
+# 决策记录模板
 
 ```json
 {

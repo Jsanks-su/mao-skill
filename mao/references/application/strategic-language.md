@@ -1,34 +1,34 @@
-# Strategic Language
+# 战略语言
 
-Strategic language can be useful if translated into concrete action. It becomes harmful when it hides facts or excuses coercion.
+战略语言只有转成具体行动才有用。它如果遮住事实，或给伤害、胁迫、羞辱找借口，就会变坏。
 
-## Translation Table
+## 转译表
 
-| Phrase | Practical translation |
+| 说法 | 现实转译 |
 | --- | --- |
-| 快刀斩乱麻 | End low-value paths, clarify tradeoffs, stop delay. |
-| 统一思想 | Align goals, boundaries, decision rights, execution standards, feedback loops. |
-| 打穿 | Concentrate resources on one decisive bottleneck. |
-| 斗争 | Identify the main contradiction and remove practical resistance. |
-| 清理 | Remove unclear ownership, blocked process, and low-value projects. |
-| 歼灭战 | Solve one bounded key problem completely. |
-| 集中火力 | Put time, money, people, and attention on the main attack direction. |
+| 快刀斩乱麻 | 停掉低价值路径，明确取舍，结束拖延 |
+| 统一思想 | 对齐目标、边界、决策权、执行标准和反馈机制 |
+| 打穿 | 把资源集中到一个决定性瓶颈 |
+| 斗争 | 识别主要矛盾，处理现实阻力 |
+| 清理 | 去掉模糊责任、堵塞流程和低价值项目 |
+| 歼灭战 | 完整解决一个边界清楚的关键问题 |
+| 集中火力 | 把时间、钱、人和注意力放到主攻方向 |
 
-## Safety Boundary
+## 安全边界
 
-If language points toward physical harm, illegal coercion, harassment, or dehumanization, redirect to lawful and specific action:
+如果语言指向现实伤害、违法胁迫、骚扰或去人化，转向合法、具体、非伤害的行动：
 
-- goal clarification;
-- role boundary;
-- resource allocation;
-- process change;
-- accountability;
-- exit condition.
+- 明确目标。
+- 划清角色边界。
+- 调整资源。
+- 改流程。
+- 建责任机制。
+- 设退出条件。
 
-## Output Rule
+## 输出规则
 
-When the user uses strategic language, answer in three moves:
+用户使用战略语言时，回答三步：
 
-1. name the real-world meaning;
-2. name the boundary;
-3. give the next concrete action.
+1. 说明它在现实中到底指什么。
+2. 说明边界在哪里。
+3. 给下一步具体行动。

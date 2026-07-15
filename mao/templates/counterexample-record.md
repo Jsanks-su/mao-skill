@@ -1,4 +1,4 @@
-# Counterexample Record Template
+# 反例记录模板
 
 ```json
 {

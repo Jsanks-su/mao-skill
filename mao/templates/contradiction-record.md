@@ -1,4 +1,4 @@
-# Contradiction Record Template
+# 矛盾记录模板
 
 ```json
 {

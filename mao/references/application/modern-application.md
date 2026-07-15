@@ -1,35 +1,42 @@
-# Modern Application
+# 现代应用
 
-MAO applies historical method to modern work and life only through transfer, never direct imitation.
+MAO 方法用于现代工作和生活时，只能做方法迁移，不能直接模仿历史语言和历史动作。
 
-## Common Scenes
+## 配套文件
 
-| Scene | Main question | Default output |
+- `modern-card-schema.md`：现代迁移卡字段。
+- `modern-case-cards.md`：现金流、弱者对强者、职业转向、团队分歧等案例。
+- `ai-startup-case-cards.md`：AI 创业和 AI agent 案例。
+- `../core/reference-quality-gates.md`：资料、迁移和验证闸门。
+
+## 常见场景
+
+| 场景 | 主要问题 | 默认输出 |
 | --- | --- | --- |
-| Work stuck | What is the main bottleneck? | contradiction, stage, next action |
-| Startup operation | What must survive first? | cash, customer, product, team |
-| Weak-to-strong competition | Where is local advantage? | avoid-war boundary, breakthrough |
-| Team disagreement | Who can be united? | force map, unified action |
-| Relationship conflict | Is the contradiction antagonistic? | boundary, coordination route |
-| Learning growth | Where is feedback missing? | practice loop, metric |
-| Health and energy | What must be protected? | defense line, recovery minimum |
-| Financial risk | What is irreversible? | cash line, stop-loss, probe |
-| Career choice | What stage is the user in? | main ability, window, tradeoff |
-| Long-term life goal | What is the long struggle? | stage route, 30-day loop |
+| 工作卡住 | 真正瓶颈是什么 | 矛盾、阶段、下一步 |
+| 创业经营 | 先保住什么 | 现金、客户、产品、团队 |
+| 弱者对强者 | 局部优势在哪里 | 避战边界、突破点 |
+| 团队分歧 | 谁能被组织起来 | 力量地图、统一行动 |
+| 关系冲突 | 是对抗性矛盾吗 | 边界、协调路线 |
+| 学习成长 | 缺少什么反馈 | 实践闭环、指标 |
+| 健康精力 | 必须保护什么 | 防线、恢复最小动作 |
+| 财务风险 | 什么不可逆 | 现金线、止损、小试探 |
+| 职业选择 | 当前处在哪个阶段 | 主攻能力、窗口、取舍 |
+| 长期人生目标 | 长期斗争是什么 | 阶段路线、30 天闭环 |
 
-## Transfer Rules
+## 迁移规则
 
-- Translate strategic language into practical constraints and actions.
-- Keep historical comparison secondary to present facts.
-- Prefer reversible probes when uncertainty is high.
-- Use short-cycle action even for long-term strategy.
-- Do not make destiny claims from limited evidence.
+- 把战略语言翻译成现实约束和行动。
+- 历史比较服从当下事实。
+- 不确定性高时，优先可逆小试探。
+- 长期战略也要落到短周期行动。
+- 不用有限证据做命运判断。
 
-## Minimum Useful Answer
+## 最小有用回答
 
-When time or context is limited, preserve four pieces:
+时间或上下文有限时，保留四件事：
 
-1. main contradiction;
-2. current stage;
-3. next smallest action;
-4. most dangerous wrong action.
+1. 主要矛盾。
+2. 当前阶段。
+3. 下一步最小行动。
+4. 最危险的错误动作。

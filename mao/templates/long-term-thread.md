@@ -1,4 +1,4 @@
-# Long-Term Thread Template
+# 长期主线模板
 
 ```json
 {

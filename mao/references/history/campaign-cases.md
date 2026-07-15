@@ -1,59 +1,211 @@
-# Campaign Cases
+# 战役案例卡
 
-Campaign cases are structured examples for method transfer. They are not commands for present action.
+战役案例只用于结构迁移，不用于复刻历史行动。使用前先读 `case-card-schema.md`、`source-policy.md` 和 `reference-quality-gates.md`。
 
-## Case Card Fields
+## 井冈山根据地
 
-- case name;
-- source;
-- source level;
-- dispute level;
-- verifiability;
-- historical background;
-- main contradiction;
-- stage judgment;
-- force structure;
-- chosen route;
-- short-term result;
-- long-term effect;
-- positive reading;
-- negative reading;
-- disputed points;
-- transferable method;
-- non-transferable boundary;
-- suitable modern scene;
-- unsuitable modern scene;
-- lesson for the current problem.
+【案例名称】井冈山根据地
 
-## Example: Jinggangshan Base Area
+【案例类型】战役 / 根据地 / 弱者破局
 
-- Source level: chronology and secondary research.
-- Dispute level: medium.
-- Main contradiction: weak revolutionary force versus stronger hostile environment.
-- Stage judgment: defense and base-building.
-- Transferable method: find terrain where weak force has local advantage; build repeated support; avoid decisive battle too early.
-- Non-transferable boundary: do not transfer armed struggle form into civilian competition.
-- Modern scenes: startup niche, small team market entry, community building.
-- Misuse risk: romanticizing weakness and ignoring resource depletion.
+【时间与阶段】1927 年后的一段早期根据地建设阶段；按方法迁移看，属于防御期与根据地建设期。
 
-## Example: Long March
+【资料基础】年谱、党史军史材料、二手研究、部分回忆材料。
 
-- Source level: chronology, memoir, secondary research.
-- Dispute level: high in details, lower in broad route significance.
-- Main contradiction: survival under encirclement and internal route disagreement.
-- Stage judgment: forced strategic retreat.
-- Transferable method: preserve core force, abandon impossible terrain, re-evaluate leadership and route under extreme feedback.
-- Non-transferable boundary: do not glorify suffering as proof of correctness.
-- Modern scenes: company retreat from failed market, career reset, project scope contraction.
-- Misuse risk: turning every setback into heroic narrative.
+【来源等级】B，局部 A/C。事实骨架可用年谱和正式史料支撑，人物压力和内部观感多依赖回忆材料。
 
-## Example: Liaoshen Campaign
+【争议程度】中。
 
-- Source level: military history and secondary research.
-- Dispute level: medium.
-- Main contradiction: whether to concentrate decisive force at the correct window.
-- Stage judgment: transition into counteroffensive.
-- Transferable method: when stage shifts, concentrate resources and close the decisive gap.
-- Non-transferable boundary: modern organizations must obey law, ethics, and human cost boundaries.
-- Modern scenes: product launch window, focused competitive move, organizational turnaround.
-- Misuse risk: forcing decisive battle before stage conditions are ready.
+【可验证性】中。大框架清楚，部分细节和解释存在差异。
+
+【历史背景】强弱悬殊、中心城市路线受挫后，弱小力量需要寻找可保存、可发展、可反复反馈的空间。
+
+【主要矛盾】弱小力量的生存发展需求，和强敌优势环境之间的矛盾。
+
+【次要矛盾】内部路线分歧、资源不足、群众基础建设难度、军事压力和组织建设压力。
+
+【阶段判断】防御期。核心任务不是决战，而是保存核心力量、建立局部优势、形成可持续根据地。
+
+【力量结构】己方弱小但机动；对方总体强大但局部治理和地形适应存在缝隙；可争取力量来自当地群众、基层组织和现实利益结合点；环境约束包括资源稀缺、围剿压力和组织不稳。
+
+【路线选择】避开强敌主战场，寻找局部有利地形和群众基础，建立根据地，边生存边组织，边实践边纠偏。
+
+【短期结果】保存了部分核心力量，形成弱者可反复行动的空间。
+
+【长期影响】成为“弱者不正面硬拼，而先找局部优势和根据地”的方法参照。
+
+【正向解释】在资源劣势下，先找到可守、可补给、可组织、可复盘的局部空间，比正面硬拼更现实。
+
+【反向解释】根据地叙事容易被浪漫化，忽视长期消耗、外部压力和失败概率。
+
+【相似点】现代创业、小团队竞争、个人职业转型也常处在资源弱、对手强、正面战场不利的状态。
+
+【差异点】现代场景受法律、商业伦理、市场规则和个人风险约束，不存在历史战争条件。
+
+【可迁移方法】找局部优势；避开对方最强战场；建立小根据地；用一线反馈修正路线；先求生存和复利。
+
+【不可迁移边界】不能迁移武装斗争形式、强制组织方式、敌我化语言和以牺牲个人合法权益为代价的行动。
+
+【适用现代场景】创业冷启动、垂直市场切入、个人能力根据地、社区产品、小团队打大公司边缘市场。
+
+【不适用现代场景】现金流已经断裂却继续浪漫化坚持；明知违法违规仍以“斗争”包装；需要正面合规竞争的场景。
+
+【误用风险】把弱小本身当优势；把艰苦当正确；长期躲在小市场不敢验证真实需求。
+
+【现代行动提示】先找一个能在 7 天内接触真实用户、完成小交付、得到反馈的局部场景，而不是直接宣布大战略。
+
+## 长征
+
+【案例名称】长征
+
+【案例类型】战役 / 战略撤退 / 路线纠偏
+
+【时间与阶段】1934-1936 年长距离战略转移；按方法迁移看，属于被迫收缩与路线再判断阶段。
+
+【资料基础】年谱、军史材料、党史材料、回忆录、二手研究。
+
+【来源等级】B/C，局部 A。路线和时间线较清楚，内部判断、责任归因和细节解释争议较高。
+
+【争议程度】高。
+
+【可验证性】中。总体过程可验证，局部叙事和动机解释需要谨慎。
+
+【历史背景】在严重压力、资源受损和路线分歧中，核心问题从扩张转为保存核心力量和重新选择路线。
+
+【主要矛盾】核心力量生存与原有路线失效之间的矛盾。
+
+【次要矛盾】领导权调整、组织疲劳、资源断裂、外部追击、方向选择不确定。
+
+【阶段判断】防御期到相持准备期。关键不是赢得漂亮，而是避免彻底失败并获得重新组织的机会。
+
+【力量结构】己方受损但仍有核心组织能力；对方压力强；可争取力量和安全空间需要在运动中寻找；环境变化剧烈。
+
+【路线选择】放弃无法守住的旧空间，保存核心力量，在极端反馈中修正路线和领导结构。
+
+【短期结果】付出巨大代价，保存部分核心力量并完成战略转移。
+
+【长期影响】成为“必要时战略撤退、保存核心、纠正路线”的参照。
+
+【正向解释】承认旧路线不可持续，及时转移，比在错误战场消耗至死更现实。
+
+【反向解释】长征不能被浪漫化为“苦难越大越正确”，更不能用来掩盖前期判断和组织问题。
+
+【相似点】公司退出失败市场、个人职业转向、项目砍范围时，也会面对沉没成本和核心能力保存问题。
+
+【差异点】现代组织可以通过合规退出、合同重谈、现金流管理和职业规划降低损失，不需要复制极端生存逻辑。
+
+【可迁移方法】承认失败信号；保存核心资源；砍掉不可守阵地；在撤退中复盘路线；重新确认主攻方向。
+
+【不可迁移边界】不能把痛苦当勋章，不能用英雄叙事掩盖错误决策，不能要求团队无条件承受不可承受代价。
+
+【适用现代场景】项目止损、创业收缩、职业重启、组织换路线、产品从错误市场退出。
+
+【不适用现代场景】还有低成本验证空间却直接悲壮撤退；为了维持叙事而拒绝承认责任。
+
+【误用风险】把任何失败都包装成战略转移；撤退后不复盘，导致换个地方重复失败。
+
+【现代行动提示】列出必须保存的核心资产、必须放弃的沉没成本、30 天内重新验证的主方向。
+
+## 辽沈战役
+
+【案例名称】辽沈战役
+
+【案例类型】战役 / 阶段转换 / 集中突破
+
+【时间与阶段】1948 年；按方法迁移看，属于相持转反攻的窗口期。
+
+【资料基础】军史材料、战役史、二手研究、回忆材料。
+
+【来源等级】B，局部 A/C。
+
+【争议程度】中。
+
+【可验证性】中到高。总体战役进程较清楚，具体决策权重和个体叙述存在差异。
+
+【历史背景】力量对比和战场形势出现变化，关键问题变为是否抓住窗口集中资源取得决定性进展。
+
+【主要矛盾】阶段条件已经变化，但若不集中优势兵力，窗口可能错失。
+
+【次要矛盾】风险承受、资源调配、战役节奏、局部目标和全局目标之间的张力。
+
+【阶段判断】反攻期。前提是已有一定力量积累和窗口条件，不是主观宣布反攻。
+
+【力量结构】己方具备集中资源形成局部优势的条件；对方存在被分割、被牵制或反应滞后的风险；环境窗口有限。
+
+【路线选择】围绕关键节点集中力量，减少平均用力，把阶段优势转化为决定性结果。
+
+【短期结果】取得重要战役进展，推动整体力量格局变化。
+
+【长期影响】成为阶段转换后集中突破的典型参照。
+
+【正向解释】当条件成熟，继续分散试探会浪费窗口，必须集中资源打关键点。
+
+【反向解释】如果阶段判断错误，提前反攻会变成冒进。
+
+【相似点】产品窗口、市场节点、组织转型和职业机会也会出现“继续试探还是集中突破”的选择。
+
+【差异点】现代商业和职业环境没有战场消灭逻辑，必须遵守法律、伦理和人的边界。
+
+【可迁移方法】先确认阶段转换；识别关键节点；集中资源；设置明确成功指标和失败信号。
+
+【不可迁移边界】不能迁移军事消灭逻辑，不能为了集中突破牺牲合规、健康、基本现金流和关键关系。
+
+【适用现代场景】产品发布、销售突破、组织扭转、职业窗口、关键客户攻坚。
+
+【不适用现代场景】资源积累不足、用户需求未验证、团队执行力不稳时强行“All in”。
+
+【误用风险】把焦虑误判成窗口；把主观兴奋误判成反攻阶段。
+
+【现代行动提示】先写出“为什么现在是反攻期”的三条事实证据；证据不足时只做试探，不做总攻。
+
+## 淮海战役
+
+【案例名称】淮海战役
+
+【案例类型】战役 / 战略协同 / 群众支持
+
+【时间与阶段】1948-1949 年；按方法迁移看，属于反攻期的大规模协同阶段。
+
+【资料基础】军史材料、党史材料、战役研究、回忆材料。
+
+【来源等级】B/C，局部 A。
+
+【争议程度】中。
+
+【可验证性】中。总体进程清楚，组织动员、后勤贡献和具体解释存在叙事差异。
+
+【历史背景】大规模行动不仅取决于前线决策，也取决于后勤、组织、群众支持和多方协同。
+
+【主要矛盾】大规模目标需要多系统协同，而任何一个关键系统失灵都可能影响全局。
+
+【次要矛盾】前线目标、后勤承载、地方组织、信息传递、资源调度之间的矛盾。
+
+【阶段判断】反攻期。已进入全局性行动，核心是协同和支撑系统能否跟上。
+
+【力量结构】己方不仅有前线力量，也有后方动员、组织网络和支持系统；对方在局部和整体调度上存在压力。
+
+【路线选择】把战役目标、组织动员、后勤支持和群众参与连成一体，而不是只看单点能力。
+
+【短期结果】形成大规模协同效果，推动全局转换。
+
+【长期影响】成为“胜负不只在前线，也在组织和后勤系统”的参照。
+
+【正向解释】大行动必须有支撑体系，不能只靠少数人冲锋。
+
+【反向解释】群众支持叙事容易被简化，现代组织不能把人当无成本资源。
+
+【相似点】大型项目、供应链、跨团队协作和平台型产品都依赖前台、后台、资源和用户支持。
+
+【差异点】现代场景下所有协同都必须尊重个人权利、合同边界、劳动边界和组织伦理。
+
+【可迁移方法】把关键行动拆成前线交付、后勤支持、信息流、责任人和反馈机制；用群众路线获取真实一线反馈。
+
+【不可迁移边界】不能迁移无边界动员、无限加班、牺牲个体权益或把组织目标压倒合法权益。
+
+【适用现代场景】大型项目交付、跨部门协同、供应链稳定、社区产品、服务体系建设。
+
+【不适用现代场景】目标不清、责任不明、团队承载不足，却要求所有人“拼命协同”。
+
+【误用风险】把后勤和一线支持当成自然存在，忽视真实成本；用动员口号掩盖管理失败。
+
+【现代行动提示】为关键项目画出前线、后勤、信息、决策、验收五条链路，找出最可能断的一环。
